@@ -1,0 +1,29 @@
+\documentclass[titlepage, a4paper, 11pt, dvipdfmx]{jsarticle}
+\usepackage{otf} %otfパッケージを読み込むことで様々な問題を回避できる
+\usepackage[T1]{fontenc} %T1エンコードにすることで様々な問題を回避できる
+\usepackage{lmodern} %フォントサイズの問題を回避
+\usepackage{exscale} %大型演算子の問題を回避
+\usepackage{etex}
+\usepackage[dvipdfm, truedimen, top=25truemm, hmargin=25truemm, bottom=25truemm]{geometry} %用紙サイズの設定
+\和暦 %日付を和暦に
+
+%スタイルファイルを追加したい場合は以下のように書く
+\usepackage{amsmath,amssymb}
+
+\title{\Huge タイトル}
+\date{\today}
+\author{\Large BV20052 \quad 青見　健志}
+\begin{document}
+\maketitle
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+
+
+\begin{thebibliography}{1}
+    \bibitem{TeX} Donald E.Knuth 著, 鷺谷好輝 訳, \TeX ブック コンピュータによる組版システム, アスキー, 1989.
+    \bibitem{LaTeX} 奥村晴彦, 黒木祐介, [改訂第7版] \LaTeXe 美文書作成入門, 技術評論社, 2017.
+\end{thebibliography}
+\end{document}
