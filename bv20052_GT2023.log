@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  5 JAN 2024 21:32
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  5 JAN 2024 21:58
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/user/Desktop/GraduationThesis2023/bv20052_GT2022
-(c:/Users/user/Desktop/GraduationThesis2023/bv20052_GT2022.tex
+**c:/Users/user/Desktop/GraduationThesis2023/bv20052_GT2023
+(c:/Users/user/Desktop/GraduationThesis2023/bv20052_GT2023.tex
 pLaTeX2e <2021-11-15> (based on LaTeX2e <2022-06-01> patch level 5)
 L3 programming layer <2022-08-30> (c:/texlive/2022/texmf-dist/tex/platex/base/jarticle.cls
 Document Class: jarticle 2020/09/30 v1.8f Standard pLaTeX class
@@ -140,8 +140,8 @@ File: l3backend-dvips.def 2022-08-30 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count273
 \g__pdf_backend_link_int=\count274
 \g__pdf_backend_link_sf_int=\count275
-) (./bv20052_GT2022.aux)
-\openout1 = `bv20052_GT2022.aux'.
+) (./bv20052_GT2023.aux)
+\openout1 = `bv20052_GT2023.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
@@ -178,28 +178,28 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] (./bv20052_GT2022.toc
+] (./bv20052_GT2023.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
 )
 \tf@toc=\write3
-\openout3 = `bv20052_GT2022.toc'.
+\openout3 = `bv20052_GT2023.toc'.
 
  [1] [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 97.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 97.
- [3] [4] [5] (./bv20052_GT2022.aux) ) 
+ [3] [4] [5] (./bv20052_GT2023.aux) ) 
 Here is how much of TeX's memory you used:
- 2383 strings out of 475534
- 34863 string characters out of 5794265
+ 2390 strings out of 475534
+ 34971 string characters out of 5794265
  382040 words of memory out of 5000000
- 24005 multiletter control sequences out of 15000+600000
- 483583 words of font info for 86 fonts, out of 8000000 for 9000
+ 24012 multiletter control sequences out of 15000+600000
+ 485238 words of font info for 93 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 55i,6n,62p,269b,301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,6n,62p,269b,305s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bv20052_GT2022.dvi (6 pages, 3288 bytes).
+Output written on bv20052_GT2023.dvi (6 pages, 3480 bytes).
