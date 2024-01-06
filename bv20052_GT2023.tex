@@ -13,6 +13,35 @@
 \usepackage{theorem}%定義や定理の環境
 \usepackage{url}
 %必要なパッケージを追加
+%定理環境の設定
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{definition}[theorem]{定義}
+\newtheorem{lemma}[theorem]{補題}
+\newtheorem{axiom}[theorem]{公理}
+\newtheorem{proposition}[theorem]{命題}
+\newtheorem{corollary}[theorem]{系}
+\newtheorem{example}[theorem]{例}
+\newtheorem*{theorem*}{定理}
+\newtheorem*{definition*}{定義}
+\newtheorem*{lemma*}{補題}
+\newtheorem*{axiom*}{公理}
+\newtheorem*{proposition*}{命題}
+\newtheorem*{corollary*}{系}
+\newtheorem*{example*}{例}
+\renewcommand\proofname{\bf 証明}
+
+%スタイルファイルを追加したい場合は以下のように書く
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+%\usepackage{eclbkbox}
+\usepackage{tikz}
+
+%\newcommandでマクロを定義できる
+\newcommand{\macrotest}{\LaTeX のマクロは便利}
+\newcommand{\PD}[2]{\frac{\partial {#1}}{\partial {#2}}}%引数もとれる
+\newcommand{\combination}[2]{{}_{#1} \mathrm{C}_{#2}}
 
 
 
