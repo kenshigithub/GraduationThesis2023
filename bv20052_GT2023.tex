@@ -242,6 +242,9 @@
     \end{itemize}
     以上より, $S^m$は$m$次元$C^{\infty}$級多様体であることが分かった. 
 \end{proof}
+\begin{proposition}\label{prop: cord-nabor condition}
+    aaaa
+\end{proposition}
 %
 \section{接ベクトル空間}
 \subsection{接ベクトル空間}
@@ -250,7 +253,7 @@
 %
 \section{多様体の次元を調べる方法}
 \subsection{写像の局所的性質}
-\begin{theorem}
+\begin{theorem}\label{theo:f^(-1)theorem}
     $(df)_p:T_p(M)\to T_p(N)$が線形写像として
     同型なら, $f$は$p$のある開近傍から$f(p)$の
     ある開近傍への$C^r$級微分同相写像である. 
@@ -258,9 +261,104 @@
     が存在して, $f(U)=V$となり, かつ, 
     $f|U:U \to V$は$C^r$級微分同相写像である. 
 \end{theorem}
-\begin{theorem}
-    $f:M\to N$をああ
+\begin{theorem}\label{theo: projection theorem}
+    $f:M\to N$を$C^r$級写像とする. ある点$p\in M$
+    における微分$(df)_p:T_p(M)\to T_p(N)$が上への
+    線形写像なら, 点$p$付近での$f$の様子は, 射影:
+    $\mathbb{R}^{m-n} \times \mathbb{R}^n \to \mathbb{R}^n$, 
+    $(x_1, \cdots ,x_m)\mapsto (x_(m-n+1), \cdots ,x_m)$
+    と同じである. すなわち, $p$のまわりの局所座標系
+    $(x_1,\cdots ,x_m)$と$f(p)$のまわりの局所座標系
+    $(y_1, \cdots ,y_n)$をうまく選んで, $f$
+    の局所座標表示
+    $(y_1, \cdots ,y_n)=(c)$が
+    \begin{eqnarray*}
+        y_1&=&f_1(x_1,\cdots ,x_m)=x_{m-n+1}\\
+        &\vdots& \\
+        y_n&=&f_n(x_1,\cdots ,x_m)=x_m
+    \end{eqnarray*}
+    であるようにできる. 
 \end{theorem}
+\begin{proof}
+    $C^r$級写像$f:M\to N$が与えられており, 
+    ある点$p\in M$における微分
+    $(df)_p:T_p(M)\to T_p(N)$が上への線形写像
+    であるとする. このとき, rank$(df)_p=n$
+    (ただし, $m=$dim$M\geq n=$dim$N$. )
+    点$p$, 点$f(p)$のまわりに, それぞれ座標近傍
+    $(U;x_1,\cdots ,x_m)$, $(V;y_1,\cdots ,y_n)$
+    をとり, $f$を局所座標表示すると
+    $$(y_1, \cdots ,y_n)=(f_1(x_1,\cdots ,x_m), 
+    \cdots ,f_n(x_1,\cdots ,x_m))$$
+    ヤコビ行列$(Jf)_p$は$(df)_p$を表す行列で, 
+    $n$行$m$列である. rank$(df)_p=n$であるから, 
+    $(Jf)_p$から$n$本の列ベクトルを選んで, 作った
+    正方行列は正則である. 必要なら適当に列を入れ替えて
+    $$B=
+    \begin{pmatrix}
+        \frac{\partial f_1}{\partial x_{m-n+1}}(p) & \cdots & \frac{\partial f_1}{\partial x_m}(p)  \\
+        &\cdots& \\
+        \frac{\partial f_n}{\partial x_{m-n+1}}(p) & \cdots & \frac{\partial f_n}{\partial x_m}(p)  \\
+    \end{pmatrix}
+    $$
+    とおくと, det$B \neq 0$であって, 
+    $$(Jf)_p=
+    \left(
+        \begin{array}{ccc|c} 
+          * & \cdots & *  &  \\
+           &  &   & B \\
+          * & \cdots & *  & 
+        \end{array} 
+        \right)
+$$
+と仮定してよい. $p$のまわりの座標近傍
+$(U;x_1,\cdots ,x_m)$から, $\mathbb{R}^m$への
+写像$\varphi :U\to \mathbb{R}^m$を
+$$\varphi(x_1,\cdots ,x_m)=(x_1, \cdots ,x_{m-n},f_1(x_1,\cdots ,x_m), 
+\cdots ,f_n(x_1,\cdots ,x_m))$$
+と定義する. やコビ行列$(J\varphi)_p$は
+$$(J\varphi)_p=
+    \left(
+        \begin{array}{ccc|ccc} 
+          1 &        &   & & & \\
+            & \ddots &   & &O& \\
+            &        & 1 & & &  \\ \hline
+          * & \cdots & * & & &  \\
+            & \cdots &   & &B& \\
+          * & \cdots & * & & &
+        \end{array} 
+        \right)
+$$
+となり, det$(J\varphi)_p=$det$B\neq 0$である. 
+したがって, 逆関数の定理（定理
+\ref{theo:f^(-1) theorem}）
+により, 点$p$を含む$U$を十分小さくとれば, 
+$\varphi |U:U\to \varphi(U)$は$C^r$級微分同相写像
+である. よって, /ref{prop: cord-nabor condition}
+より,$(U, \varphi|U)$は$p$のまわりの新しい$C^r$
+級座標近傍と思える. $(U, \varphi|U)$の
+局所座標系を$(z_1,\cdots ,z_m)$とすると, 
+上の$\varphi$の定義式から, 
+$$(z_1,\cdots ,z_m)=\varphi(x_1,\cdots x_m)
+=(x_1,\cdots x_{m-n},f_1(x_1,\cdots ,x_m), 
+\cdots ,f_n(x_1,\cdots ,x_m))$$
+を得る. とくに, $(z_{m-n+1},\cdots ,z_m)
+=(f_1(x_1,\cdots ,x_m), 
+\cdots ,f_n(x_1,\cdots ,x_m))$
+であるから, 
+\begin{eqnarray*}
+    f\circ \varphi (z_1,\cdots z_m)&=&f(x_1,\cdots x_m)\\
+    &=&(f_1(x_1,\cdots ,x_m),\cdots ,f_n(x_1,\cdots ,x_m))\\
+    &=&(z_{m-n+1},\cdots ,z_m)
+\end{eqnarray*}
+となる. よって, $(z_1,\cdots ,z_m)$と$(y_1,\cdots ,y_n)$
+に関する$f:M\to N$の点$p$のまわりでの局所座標表示
+$$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
+=(y_1,\cdots ,y_n)$$
+である. $(z_1,\cdots ,z_m)$を改めて$(x_1,\cdots ,x_m)$
+と書き直せば, 定理\ref{theo: projection theorem}の
+主張が得られる. 
+\end{proof}
 \subsection{$C^r$級部分多様体}
 \subsection{多様体の次元の具体的な計算}
 \newpage

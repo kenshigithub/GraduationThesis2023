@@ -8,6 +8,6 @@
 \contentsline {subsection}{\numberline {4.2}$C^r$級写像の微分}{6}{}%
 \contentsline {section}{\numberline {5}多様体の次元を調べる方法}{7}{}%
 \contentsline {subsection}{\numberline {5.1}写像の局所的性質}{7}{}%
-\contentsline {subsection}{\numberline {5.2}$C^r$級部分多様体}{7}{}%
-\contentsline {subsection}{\numberline {5.3}多様体の次元の具体的な計算}{7}{}%
-\contentsline {section}{\numberline {6}おわりに}{8}{}%
+\contentsline {subsection}{\numberline {5.2}$C^r$級部分多様体}{8}{}%
+\contentsline {subsection}{\numberline {5.3}多様体の次元の具体的な計算}{8}{}%
+\contentsline {section}{\numberline {6}おわりに}{9}{}%
