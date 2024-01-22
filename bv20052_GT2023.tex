@@ -359,8 +359,104 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
 と書き直せば, 定理\ref{theo: projection theorem}の
 主張が得られる. 
 \end{proof}
+\begin{theorem}\label{theo:inclusion map theorem}
+    $f:M\to N$を$C^r$級写像とする. 
+    $(df)_p:T_p(M)\to T_{f(p)}(N)$が
+    $1$対$1$の線形写像なら, 点$p$の付近での$f$の
+    様子は, 包含写像
+    $\mathbb{R}^m\to \mathbb{R}^n,\ 
+    (x_1,\cdots ,x_m)\mapsto 
+    (x_1,\cdots ,x_m,0,\cdots ,0)$
+    と同じである. すなわち, $p$のまわりの局所座標系
+    $(x_1,\cdots ,x_m)$と$f(p)$のまわりの局所座標系
+    $(y_1,\cdots ,y_n)$をうまく選んで, $f$の
+    局所座標表示
+    $(y_1,\cdots ,y_n)\mapsto (f_1(x_1,\cdots x_m),
+    \cdots ,f_n(x_1,\cdots x_m),)$が, 
+    \begin{eqnarray*}
+        y_1&=&f_1(x_1,\cdots x_m)=x_1\\
+        &\vdots& \\
+        y_m&=&f_m(x_1,\cdots x_m)=x_m\\
+        y_{m+1}&=&f_{m+1}(x_1,\cdots x_m)=0\\
+        &\vdots& \\
+        y_n&=&f_n(x_1,\cdots x_m)=0\\
+    \end{eqnarray*}
+    であるようにできる. 
+\end{theorem}
+\begin{proof}
+    問題は局所的であるから$M=\mathbb{R}^m$, 
+    $N=\mathbb{R}^n$と仮定してよい. ($m\leq n$)
+    また, $p=\boldsymbol{o}$, $f(p)=\boldsymbol{o}$
+    としてよい. 
+    $\mathbb{R}^m$の自然な座標$(x_1, \cdots ,x_m)$
+    と, $\mathbb{R}^n$の自然な座標に関して, 
+    与えられた$C^r$級写像$f:\mathbb{R}^m\to \mathbb{R}^n$
+    を局所座標表示したものを
+    $$u_1=f_1(x_1,\cdots ,x_m),\ \cdots ,
+    u_n=f_n(x_1,\cdots ,x_m)$$
+    とする. $(df)_{\boldsymbol{o}}:
+    T_{\boldsymbol{o}}(\mathbb{R}^m)\to 
+    T_{\boldsymbol{o}}(\mathbb{R}^n)$
+    は$1$対$1$であるから, ヤコビ行列$(Jf)_{\boldsymbol{o}}$
+    から, 適当な$m$行を選び出して作った$m$次正方行列
+    は正則である. 必要なら, 
+    $(u_1, \cdots ,u_m)$の並び方を変えて, 
+    $(Jf)_{\boldsymbol{o}}=
+    \begin{pmatrix}
+        A \\ \hline
+        B
+     \end{pmatrix}
+     $
+     ($A$は$m$行$m$列の正則行列)と仮定してよい. 
+     $(x_1, \cdots ,x_m)$に新しく, 
+     $(x_{m+1}, \cdots ,x_n)$を付け加えて, 
+     $\mathbb{R}^m \times \mathbb{R}^{n-m}$を
+     構成し, 新しい写像
+     $F:\mathbb{R}^m \times \mathbb{R}^{n-m}
+     \to \mathbb{R}^n$
+    を, 
+    \begin{eqnarray*}
+        &&F(x_1,\cdots ,x_m,x_{m+1},\cdots x_n)\\
+    &&=(f_1(x_1,\cdots ,x_m),\cdots ,f_m(x_1,\cdots ,x_m), 
+    f_{m+1}(x_1,\cdots ,x_m)+x_{m+1}, 
+    \cdots ,f_{n}(x_1,\cdots ,x_m)+x_{n})
+    \end{eqnarray*}
+    と定義する.$F$のヤコビ行列
+    $$(Jf)_{\boldsymbol{o}}=
+    \left(
+\begin{array}{c|ccc} 
+  A &  & O  &  \\ \hline
+   & 1 &   &  \\
+  B &  & \vdots &  \\
+   &  &   & 1
+\end{array} 
+\right)
+    $$
+    であり, 正則である. 
+    逆関数の定理\ref{theo:f^(-1)theorem}により, 
+    $\mathbb{R}^m \times \mathbb{R}^{n-m}$
+    における, $\boldsymbol{o}$の近傍$U$と, 
+    $\mathbb{R}^n$における$\boldsymbol{o}$
+    の近傍$V$が存在して, $F|U:U\to V$は$C^r$級
+    微分同相写像になる. $\psi =(F|U)^{-1}:V\to U$
+    とおく. $(V, \psi)$は$\boldsymbol{o}$の
+    まわりの$\mathbb{R}^n$の$C^r$級座標近傍と思える. 
+    この座標近傍に関する局所座標系を$(y_1,\cdots y_n)$
+    とし, $(x_1, \cdots ,x_m)$と$(y_1,\cdots y_n)$に
+    関して, $f:U\cap(\mathbb{R}^m\times 
+    \{ \boldsymbol{o} \})\to \mathbb{R}^n$
+    を局所座標表示すると, 
+    \begin{eqnarray*}
+        (y_1,\cdots ,y_n)&=&\psi (f(x_1,\cdots ,x_m))\\
+        &=&\psi(F(x_1,\cdots ,x_m,0,\cdots 0))\\
+        &=&(F|U)^{-1}(F(x_1,\cdots ,x_m,0,\cdots 0))\\
+        &=&(x_1,\cdots ,x_m,0,\cdots ,0)
+    \end{eqnarray*}
+    となる. したがって, 定理\ref{theo:inclusion map theorem}
+    の主張する通りの局所座標表示が得られた. 
+\end{proof}
 \subsection{$C^r$級部分多様体}
-\begin{definition}
+\begin{definition}\label{def:C^r-submanifold}
     $n$次元$C^r$級多様体$N$の部分集合$L$が
     $N$の$l$次元$C^r$級部分多様体であるとは, 
     \begin{itemize}
@@ -380,7 +476,74 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
     多様体である. 
 \end{proposition}
 \begin{proof}
-    aa
+    \begin{itemize}
+        \item[(1)]
+        $l=n$のとき, $N$からの相対位相によって, 
+        $L$は位相空間となり, 
+        $N$の$C^r$級座標近傍を
+        $\mathcal{S}=
+        \{U_\alpha,\varphi _\alpha\}_{\alpha\in A}$
+        とすると, $\mathcal{S}$を$L$に制限した
+        $\{U_\alpha \cap L,
+        \varphi _\alpha |U_\alpha \cap L\}_{\alpha\in A}$
+        は$L$の$C^r$局所座標系になる. 
+        よって, $L$はそれ自身, $l$($=n$)次元
+        $C^r$級多様体である. 
+        \item[(2)] 
+        $0\leq l<n$のとき, $L$には$N$からの相対位相
+        を入れる. $N$がハウスドルフ空間であるから$L$
+        もそうである. \\
+        $L$の任意の点$p$に対し, $p$を含む$N$の
+        局所座標系$(U;x_1,\cdots ,x_n)$で定義
+        \ref{def:C^r-submanifold}の条件を満たすもの
+        を選び, $(U_p;x^p_1,\cdots ,x^p_n)$とする. 
+        $V_p=L\cap U_p$とおくと, $V_p$は$L$の開集合
+        である. $V_p$上の$U_p$の局所座標系
+        $(x^p_1, \cdots ,x^p_n)$の$x^p_1$から
+        $x^p_l$までを制限したもの$(V_p;x^p_1,\cdots ,x^p_l)$
+        を考える. \\
+        $\{(V_p;x^p_1,\cdots ,x^p_l)\}_{p\in L}$が
+        $L$を被覆することは明らかである.\\
+        $V_p$と$V_q$が交わるとする. 対応する
+        $(U_p;x^p_1,\cdots ,x^p_n)$ と
+        $(U_q;x^q_1,\cdots ,x^q_n)$は, 
+        $N$の適当な座標近傍
+        $(U_\alpha ;x^\alpha_1, \cdots ,x^\alpha_n)$,
+        $(U_\beta ;x^\beta_1, \cdots ,x^\beta_n)$
+        である. この間の座標変換はある$C^r$級関数$f$を
+        用いて, 
+        $$(x^\beta_1, \cdots ,x^\beta_n)
+        =(f_1(x^\alpha_1, \cdots ,x^\alpha_n), \cdots 
+        , f_n(x^\alpha_1, \cdots ,x^\alpha_n))$$
+        と書ける. $V_p\cap V_q$上では, 
+        $x^\alpha_{l+1}=x^\alpha_n=0$, $x^\beta_{l+1}=x^\beta_n=0$
+        が成り立つので, $V_p\cap V_q$上では
+        \begin{eqnarray*}
+            x^\beta_1&=&f_1(x^\alpha_1, \cdots ,x^\alpha_l,0,\cdots ,0)\\
+            &\vdots& \\
+            x^\beta_l&=&f_l(x^\alpha_1, \cdots ,x^\alpha_l,0,\cdots ,0)\\
+            0&=&f_{l+1}(x^\alpha_1, \cdots ,x^\alpha_l,0,\cdots ,0)\\
+            &\vdots& \\
+            0&=&f_n(x^\alpha_1, \cdots ,x^\alpha_l,0,\cdots ,0)\\
+        \end{eqnarray*}
+        となっている. 改めて関数$g$を
+        \begin{eqnarray*}
+            g(x^\alpha_1, \cdots ,x^\alpha_l)&=&
+            (g_1(x^\alpha_1, \cdots ,x^\alpha_l), \cdots 
+            , g_l(x^\alpha_1, \cdots ,x^\alpha_l))\\
+            &=&(f_1(x^\alpha_1, \cdots ,x^\alpha_l,0,\cdots ,0), \cdots 
+            , f_l(x^\alpha_1, \cdots ,x^\alpha_l,0,\cdots ,0))
+        \end{eqnarray*}
+        と定義すると, この関数は$C^r$級である. 
+        そして, 
+        $$(x^\beta_1, \cdots ,x^\beta_l)
+        =g(x^\alpha_1, \cdots ,x^\alpha_l)$$
+        が$(V_p;x^p_1,\cdots x^p_l)$から
+        $(V_q;x^q_1,\cdots x^q_l)$の座標変換を与えている. \\
+        ゆえに, $\{(V_p;x^p_1,\cdots ,x^p_l)\}_{p\in L}$
+        は$L$の$C^r$級座標近傍になっている. \\
+        以上より, $L$は$l$次元$C^r$級多様体である. 
+    \end{itemize}
 \end{proof}
 \begin{theorem}
     $M$, $N$を$m$次元, $n$次元の$C^r$級多様体, 
@@ -388,7 +551,7 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
     $q$について, $f(p)=q$となる$M$の各点$p$
     が常にrank$(Jf)_p=n$を満たすとき, 逆像
     $f^{-1}(q)$は$M$の$(m-n)$次元$C^r$級多様体
-    である.  
+    である. 
 \end{theorem}
 \subsection{多様体の次元の具体的な計算}
 \newpage
