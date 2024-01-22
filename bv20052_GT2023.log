@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  22 JAN 2024 02:37
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  22 JAN 2024 11:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -414,7 +414,15 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 
 LaTeX Warning: Reference `theo:f^(-1) theorem' on page 8 undefined on input line 334.
 
-[8] [9] [10] (./bv20052_GT2023.aux)
+
+Overfull \hbox (0.4439pt too wide) in paragraph at lines 369--372
+[]$\OT1/cmr/m/n/12 0 \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/12 l < n$ \JY1/mc/m/n/12 のとき\OT1/cmr/m/n/12 :$\OML/cmm/m/it/12 L$ \JY1/mc/m/n/12 の任意の点 $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 に対し\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 を含む $\OML/cmm/m/it/12 N$ \JY1/mc/m/n/12 の座標近傍 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$
+ []
+
+[8]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 383.
+ [9] [10] [11] (./bv20052_GT2023.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -422,10 +430,10 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  12993 strings out of 475534
  261899 string characters out of 5794265
- 596162 words of memory out of 5000000
+ 596163 words of memory out of 5000000
  34397 multiletter control sequences out of 15000+600000
  487478 words of font info for 102 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  84i,9n,89p,434b,361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bv20052_GT2023.dvi (11 pages, 27444 bytes).
+Output written on bv20052_GT2023.dvi (12 pages, 29532 bytes).
