@@ -470,7 +470,7 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
         が成り立つことである. 
     \end{itemize}
 \end{definition}
-\begin{proposition}
+\begin{proposition}\label{prop:dim of C^r-submanifold}
     $n$次元$C^r$級多様体$N$の$l$次元$C^r$級
     部分多様体$L$は, それ自身$l$次元$C^r$級
     多様体である. 
@@ -545,14 +545,52 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
         以上より, $L$は$l$次元$C^r$級多様体である. 
     \end{itemize}
 \end{proof}
-\begin{theorem}
+\begin{theorem}\label{theo:f^{-1}(q) C^r manifold}
     $M$, $N$を$m$次元, $n$次元の$C^r$級多様体, 
     $f:M\to N$を$C^r$級写像とする. $N$のある点
     $q$について, $f(p)=q$となる$M$の各点$p$
     が常にrank$(Jf)_p=n$を満たすとき, 逆像
-    $f^{-1}(q)$は$M$の$(m-n)$次元$C^r$級多様体
+    $f^{-1}(q)$は$(m-n)$次元$C^r$級多様体
     である. 
 \end{theorem}
+\begin{proof}
+    定義\ref{def:C^r-submanifold}, 命題
+    \ref{prop:dim of C^r-submanifold}より, 
+    次のことを証明すればよい.\\ 
+
+    $q\in N$の逆像$f^{-1}(q)$に属する任意の点
+    $p$に対し, $p$のまわりの座標近傍
+    $(U;x_1,\cdots .x_m)$が存在して, 
+    $$f^{-1}(q)\cap U
+    =\{(x_1,\cdots x_m)\in U|
+    x_{m-n+1}=\cdots =x_m=0\}$$
+    が成り立つ. \\
+
+    今, $f(p)=q$を満たす$p\in M$について, 常に
+    rank$(Jf)_p=n$であるから, $(df)_p$は上への
+    写像である. よって, 定理\ref{theo: projection theorem}
+    より, $p$のまわりの座標近傍$(U;x_1,\cdots ,x_m)$
+    と$q$($=f(p)$)のまわりの座標近傍
+    $(V;y_1,\cdots ,y_n)$が存在して, $f|U:U\to V$
+    は
+    $$(y_1,\cdots ,y_n)=f(x_1,\cdots x_m)
+    =(x_{m-n+1},\cdots ,x_m)$$
+    と座標表示される. \\
+    $(U;x_1,\cdots x_m)$は任意にとってきた
+    $(V;y_1,\cdots ,y_n)$
+    に応じて選べるから, $(V;y_1,\cdots ,y_n)$は
+    点$q$で$y_1=\cdots =y_n=0$となるように
+    とっておくと, 
+    \begin{eqnarray*}
+        f^{-1}(q)\cap U&=& \{p\in U|f(p)=q\}\\
+        &=&\{(x_1,\cdots ,x_m)\in U|f(x_1,\cdots x_m)=(0,\cdots ,0)\}\\
+        &=&\{(x_1,\cdots ,x_m)\in U|(x_{m-n+1},\cdots x_m)=(0,\cdots ,0)\}\\
+        &=&\{(x_1,\cdots x_m)\in U|x_{m-n+1}=\cdots =x_m=0\}
+    \end{eqnarray*}
+    となり, 条件を満たす$U$が存在することがわかる. 
+    これで定理\ref{theo:f^{-1}(q) C^r manifold}
+    が証明できた. 
+\end{proof}
 \subsection{多様体の次元の具体的な計算}
 \newpage
 %

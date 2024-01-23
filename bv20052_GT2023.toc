@@ -9,5 +9,5 @@
 \contentsline {section}{\numberline {5}多様体の次元を調べる方法}{7}{}%
 \contentsline {subsection}{\numberline {5.1}写像の局所的性質}{7}{}%
 \contentsline {subsection}{\numberline {5.2}$C^r$級部分多様体}{10}{}%
-\contentsline {subsection}{\numberline {5.3}多様体の次元の具体的な計算}{11}{}%
-\contentsline {section}{\numberline {6}おわりに}{12}{}%
+\contentsline {subsection}{\numberline {5.3}多様体の次元の具体的な計算}{12}{}%
+\contentsline {section}{\numberline {6}おわりに}{13}{}%
