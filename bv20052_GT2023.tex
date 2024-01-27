@@ -246,6 +246,78 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
     \end{itemize}
     以上より, $S^m$は$m$次元$C^{\infty}$級多様体であることが分かった. 
 \end{proof}
+\begin{definition}
+    $\{(U_\alpha ,\varphi _\alpha)\}_{\alpha \in A}$
+    を$m$次元$C^r$級多様体$M$の$1$つの$m$次元$C^r$級
+    座標近傍とする. $M$の開集合$V$と$V$から$\mathbb{R}^m$
+    への写像$\psi$の対$(V,\psi)$が次の条件(1), (2)
+    を満たしているとき, $(V,\psi)$は
+    $\{(U_\alpha ,\varphi _\alpha)\}_{\alpha \in A}$
+    と両立するという. 
+    \begin{itemize}
+        \item[(1)]$\psi:V\to \mathbb{R}^m$の像
+        $\psi (V)$は$\mathbb{R}^m$の開集合で
+        $\psi$は$V$から$\psi (V)$への同相写像
+        である. 
+        \item[(2)] $V\cap U_\alpha \neq \phi$
+        となる$\alpha$に対しては, 
+        $\psi \circ \varphi ^{-1}:
+        \varphi(V\cap U_\alpha)\to
+        \psi(V\cap U_\alpha)$は$C^r$級写像である. 
+    \end{itemize}
+\begin{proposition}
+    $(V_1,\psi_1)$, $(V_1,\psi_1)$がともに与えられた
+    座標近傍系$\{(U_\alpha ,
+    \varphi _\alpha)\}_{\alpha \in A}$
+    と両立していて, $V_1\cap V_2\neq \phi$
+    とすると, $\psi_2\circ \psi_1^{-1}$は$C^r$級
+    写像となる. 
+\end{proposition}
+\begin{proof}
+    任意の点$x\in V_1\cap V_2$に対し, 
+    $x_\in U_\alpha$となる$(U_\alpha, 
+    \varphi_\alpha)$が座っ票近傍系の中に
+    存在する. 
+    $$\psi_2\circ \psi_1^{-1}:
+    \psi_1(V_1\cap V_2\cap U_\alpha)\to
+    \psi_2(V_1\cap V_2\cap U_\alpha)$$
+    は$(\psi_2\circ \varphi_\alpha^{-1})\circ
+    (\psi_1\circ \varphi_\alpha^{-1})^{-1}$
+    と分解され, 
+    $(\psi_2\circ \varphi_\alpha^{-1})$, 
+    $(\psi_1\circ \varphi_\alpha^{-1})^{-1}$
+    はそれぞれ$x\in V_1\cap V_2$
+    に関して$C^r$級であるから, 
+    $\psi_2\circ \psi_1^{-1}$も
+    $x$に関して$C^r$級である. いま, 
+    $x\in V_1\cap V_2$は任意であったから, 
+    $\psi_2\circ \psi_1^{-1}$は$C^r$級
+    写像である. 
+\end{proof}
+\begin{definition}
+    位相空間$M$上に$C^r$級座標近傍系
+    $\mathcal{S}=
+    \{(U_\alpha, \varphi_\alpha)\}_{\alpha\in A}$
+    が与えられているとする. 
+    $\mathcal{S}$
+    と両立する$(V,\psi)$の全体集合
+    $\mathcal{M}=\mathcal{M}(\mathcal{S})$を
+    $M$上の極大な$C^r$級座標近傍系とする. 
+    ここで, 極大とは$\mathcal{M}$と両立する
+    全ての$(U,\varphi)$が$\mathcal{M}
+    =\mathcal{M}(\mathcal{S})$
+    に属することをいう. この$\mathcal{M}
+    =\mathcal{M}(\mathcal{S})$
+    のことを$\mathcal{S}$から決まる
+    $M$の$C^r$級極大座標近傍系という. 
+\end{definition}
+以降, $C^r$級多様体$M$が$C^r$級座標近傍系
+$\mathcal{S}$によって定義されたとき, $M$には
+$\mathcal{S}$から決まる$C^r$級極大座標近傍系
+$\mathcal{M}(\mathcal{S})$を与え, 
+$(M,\mathcal{M}(\mathcal{S}))$を
+考えるものとする. 
+\end{definition}
 
 \subsection{$C^s$級写像}
 $M$, $N$を$m$次元, $n$次元の$C^r$級多様体とし, 
@@ -267,7 +339,7 @@ $\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
 を$(U;x_1,\cdots x_m)$と$(V;y_1,\cdots y_n)$
 に関する$f$の局所座標表示という. 
 \end{definition}
-\begin{definition}
+\begin{definition}\label{def:C^s map}
     連続写像$f:M\to N$が$1$点$p\in M$において
     $C^s$級であるとは, $p$を含む$M$の$C^r$級
     座標近傍$(U;x_1,\cdots x_m)$と
@@ -277,10 +349,13 @@ $\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
         \item[(1)]$f(U)\subset V$
         \item[(2)]$(U;x_1,\cdots x_m)$と
         $(V;y_1,\cdots y_n)$に関する$f$の
-        局所座標表示が$C^r$級である. 
+        局所座標表示が$C^s$級である. 
     \end{itemize}
     この$2$つの条件が成り立つことである. 
+    $f$が任意の点$p\in M$で$C^s$級であるとき, 
+    $f$は$C^s$級写像であるという. 
 \end{definition}
+
 \begin{proposition}\label{prop: cord-nabor condition}
     $M$を$m$次元$C^r$級多様体, $V$を$M$の開集合, 
     $V'$を$\mathbb{R}^m$の開集合とする. また, 
