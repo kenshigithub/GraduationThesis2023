@@ -130,6 +130,7 @@
 \newpage
 %
 \section{$C^r$級多様体と$C^r$級写像}
+\subsection{$C^r$級多様体}
 \begin{definition}
     位相空間$X$の開集合$U$から$m$次元数空間$\mathbb{R}^m$
     のある開集合$U'$への同相写像
@@ -137,6 +138,9 @@
     があるとき, $(U, \varphi)$を$m$次元座標近傍といい, 
     $\varphi$を$U$上の局所座標系という. 
 \end{definition}
+$(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
+    が描かれていると考え, $(U;x_1, \cdots ,x_m)$
+    とも表すこととする. 
 \begin{definition}
     $(U, \varphi)$を位相空間$X$内の局所座標近傍とする.
     $U$内の任意の点$p$に対して$\varphi(p) \in \mathbb{R}^m$
@@ -242,6 +246,41 @@
     \end{itemize}
     以上より, $S^m$は$m$次元$C^{\infty}$級多様体であることが分かった. 
 \end{proof}
+
+\subsection{$C^s$級写像}
+$M$, $N$を$m$次元, $n$次元の$C^r$級多様体とし, 
+$f$を連続写像とする. 
+\begin{definition}\label{def:local coordinate display}
+$M$, $N$の$C^r$級
+座標近傍$(U,\varphi)$, 
+$(V,\psi)$が存在し, 
+$$f(U)\subset V$$
+が成り立つ. 
+$U$と$V$の中には座標近傍系$(x_1,\cdots x_m)$, 
+$(y_1,\cdots y_n)$があるから, 
+$f|U:U\to V$を
+$$(y_1,\cdots y_n)=
+\psi^{-1} \circ f\circ \varphi(x_1,\cdots x_m)$$
+と表示することができる. この表示の
+$\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
+もの($(y_1,\cdots y_n)=f(x_1,\cdots x_m)$)
+を$(U;x_1,\cdots x_m)$と$(V;y_1,\cdots y_n)$
+に関する$f$の局所座標表示という. 
+\end{definition}
+\begin{definition}
+    連続写像$f:M\to N$が$1$点$p\in M$において
+    $C^s$級であるとは, $p$を含む$M$の$C^r$級
+    座標近傍$(U;x_1,\cdots x_m)$と
+    $f(p)$を含む$N$の
+    座標近傍$(V;y_1,\cdots y_n)$が存在して, 
+    \begin{itemize}
+        \item[(1)]$f(U)\subset V$
+        \item[(2)]$(U;x_1,\cdots x_m)$と
+        $(V;y_1,\cdots y_n)$に関する$f$の
+        局所座標表示が$C^r$級である. 
+    \end{itemize}
+    この$2$つの条件が成り立つことである. 
+\end{definition}
 \begin{proposition}\label{prop: cord-nabor condition}
     $M$を$m$次元$C^r$級多様体, $V$を$M$の開集合, 
     $V'$を$\mathbb{R}^m$の開集合とする. また, 
@@ -251,7 +290,14 @@
     $\varphi:V\to V'$が, $C^r$級微分同相写像
     であることである. 
 \end{proposition}
+\begin{proof}
+    まず, $(V,\varphi)$が$C^r$級座標近傍なら, 
+    $\varphi:V\to V'$が, $C^r$級微分同相写像
+    であることを証明する. 
+    $\varphi ^{-1}\circ\varphi:V'\to V'$
+    が$C^r$級であることを示せばよい.  
 
+\end{proof}
 %
 \section{接ベクトル空間}
 \subsection{接ベクトル空間}
