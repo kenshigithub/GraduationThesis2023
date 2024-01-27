@@ -349,13 +349,94 @@ $\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
         \item[(1)]$f(U)\subset V$
         \item[(2)]$(U;x_1,\cdots x_m)$と
         $(V;y_1,\cdots y_n)$に関する$f$の
-        局所座標表示が$C^s$級である. 
+        局所座標表示が$C^s$級である.
+        (ただし, $0\leq s \leq r \leq \infty$) 
     \end{itemize}
     この$2$つの条件が成り立つことである. 
     $f$が任意の点$p\in M$で$C^s$級であるとき, 
     $f$は$C^s$級写像であるという. 
 \end{definition}
 
+\begin{proposition}
+    連続写像$f:M\to N$が$1$点$p\in M$において
+    $C^s$級であるという性質は, $p$, $f(p)$を
+    それぞれ含む$C^r$級座標近傍$(U,\varphi)$, 
+    $(V, \psi)$の選び方によらない. 
+    (ただし, $0\leq s \leq r \leq \infty$)
+\end{proposition}
+\begin{proof}
+    $f$は$p\in M$において$(U,\varphi)$, 
+    $(V, \psi)$に関して$C^s$級であると仮定する. 
+    $f(U')\subset V'$, $U'=U$, $V'=V$となるような
+    $p$, $f(p)$をそれぞれ含む別の$C^r$級座標近傍
+    $(U',\varphi')$, $(V, \psi')$をとると, 
+    $\psi'\circ f\circ \varphi'^{-1}$は
+    $$\psi'\circ f\circ \varphi'^{-1}=
+    (\psi'\circ \psi^{-1})\circ
+    (\psi \circ f\circ \varphi^{-1})\circ
+    (\varphi \circ \varphi')$$
+    と分解される. $\psi'\circ \psi^{-1}$, 
+    $\varphi \circ \varphi'$はそれぞれ$M$, $N$
+    における座標変換であるから$C^r$級であり, 
+    $\psi \circ f\circ \varphi^{-1}$は
+    仮定より$C^s$級であるから, 
+    $\psi'\circ f\circ \varphi'^{-1}$は
+    $C^s$級である. よって命題は証明された. 
+\end{proof}
+\begin{proposition}
+    $M$, $N$, $Q$を$C^r$級多様体とする. 
+    $f:M\to N$, $g:N\to Q$がともに$C^s$級
+    写像なら, 合成写像$g\circ f:M\to Q$
+    も$C^s$級である. 
+    (ただし, $0\leq s \leq r \leq \infty$)
+\end{proposition}
+\begin{proof}
+    \begin{itemize}
+        \item[(1)]
+        $p$を$M$の任意の点とすると, $g$は$C^s$
+        級写像より, $g(V)\subset W$となうような
+        $f(p)$, $g(f(p))$を含む座標近傍
+        $(V,\psi)$, $(W, \omega)$が存在する. 
+        また, $f$は$C^s$
+        級写像より, $f(U)\subset V$となうような
+        $p$を含む座標近傍$(U,\varphi)$が存在する. 
+        よって, 任意の点$p\in M$において
+        $g\circ f(p)\subset W$となるような
+        $p$, $g\circ f(p)$を含む座標近傍
+        $(U,\varphi)$, $(W, \omega)$の存在を
+        示せた. 
+        \item[(2)] 
+        $\omega \circ (g\circ f)\circ \varphi^{-1}$
+        は
+        $$\omega \circ (g\circ f)\circ \varphi^{-1}
+        =(\omega \circ g\circ \psi^{-1})\circ
+        (\psi \circ f\circ \varphi^{-1})$$
+        と分解される. 
+        $g$は$C^s$級写像より, 
+        $\omega \circ g\circ \psi^{-1}$
+        は$C^s$級, 
+        $f$は$C^s$級写像より,
+        $\psi \circ f\circ \varphi^{-1}$
+        は$C^s$級であるから, 
+        $\omega \circ (g\circ f)\circ \varphi^{-1}$
+        は$C^s$級となる. 
+    \end{itemize}
+    以上より, 合成写像$g\circ f:M\to Q$
+    は$C^s$級である.
+\end{proof}
+\begin{definition}\label{def:C^s deffeomorphism}
+    $M$, $N$を$C^r$級多様体とする. $f:M\to N$
+    が$C^s$級微分同相写像であるとは, 次の条件
+    (1), (2)を満たすことをいう. 
+    \begin{itemize}
+        \item[(1)]
+        $f:M\to N$は全単射（$1$対$1$かつ上への写像）
+        である. 
+        \item[(2)] 
+        $f:M\to N$と$f^{-1}:N\to M$はともに$C^s$
+        級写像である. 
+    \end{itemize}
+\end{definition}
 \begin{proposition}\label{prop: cord-nabor condition}
     $M$を$m$次元$C^r$級多様体, $V$を$M$の開集合, 
     $V'$を$\mathbb{R}^m$の開集合とする. また, 
@@ -376,6 +457,7 @@ $\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
 %
 \section{接ベクトル空間}
 \subsection{接ベクトル空間}
+
 \subsection{$C^r$級写像の微分}
 \newpage
 %
