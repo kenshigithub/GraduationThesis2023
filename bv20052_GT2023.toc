@@ -7,9 +7,9 @@
 \contentsline {subsection}{\numberline {3.2}$C^s$級写像}{7}{}%
 \contentsline {section}{\numberline {4}接ベクトル空間}{8}{}%
 \contentsline {subsection}{\numberline {4.1}接ベクトル空間}{8}{}%
-\contentsline {subsection}{\numberline {4.2}$C^r$級写像の微分}{8}{}%
-\contentsline {section}{\numberline {5}多様体の次元を調べる方法}{9}{}%
-\contentsline {subsection}{\numberline {5.1}写像の局所的性質}{9}{}%
-\contentsline {subsection}{\numberline {5.2}$C^r$級部分多様体}{12}{}%
-\contentsline {subsection}{\numberline {5.3}多様体の次元の具体的な計算}{14}{}%
-\contentsline {section}{\numberline {6}おわりに}{15}{}%
+\contentsline {subsection}{\numberline {4.2}$C^r$級写像の微分}{12}{}%
+\contentsline {section}{\numberline {5}多様体の次元を調べる方法}{13}{}%
+\contentsline {subsection}{\numberline {5.1}写像の局所的性質}{13}{}%
+\contentsline {subsection}{\numberline {5.2}$C^r$級部分多様体}{16}{}%
+\contentsline {subsection}{\numberline {5.3}多様体の次元の具体的な計算}{18}{}%
+\contentsline {section}{\numberline {6}おわりに}{19}{}%

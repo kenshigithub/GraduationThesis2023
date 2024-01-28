@@ -430,7 +430,7 @@ $\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
     (1), (2)を満たすことをいう. 
     \begin{itemize}
         \item[(1)]
-        $f:M\to N$は全単射（$1$対$1$かつ上への写像）
+        $f:M\to N$は全単射($1$対$1$かつ上への写像)
         である. 
         \item[(2)] 
         $f:M\to N$と$f^{-1}:N\to M$はともに$C^s$
@@ -457,10 +457,306 @@ $\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
 %
 \section{接ベクトル空間}
 \subsection{接ベクトル空間}
+$M$を$m$次元$C^r$級多様体とし 
+($1\leq r\leq \infty$), $M$の$1$点$p$を通る
+$C^r$級曲線$c$を考える. ここで, $c$のパラメータ
+$t$は$-\epsilon \leq t\leq \epsilon$の
+範囲を動くとし, $c(0)=p$であるとする. 
+\begin{definition}\label{def:directional derivative}
+    点$p$における方向微分$\boldsymbol{v}$とは, 
+    点$p$の開近傍上で
+    定義された$C^r$級関数$f$に実数
+    $\boldsymbol{v}(f)$を
+    対応させる操作であって, 次の性質(0), (1), (2)
+    をもつものである. 
+    \begin{itemize}
+        \item[(0)]$f$と$g$が点$p$の十分
+        小さな近傍で上で一致すれば, 
+        $\boldsymbol{v}(f)=\boldsymbol{v}(g)$. 
+        \item[(1)]$\boldsymbol{v}(af+bg)
+        =a\boldsymbol{v}(f)+
+        a\boldsymbol{v}(g)$($a,b\in \mathbb{R}$)
+        \item[(2)]$\boldsymbol{v}(fg)=
+        \boldsymbol{v}(f)g(p)+
+        \boldsymbol{v}(g)f(p)$
+    \end{itemize}
+\end{definition}
+    \begin{example}
+        $c$に沿う($t=0$における)方向微分
+        点$p\in M$の開近傍$U$で定義された任意の
+        $C^r$級関数$f$を考える. 
+        $c:(-\epsilon, \epsilon)\to U$
+        と$f:U\to \mathbb{R}$の合成関数
+        $f(c(t))$の$t=0$における
+        通常の微分係数
+        $$\left .\frac{df(c(t))}{dt}\right|_{t=0}
+        \ \left( \lim_{t\to 0}
+        \frac{f(c(t))-f(c(0))}{t} \right) $$
+        を考える. 
+        関数$f$に上の微分係数を対応させる対応
+        $$\left .\frac{dc}{dt}\right|_{t=0}:
+        f\mapsto 
+        \left .\frac{df(c(t))}{dt}\right|_{t=0}$$
+        を曲線$c$の$t=0$における速度ベクトルという. 
+        曲線$c$の$t=0$における速度ベクトルは
+        方向微分である. 実際, 
+        \begin{itemize}
+            \item[(0)]$f$, $g$が点$p$の開近傍上で定義
+            された$C^r$級関数で, $p$のある十分
+            小さな開近傍上で$f=g$ならば, 
+            $$\left .\frac{dc}{dt}\right|_{t=0}
+            (f)=\left .\frac{df(c(t))}{dt}\right|_{t=0}=
+            \left .\frac{dg(c(t))}{dt}\right|_{t=0}=
+            \left .\frac{dc}{dt}\right|_{t=0}(g)$$
+            \item[(1)]$f$, $g$が点$p$の開近傍上で定義
+            された$C^r$級関数で, $a, b\in \mathbb{R}$
+            のとき, 
+            \begin{eqnarray*}
+                \left .\frac{dc}{dt}\right|_{t=0}
+            (af+bg)&=&
+            \left .\frac{d(af(c(t))+bg(c(t)))}{dt}
+            \right|_{t=0}\\
+            &=&
+            a\left .\frac{df(c(t))}{dt}\right|_{t=0}+
+            b\left .\frac{dg(c(t))}{dt}\right|_{t=0}\\
+            &=&
+            a\left .\frac{dc}{dt}\right|_{t=0}(f)+
+            b\left .\frac{dc}{dt}\right|_{t=0}(g)
+            \end{eqnarray*}
+            \item[(2)]
+            $f$, $g$が点$p$の開近傍上で定義
+            された$C^r$級関数で, $fg$をそれらの
+            積とすれば, 
+            \begin{eqnarray*}
+                \left .\frac{dc}{dt}\right|_{t=0}
+            (fg)&=&
+            \left\{\frac{df(c(t))}{dt}g(c(t))+
+            f(c(t))\frac{dg(c(t))}{dt}
+            \right\}_{t=0}\\
+            &=&
+            \left .\frac{df(c(t))}{dt}\right|_{t=0}
+            g(p)+ f(p)
+            \left .\frac{dg(c(t))}{dt}\right|_{t=0}\\
+            &=&
+            \left .\frac{dc}{dt}\right|_{t=0}(f)g(p)
+            +f(p)
+            \left .\frac{dc}{dt}\right|_{t=0}(g)
+            \end{eqnarray*}
+        \end{itemize}
+    \end{example}
+    \begin{example}
+        $p$を含む座標近傍$(U;x_1,\cdots x_m)$を
+        $1$つ固定する. $p$のまわりで定義された
+        $C^r$級関数$f$に, $p$における$x_i$
+        方向の偏微分係数を対応させる操作を
+        $\left(\frac{\partial}{\partial x_i}
+        \right)_p$と書く. すなわち, 
+        $$\left(\frac{\partial}{\partial x_i}
+        \right)_p:f\mapsto 
+        \frac{\partial f}{\partial x_i}(p)$$. 
+        このとき, $\left(\frac{\partial}
+        {\partial x_i}\right)_p$は$p$における
+        方向微分の性質(0), (1), (2)を満たす. 
+    \end{example}
+    \begin{definition}
+        点$p\in M$における方向微分全ての集合を
+        $$D_p^r(M)$$
+        と表す. $D_p^r(M)$の$2$元$u$, $v$と
+        実数$a$に対して, 
+        和$\boldsymbol{u}+\boldsymbol{v}$と
+        実数倍$a\boldsymbol{u}$を
+        $$(\boldsymbol{u}+\boldsymbol{v})(f)=
+        \boldsymbol{u}(f)+\boldsymbol{v}(v)$$
+        $$a\boldsymbol{u}(f)=
+        a(\boldsymbol{u}(f))$$
+        と定めると, $D_p^r(M)$は
+        $\mathbb{R}$上のベクトル空間となる. 
+        ただし, $D_p^r(M)$のゼロベクトルは
+        任意の$f$に$0$を対応させる自明な
+        方向微分$\boldsymbol{0}$である. 
+    \end{definition}
+    \begin{proposition}
+        ベクトル空間$D_p^r(M)$の元として, 
+        $m$個のベクトル
+        $\left(\frac{\partial}{\partial x_1}\right)_p, 
+        \cdots 
+        \left(\frac{\partial}{\partial x_m}\right)_p$
+        は$1$次独立である. 
+    \end{proposition}
+    \begin{proof}
+        実数$a_1,\cdots a_m$に対して
+        $a_1\left(\frac{\partial}{\partial x_1}\right)_p+
+        \cdots +
+        a_m\left(\frac{\partial}{\partial x_m}\right)_p=
+        \boldsymbol{0}$
+        ならば, $a_1=\cdots =a_m=0$であることを
+        示せばよい. 
+        $a_1\left(\frac{\partial}{\partial x_1}\right)_p+
+        \cdots +
+        a_m\left(\frac{\partial}{\partial x_m}\right)_p=
+        \boldsymbol{0}$
+        と仮定すると, 点$p$のまわりで定義された
+        任意の$C^r$級関数$f$について
+        $a_1\left(\frac{\partial}{\partial x_1}\right)_p(f)+
+        \cdots +
+        a_m\left(\frac{\partial}{\partial x_m}\right)_p(f)=
+        0$
+        が成り立つ. つまり, 
+        $a_1\frac{\partial f}{\partial x_1}(p)+
+        \cdots +
+        a_m\frac{\partial f}{\partial x_m}(p)=
+        0$
+        となる. $f$は任意であったから, $f=x_1$
+        という関数をとってくると, 
+        \begin{eqnarray*}
+            \frac{\partial f}{\partial x_1}&=&1\\
+            \frac{\partial f}{\partial x_i}&=&0
+            \ \text{($i\geq 2$)}
+        \end{eqnarray*}
+        であるから, 最初の項のみが$a_1$となって残り, 
+        あとは消える. よって$a_1=0$がわかる. 
+        同様に$f=x_2,\cdots x_m$を次々に代入
+        して, $a_1=\cdots =a_m=0$が示される. 
+        これで命題が証明された. 
+    \end{proof}
+    \begin{definition}\label{def:tangent vector space}
+        $m$個のベクトル
+        $\left(\frac{\partial}{\partial x_1}\right)_p, 
+        \cdots 
+        \left(\frac{\partial}{\partial x_m}\right)_p$
+        の張る$D_p^r(M)$の部分ベクトル空間を, 点$p$
+        における$M$の接ベクトル空間とよび, 
+        $$T_p(M)$$
+        という記号で表す. 接ベクトル空間$T_p(M)$の
+        元を接ベクトルとよぶ. 
+    \end{definition}
+    \begin{proposition}
+        $T_p(M)$は点$p$のまわりの局所座標系のとり方に
+        よらず一意に定まる. つまり, 点$p$のまわりで
+        $(x_1,\cdots ,x_m)$と別の局所座標系
+        $(y_1,\cdots ,y_m)$を選んだとき, 
+        方向微分
+        $$\left(\frac{\partial}{\partial y_1}\right)_p, 
+        \cdots ,
+        \left(\frac{\partial}{\partial y_m}\right)_p$$
+        の張る$D_p^r(M)$の部分ベクトル空間は, 
+        $$\left(\frac{\partial}{\partial x_1}\right)_p, 
+        \cdots ,
+        \left(\frac{\partial}{\partial x_m}\right)_p$$
+        の張る部分ベクトル空間に一致する. 
+    \end{proposition}
+    \begin{proof}
+        点$p$のまわりで定義された任意の$C^r$級
+        関数$f$について, 次の変換公式が成り立つ. 
+        $$\frac{\partial f}{\partial x_i}
+        =\sum_{j=1}^{m}\frac{\partial y_j}
+        {\partial x_i}(p)
+        \frac{\partial f}{\partial y_j}(p).$$
+        方向微分の記号を使ってかくと, 
+        $$\left(\frac{\partial}{\partial x_i}\right)_p=
+        \sum_{j=1}^{m}
+        \frac{\partial y_j}{\partial x_i}(p)
+        \left(\frac{\partial}{\partial y_j}\right)_p$$
+        を得る. 右辺の
+        $\frac{\partial y_j}{\partial x_i}(p)$
+        を単なる実数と思うと, この式は, 
+        方向微分$\left(\frac{\partial}{\partial x_i}\right)_p$
+        ($i=1,\cdots m$)が
+        $\left(\frac{\partial}{\partial y_1}\right)_p, \cdots 
+        ,\left(\frac{\partial}{\partial y_m}\right)_p$
+        の$1$次結合で表されるということを意味している. 
+        したがって, 
+        $\left(\frac{\partial}{\partial x_1}\right)_p, \cdots 
+        ,\left(\frac{\partial}{\partial x_m}\right)_p$
+        は
+        $\left(\frac{\partial}{\partial y_1}\right)_p, \cdots 
+        ,\left(\frac{\partial}{\partial y_m}\right)_p$
+        の張るベクトル空間に属している. 
+        $(x_1,\cdots ,x_m)$と$(y_1,\cdots ,y_m)$
+        の役割を入れ換えて同じ議論をすれば, 逆に
+        $\left(\frac{\partial}{\partial y_1}\right)_p, \cdots 
+        ,\left(\frac{\partial}{\partial y_m}\right)_p$
+        が
+        $\left(\frac{\partial}{\partial x_1}\right)_p, \cdots 
+        ,\left(\frac{\partial}{\partial x_m}\right)_p$
+        の張るベクトル空間に属していることも証明される. 
+        したがって, 両者の張るベクトル空間は一致する. 
+    \end{proof}
+    上の証明中に出てきた基底の変換公式は重要であるから
+    改めて命題の形で述べておく. 
+    \begin{proposition}\label{prop:basis conversion}
+        点$p$のまわりに$2$つの局所座標系
+        $(x_1,\cdots x_m)$, $(y_1,\cdots ,y_m)$
+        があると, それに応じて$T_p(M)$の基底
+        $$\left<\left(\frac{\partial}
+        {\partial x_1}\right)_p,\cdots ,
+        \left(\frac{\partial}
+        {\partial x_m}\right)_p\right>,\ 
+        \left<d\left(\frac{\partial}
+        {\partial y_1}\right)_p,\cdots ,
+        \left(\frac{\partial}
+        {\partial y_m}\right)_p\right>$$
+        が定まる. それらの間には次の関係式
+        が成り立つ. 
+        $$\left(\frac{\partial}{\partial x_i}\right)_p=
+        \sum_{j=1}^{m}
+        \frac{\partial y_j}{\partial x_i}(p)
+        \left(\frac{\partial}{\partial y_j}\right)_p$$
+    \end{proposition}
+    \begin{proposition}
+        曲線$c$の$t=0$における速度ベクトル
+        $\left .\frac{dc}{dt}\right|_{t=0}$
+        は$T_p(M)$の元, すなわち接ベクトルである. 
+    \end{proposition}
+    \begin{proof}
+        点$p$のまわりの局所座標系$(x_1,\cdots ,x_m)$
+        を任意に固定する. 
+        $\left .\frac{dc}{dt}\right|_{t=0}$
+        が$\left(\frac{\partial}{\partial x_1}\right), 
+        \cdots ,
+        \left(\frac{\partial}{\partial x_m}\right)$
+        という形の方向微分の$1$次結合として表されている
+        ことを証明すればよい. 
+        $p$のまわりで定義された任意の$C^r$級関数$f$を
+        をとり, 関数$f$と曲線$c$を局所座標表示したものが
+        それぞれ, 
+        $$f(x_1,\cdots ,x_m),\ 
+        c(t)=(x_1(t),\cdots x_m(t))$$
+        であったとすると, 
+        \begin{eqnarray*}
+            \left .\frac{dc}{dt}\right|_{t=0}(f)&=&
+            \left .\frac{d}{dt}f(x_1(t),\cdots ,x_m(t))
+            \right|_{t=0}\\
+            &=&\sum_{i=1}^{m}\frac{dx_i}{dt}(0)
+            \frac{\partial f}{\partial x_i}(p)
+        \end{eqnarray*}
+        と計算される(合成関数の微分法). 
+        $f$は任意であったから, 方向微分としての等式
+        $$\left .\frac{dc}{dt}\right|_{t=0}=
+        \sum_{i=1}^{m}\frac{dx_i}{dt}(0)
+            \left(\frac{\partial}{\partial x_i}
+            \right)_p$$
+        を得る. 右辺の$\frac{dx_1}{dt}(0), 
+        \cdots ,\frac{dx_m}{dt}(0)$
+        を単なる実数と思うと, 
+        $\left .\frac{dc}{dt}\right|_{t=0}$
+        が
+        $\left(\frac{\partial}{\partial x_1}\right), 
+        \cdots ,
+        \left(\frac{\partial}{\partial x_m}\right)$
+        の$1$次結合で表されることがわかる. 
+        これで命題が証明された. 
+    \end{proof}
 
 \subsection{$C^r$級写像の微分}
+$M$, $N$をそれぞれ$m$次元, $n$次元の$C^r$級
+多様体, $f:M\to N$を
+$C^r$級写像とし($1 \leq r\leq \infty$), 
+点$p\in M$を通る$M$上の$C^r$曲線を
+$$c:(-\epsilon, \epsilon)\to M,\ c(0)=p$$
+とする. 
+
 \newpage
-%
 \section{多様体の次元を調べる方法}
 \subsection{写像の局所的性質}
 \begin{theorem}\label{theo:f^(-1)theorem}
@@ -540,8 +836,8 @@ $$(J\varphi)_p=
         \right)
 $$
 となり, det$(J\varphi)_p=$det$B\neq 0$である. 
-したがって, 逆関数の定理（定理
-\ref{theo:f^(-1) theorem}）
+したがって, 逆関数の定理(定理
+\ref{theo:f^(-1) theorem})
 により, 点$p$を含む$U$を十分小さくとれば, 
 $\varphi |U:U\to \varphi(U)$は$C^r$級微分同相写像
 である. よって, /ref{prop: cord-nabor condition}
@@ -810,7 +1106,7 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
 \begin{thebibliography}{99}
 \bibitem{Matsumoto18} 松本幸夫, [第30版]多様体の基礎, 東京大学出版会, 2018.
 \bibitem{b}【論文の場合】著者名，タイトル，雑誌名，巻・号，出版年度，頁．
-\bibitem{c}【Webページの場合】 タイトル，ページ制作者（機関）等，URL: \url{http://www.shibaura-it.ac.jp/}，最終アクセス日時: 2021/12/28 16:33．
+\bibitem{c}【Webページの場合】 タイトル，ページ制作者(機関)等，URL: \url{http://www.shibaura-it.ac.jp/}，最終アクセス日時: 2021/12/28 16:33．
 \end{thebibliography}
 
 \end{document}
