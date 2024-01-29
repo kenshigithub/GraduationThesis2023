@@ -703,7 +703,7 @@ $t$は$-\epsilon \leq t\leq \epsilon$の
         \frac{\partial y_j}{\partial x_i}(p)
         \left(\frac{\partial}{\partial y_j}\right)_p$$
     \end{proposition}
-    \begin{proposition}
+    \begin{proposition}\label{prop:dc/dt is tangent vector}
         曲線$c$の$t=0$における速度ベクトル
         $\left .\frac{dc}{dt}\right|_{t=0}$
         は$T_p(M)$の元, すなわち接ベクトルである. 
@@ -754,9 +754,125 @@ $M$, $N$をそれぞれ$m$次元, $n$次元の$C^r$級
 $C^r$級写像とし($1 \leq r\leq \infty$), 
 点$p\in M$を通る$M$上の$C^r$曲線を
 $$c:(-\epsilon, \epsilon)\to M,\ c(0)=p$$
-とする. 
-
+とする. この曲線を写像$f$でうつすと, 点
+$q=f(p)$を通る$N$上の$C^r$曲線
+$$f\circ c:(-\epsilon, \epsilon)\to N, f^\circ c(0)=q$$
+が得られる. 
+$t=0$における曲線$c$の速度ベクトル
+$$\left .\frac{dc}{dt}\right|_{t=0}\in T_p(M)$$
+と, $t=0$における曲線$f\circ c$の速度ベクトル
+$$\left .\frac{d(f\circ c)}{dt}\right|_{t=0}
+\in T_q(M)$$
+の関係を調べる. 
+\begin{proposition}
+    $t=0$における$c$と$f\circ c$の速度ベクトルを
+    それぞれ
+    $$\left .\frac{dc}{dt}\right|_{t=0}=
+    \sum_{i=1}^{m}v_i\left(\frac{\partial}
+    {\partial x_i}\right)_p,\ 
+    \left .\frac{d(f\circ c)}{dt}\right|_{t=0}=
+    \sum_{j=1}^{n}w_j\left(\frac{\partial}
+    {\partial y_j}\right)_q$$
+    とおくと, 係数$v_1,\cdots ,v_m$と
+    $w_1,\cdots ,w_n$の間には次の関係がある. 
+    $$w_j=\sum_{i=1}^{m}\frac{\partial f_j}
+    {\partial x_i}(p)v_i\ (j=1,\cdots ,n)$$
+    またこの式を, 縦ベクトルと行列を使って書くと
+    $$\begin{pmatrix}
+          w_1 \\
+          \vdots \\
+          w_n 
+        \end{pmatrix}
+        =
+        \left(
+        \begin{array}{ccc}
+          \frac{\partial f_1}{\partial x_1}(p)&\cdots &\frac{\partial f_1}{\partial x_m}(p)\\
+          \vdots &\ddots& \vdots \\
+          \frac{\partial f_n}{\partial x_1}(p)&\cdots &\frac{\partial f_n}{\partial x_m}(p) 
+        \end{array} 
+        \right)=
+        \begin{pmatrix}
+          v_1\\
+          \vdots \\
+          v_m
+        \end{pmatrix}
+        $$
+    となる. 
+\end{proposition}
+\begin{proof}
+    点$p$を含む$M$の座標近傍$(U;x_1,\cdots x_m)$
+    と, $q=f(p)$を含む$N$の座標近傍
+    $(V;y_1,\cdots y_n)$を$f(U)\subset V$
+    となるようにとる. $f$を$(U;x_1,\cdots x_m)$
+    と$(V;y_1,\cdots y_n)$に関して局所座標
+    表示したものが
+    \begin{eqnarray*}
+        y_1&=&f_1(x_1,\cdots ,x_m)\\
+        &\vdots& \\
+        y_n&=&f_n(x_1,\cdots ,x_m)
+    \end{eqnarray*}
+    であるとする. 右辺の関数は$(x_1,\cdots x_m)$
+    に関して$C^r$級である. 
+    パラメータ$t$の動く範囲$-\epsilon\leq t \epsilon$
+    を十分小さくとれば, 曲線$c$は
+    $(U;x_1,\cdots x_m)$の中に含まれるとしてよい. 
+    局所座標系$(x_1,\cdots ,x_m)$に関する$c$の
+    局所座標表示を
+    $$c(t)=(x_1(t),\cdots ,x_m(t))$$
+    とすると, 曲線$f\circ c$の$(y_1,\cdots ,y_n)$
+    に関する局所座標表示は
+    \begin{eqnarray*}
+        f\circ c(t)&=&(y_1(t),\cdots ,y_n(t))\\
+        &=&(f_1(x_1(t),\cdots ,x_m(t)),\cdots ,
+        f_n(x_1(t),\cdots ,x_m(t)))
+    \end{eqnarray*}
+    で与えられる. 
+    曲線$c$の$t=0$における速度ベクトルを
+    $$\left .\frac{dc}{dt}\right|_{t=0}=
+    v_1\left(\frac{\partial}{\partial x_1}\right)_p
+    +\cdots +
+    v_m\left(\frac{\partial}{\partial x_m}\right)_p$$
+    とおく. ただし$v_1,\cdots ,v_m$は実数である. 
+    命題\ref{prop:dc/dt is tangent vector}より, 
+    $v_i=\frac{dx_i}{dt}(0)\ (i=1,\cdots ,m)$
+    である. 曲線$f\circ c$の速度ベクトルを求めると
+    \begin{eqnarray*}
+        \left .\frac{f\circ c}{dt}\right|_{t=0}
+        &=&\sum_{j=1}^{n}\frac{dy_j}{dt}(0)
+        \left(\frac{\partial}{\partial y_j}
+        \right)_q\\
+        &=&
+        \sum_{j=1}^{n}\left .
+        f_j(x_1(t),\cdots ,x_m(t))\right|_{t=0}
+        \left(\frac{\partial}{\partial y_j}
+        \right)_q\\
+        &=&
+        \sum_{j=1}^{n}\left\{
+            \sum_{i=1}^{m}\frac{\partial f_j}
+            {\partial x_i}(p)
+            \frac{dx_i}{dt}(0)
+        \right\}
+        \left(\frac{\partial}{\partial y_j}
+        \right)_q\\
+        &=&
+        \sum_{j=1}^{n}\left\{
+            \sum_{i=1}^{m}\frac{\partial f_j}
+            {\partial x_i}(p)
+            v_i
+        \right\}
+        \left(\frac{\partial}{\partial y_j}
+        \right)_q
+    \end{eqnarray*}
+    となる. 速度ベクトル
+    $\left .\frac{f\circ c}{dt}\right|_{t=0}$
+    の係数を$w_1, \cdots ,w_n$とすると, 
+    $$w_j=\sum_{i=1}^{m}\frac{\partial f_j}
+    {\partial x_i}(p)v_i\ (j=1,\cdots ,n)$$
+    を得る. よって命題は証明された. 
+\end{proof}
 \newpage
+
+
 \section{多様体の次元を調べる方法}
 \subsection{写像の局所的性質}
 \begin{theorem}\label{theo:f^(-1)theorem}
