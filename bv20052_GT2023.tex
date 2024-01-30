@@ -764,7 +764,7 @@ $$\left .\frac{dc}{dt}\right|_{t=0}\in T_p(M)$$
 $$\left .\frac{d(f\circ c)}{dt}\right|_{t=0}
 \in T_q(M)$$
 の関係を調べる. 
-\begin{proposition}
+\begin{proposition}\label{prop:relation of v and w}
     $t=0$における$c$と$f\circ c$の速度ベクトルを
     それぞれ
     $$\left .\frac{dc}{dt}\right|_{t=0}=
@@ -870,13 +870,161 @@ $$\left .\frac{d(f\circ c)}{dt}\right|_{t=0}
     {\partial x_i}(p)v_i\ (j=1,\cdots ,n)$$
     を得る. よって命題は証明された. 
 \end{proof}
+\begin{definition}\label{def:Jacobian matrix}
+    命題\ref{prop:relation of v and w}
+に現れた$n$行$m$列の行列
+$$\left(
+    \begin{array}{ccc}
+      \frac{\partial f_1}{\partial x_1}(p)&\cdots &\frac{\partial f_1}{\partial x_m}(p)\\
+      \vdots &\ddots& \vdots \\
+      \frac{\partial f_n}{\partial x_1}(p)&\cdots &\frac{\partial f_n}{\partial x_m}(p) 
+    \end{array} 
+  \right)$$
+を, 点$p$における写像$f:M\to N$のヤコビ行列
+とよび, 記号で
+$$(Jf)_p$$
+と表す. ヤコビ行列$(Jf)_p$は, 局所座標系
+$(x_1,\cdots ,x_m)$と$(y_1,\cdots ,y_n)$
+を選ぶことによって決まる行列である. 
+\end{definition}
+命題\ref{prop:relation of v and w}より次の
+系が分かる. 
+\begin{corollary}\label{coro:any c is OK}
+    $\left .\frac{d(f\circ c)}{dt}\right|_{t=0}$
+    は$\left .\frac{dc}{dt}\right|_{t=0}$
+    のみに依存して定まり, 点$p$から離れたところ
+    での$c$の振る舞いによらない. 
+    すなわち, 点$p\in M$を通る曲線$2$本を
+    $$c:(-\epsilon, \epsilon)\to M\ (c(0)=p)$$
+    $$c':(-\epsilon, \epsilon)\to M\ (c'(0)=p)$$
+    とし, 
+    $\left .\frac{dc}{dt}\right|_{t=0}=
+    \left .\frac{dc'}{dt}\right|_{t=0}$
+    と仮定すると, 
+    $\left .\frac{d(f\circ c)}{dt}\right|_{t=0}=
+    \left .\frac{d(f\circ c')}{dt}\right|_{t=0}$
+    が成り立つ. なぜなら$f$を固定しておけば, 
+    ベクトル$(w_1,\cdots ,w_n)$は, ベクトル
+    $(v_1,\cdots ,v_m)$のみから計算
+    されるからである. 
+\end{corollary}
+\begin{proposition}\label{prop:c exist}
+    $T_p(M)_p$に属する任意のベクトル$\boldsymbol{v}$
+    に対し, 点$p$を通る$C^r$級曲線
+    $$c:(-\epsilon, \epsilon)\to M\ (c(0)=p)$$
+    が存在して, $\left .\frac{dc}{dt}
+    \right|_{t=0}=\boldsymbol{v}$
+    が成り立つ. 
+\end{proposition}
+\begin{proof}
+    $p$のまわりの局所座標系$(x_1,\cdots ,x_m)$
+    を固定して考える. このとき, 
+    $$\boldsymbol{v}=
+    v_1\left(\frac{\partial}{\partial x_1}\right)_p
+    +\cdots +
+    v_m\left(\frac{\partial}{\partial x_m}\right)_p$$
+    であるとする. これに応じて, 曲線$c$を
+    $$c(t)=(a_1+v_1t,\cdots ,a_m+v_mt)$$
+    と定義すればよい. ここに, $(a_1,\cdots ,a_m)$
+    は$P$の局所座標である. 速度ベクトル
+    $\left .\frac{dc}{dt}\right|_{t=0}$
+    を計算すれば, $\boldsymbol{v}$に一致する
+    ことが確かめられる. 
+\end{proof}
+系\ref{coro:any c is OK}と命題\ref{prop:c exist}
+により, 次のような写像
+$$T_p(M)\to T_q(N),\ 
+\left .\frac{dc}{dt}\right|_{t=0}\mapsto
+\left .\frac{d(f\circ c)}{dt}\right|_{t=0}
+\ (q=f(p))$$
+が自然に定義できる. 
+\begin{definition}\label{def:differential}
+    こうして得られた写像を
+    $$(df)_p:T_p(M)\to T_q(N)$$
+    と書き, 点$p$における$f:M\to N$
+    の微分とよぶ. 
+\end{definition}
+\begin{proposition}
+    $(df)_p:T_p(M)\to T_p(M)$は線型写像である. 
+\end{proposition}
+\begin{proof}
+    線型写像とはベクトルの和をベクトルの和にうつし, 
+    ベクトルの$a$倍をベクトルの$a$倍にうつすような写像
+    である. 
+    $p$, $q$のまわりにそれぞれ局所座標系
+    $(x_1,\cdots ,x_m)$, $(y_1,\cdots ,y_n)$
+    をとり, $T_p(M)$, $T_q(N)$の中に
+    基底$\left< \left(\frac{\partial}
+    {\partial x_1}\right)_p,\cdots ,
+    \left(\frac{\partial}
+    {\partial x_m}\right)_p\right>$, 
+    $\left< \left(\frac{\partial}
+    {\partial y_1}\right)_p,\cdots ,
+    \left(\frac{\partial}
+    {\partial y_n}\right)_p\right>$
+    を固定すると, 
+    任意の$\boldsymbol{v}\in T_p(M)$は
+    $$\boldsymbol{v}=
+    \sum_{i=1}^{m}v_i
+    \left(\frac{\partial}{\partial x_i}
+    \right)_p$$
+    と書け, 数ベクトル$(v_1,\cdots ,v_m)$
+    と$1$対$1$に対応する. 同様に, 
+    任意の$\boldsymbol{w}\in T_q(N)$は
+    $$\boldsymbol{w}=
+    \sum_{j=1}^{n}v_i
+    \left(\frac{\partial}{\partial y_j}
+    \right)_q$$
+    と書け, 数ベクトル$(w_1,\cdots ,w_n)$
+    と$1$対$1$に対応する. 今, 
+    $\boldsymbol{w}=(df)_p(\boldsymbol{v})$
+    であるとすると, 
+    $\boldsymbol{w}$と$\boldsymbol{v}$
+    に対応する数ベクトルを縦ベクトルに書いたとして, 
+    $$\begin{pmatrix}
+        w_1\\
+        \vdots \\
+        w_n
+    \end{pmatrix}=(Jf)_p
+    \begin{pmatrix}
+        v_1\\
+        \vdots \\
+        v_m
+    \end{pmatrix}$$
+    の関係がある. $(Jf)_p$は点$p$における$f$
+    のヤコビ行列である. この関係から
+    $(df)_p:\boldsymbol{v}\mapsto 
+    \boldsymbol{w}$が線型写像であることがわかる. 
+\end{proof}
+\begin{proposition}
+    点$p$, $q$のまわりでそれぞれ局所座標系
+    $(x_1,\cdots ,x_m)$, $(y_1,\cdots ,y_n)$
+    を固定し, それによって$f$を
+    \begin{eqnarray*}
+        y_1&=&f_1(x_1,\cdots ,x_m)\\
+        &\vdots&\\
+        y_n&=&f_n(x_1,\cdots ,x_m)
+    \end{eqnarray*}
+    と局所座標表示する. このとき, 次の
+    公式が成り立つ. 
+    $$(df)_p\left( \left(
+        \frac{\partial}{\partial x_i}
+    \right)_p\right)=
+    \sum_{j=1}^{n}\frac{\partial f_j}
+    {\partial x_i}(p)\left(
+        \frac{\partial}{\partial y_j}
+    \right)_q$$
+\end{proposition}
+\begin{proof}
+    
+\end{proof}
 \newpage
 
 
 \section{多様体の次元を調べる方法}
 \subsection{写像の局所的性質}
 \begin{theorem}\label{theo:f^(-1)theorem}
-    $(df)_p:T_p(M)\to T_p(N)$が線形写像として
+    $(df)_p:T_p(M)\to T_p(N)$が線型写像として
     同型なら, $f$は$p$のある開近傍から$f(p)$の
     ある開近傍への$C^r$級微分同相写像である. 
     すなわち, $p$の開近傍$U$と$f(p)$の開近傍$V$
@@ -886,7 +1034,7 @@ $$\left .\frac{d(f\circ c)}{dt}\right|_{t=0}
 \begin{theorem}\label{theo: projection theorem}
     $f:M\to N$を$C^r$級写像とする. ある点$p\in M$
     における微分$(df)_p:T_p(M)\to T_p(N)$が上への
-    線形写像なら, 点$p$付近での$f$の様子は, 射影:
+    線型写像なら, 点$p$付近での$f$の様子は, 射影:
     $\mathbb{R}^{m-n} \times \mathbb{R}^n \to \mathbb{R}^n$, 
     $(x_1, \cdots ,x_m)\mapsto (x_(m-n+1), \cdots ,x_m)$
     と同じである. すなわち, $p$のまわりの局所座標系
@@ -904,7 +1052,7 @@ $$\left .\frac{d(f\circ c)}{dt}\right|_{t=0}
 \begin{proof}
     $C^r$級写像$f:M\to N$が与えられており, 
     ある点$p\in M$における微分
-    $(df)_p:T_p(M)\to T_p(N)$が上への線形写像
+    $(df)_p:T_p(M)\to T_p(N)$が上への線型写像
     であるとする. このとき, rank$(df)_p=n$
     (ただし, $m=$dim$M\geq n=$dim$N$. )
     点$p$, 点$f(p)$のまわりに, それぞれ座標近傍
@@ -984,7 +1132,7 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
 \begin{theorem}\label{theo:inclusion map theorem}
     $f:M\to N$を$C^r$級写像とする. 
     $(df)_p:T_p(M)\to T_{f(p)}(N)$が
-    $1$対$1$の線形写像なら, 点$p$の付近での$f$の
+    $1$対$1$の線型写像なら, 点$p$の付近での$f$の
     様子は, 包含写像
     $\mathbb{R}^m\to \mathbb{R}^n,\ 
     (x_1,\cdots ,x_m)\mapsto 
