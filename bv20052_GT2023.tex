@@ -1016,8 +1016,160 @@ $$T_p(M)\to T_q(N),\
     \right)_q$$
 \end{proposition}
 \begin{proof}
-    
+    $\left(\frac{\partial}{\partial x_i}\right)_p$
+    を$\sum_{i=1}^{m}v_i\left(\frac
+    {\partial}{\partial x_i}\right)_p$
+    の形で表すと, $v_i=1,\ v_k=0\ (k\neq i)$
+    である. 
+    $(df)_p\left( \left(
+        \frac{\partial}{\partial x_i}
+    \right)_p\right)=
+    \sum_{j=1}^{n}w_j\left(
+        \frac{\partial}{\partial y_j}
+    \right)_q$
+    とおいたときの$w_j$は
+    $$w_j=\sum_{i=1}^{m}v_i \frac{\partial f_j}
+    {\partial x_i}(p)$$
+    であるから, $v_i=1,\ v_k=0\ (k\neq i)$
+    を代入して, 
+    $$w_j=v_i \frac{\partial f_j}
+    {\partial x_i}(p)$$
+    を得る. よって, 
+    $$(df)_p\left( \left(
+        \frac{\partial}{\partial x_i}
+    \right)_p\right)=
+    \sum_{j=1}^{n}w_j\left(
+        \frac{\partial}{\partial y_j}
+    \right)_q=
+    \sum_{j=1}^{n}\frac{\partial f_j}
+    {\partial x_i}(p)\left(
+        \frac{\partial}{\partial y_j}
+    \right)_q$$
+    が成り立つことが分かる. 
 \end{proof}
+\begin{proposition}
+    $f:M\to N$を$C^r$級写像とする. $M$の点$p$
+    における任意の接ベクトル$\boldsymbol{v}
+    \in T_p(M)$と, $N$の点$f(p)$のまわりで定義された
+    任意の$C^r$級関数$\xi$について
+    $$((df)_p(\boldsymbol{v}))(\xi)=
+    \boldsymbol{v}(\xi \circ f)$$
+    が成り立つ. 
+\end{proposition}
+\begin{proof}
+    $\boldsymbol{v}=\left .\frac{dc}{dt}
+    \right|_{t=0}$であるような$C^r$級
+    曲線$c:(-\epsilon, \epsilon)\to M$, 
+    $c(0)=p$をとる. $(df)_p$の定義より, 
+    $$(df)_p(\boldsymbol{v})=
+    \left .\frac{d(f\circ c)}{dt}\right|_{t=0}$$
+    である. 
+    速度ベクトル$\left .\frac{d(f\circ c)}{dt}\right|_{t=0}$
+    を方向微分と考えると, 
+    $$\left .\frac{d(f\circ c)}{dt}\right|_{t=0}
+    (\xi)=
+    \left .\frac{d\xi(f\circ c(t))}
+    {dt}\right|_{t=0}$$
+    が成り立つ. よって, 
+    \begin{eqnarray*}
+        (df)_p(\boldsymbol{v})(\xi)&=&
+        \left .\frac{d\xi(f\circ c(t))}
+        {dt}\right|_{t=0}(\xi)\\
+        &=&\left .\frac{d\xi(f\circ c(t))}
+        {dt}\right|_{t=0}\\
+        &=&\left .\frac{d(\xi\circ f(c(t)))}
+        {dt}\right|_{t=0}\\
+        &=&
+        \left .\frac{dc}{dt}\right|_{t=0}(\xi 
+        \circ f)\\
+        &=&\boldsymbol{v}(\xi\circ f)
+    \end{eqnarray*}
+    となり, 命題は証明された. 
+\end{proof}
+\begin{proposition}
+    $M$, $N$, $Q$をそれぞれ, $m$次元, $n$次元, 
+    $q$次元の$C^r$級多様体, 
+    $f:M\to N$, $g:N\to Q$を$C^r$級写像, 
+    $p$を$M$の点とする($1\leq r\leq \infty$). 
+    このとき
+    $$d(g\circ f)_p=(dg)_{f(p)}\circ (df)_p:
+    T_p(M)\to T_{g\circ f(p)}(Q)$$
+    が成り立つ. 
+\end{proposition}
+\begin{proof}
+    任意の接ベクトル$\boldsymbol{v}\in T_p(M)$
+    をとる. $\boldsymbol{v}=
+    \left .\frac{dc}{dt}\right|_{t=0}$であるような
+    $C^r$級曲線$c:(-\epsilon, \epsilon)\to M$, 
+    $c(0)=p$をとる. 
+    \begin{eqnarray*}
+        d(g\circ f)_p(\boldsymbol{v})&=&
+        d(g\circ f)_p\left(\left .
+        \frac{dc}{dt}\right|_{t=0}\right)\\
+        &=&\left .
+        \frac{d(g\circ f)\circ c}{dt}
+        \right|_{t=0}\\
+        &=&\left .
+        \frac{dg\circ (f\circ c)}{dt}
+        \right|_{t=0}\\
+        &=&(dg)_{f(p)}
+        \left(\left .
+        \frac{d(f\circ c)}{dt}\right|_{t=0}\right)\\
+        &=&(dg)_{f(p)}\circ (df)_p
+        \left(\left .
+        \frac{dc}{dt}\right|_{t=0}\right)\\
+        &=&(dg)_{f(p)}\circ (df)_p
+        (\boldsymbol{v})
+    \end{eqnarray*}
+    となる. ここで, $\boldsymbol{v}\in T_p(M)$は任意
+    であったから, $d(g\circ f)_p=
+    (dg)_{f(p)}\circ(df)_p$が成り立つ. 
+\end{proof}
+$(df)_p$, $(dg)_{f(p)}$, $d(g\circ f)_p$はそれぞれ
+ヤコビ行列$(Jf)_p$, $(Jg)_{f(p)}$, $J(g\circ f)_p$
+で表現されるから, 次の系が得られる. 
+\begin{corollary}
+    $J(g\circ f)_p=(Jg)_{f(p)}(Jf)_p$である. 
+\end{corollary}
+\begin{corollary}
+    \begin{itemize}
+        \item[(i)]$M=N$のとき, $d(id_M)_p
+        =id_{T_p(M)}$である($d(id_M)_p$, 
+        $id_{T_p(M)}$はそれぞれ$M$, $T_p(M)$の
+        恒等写像). 
+        \item[(ii)]
+        $f:M\to N$が$C^r$級微分同相写像なら, 任意の
+        $p\in M$について, $(df)_p:T_p(M)\to T_{f(p)}(N)$
+        は線型写像として同型であって, 
+        $$(df^{-1})_{f(p)}=(df)_p^{-1}$$
+        が成り立つ. 
+    \end{itemize}
+\end{corollary}
+この系をヤコビ行列を使って書き直すと
+次の系が得られる. 
+\begin{corollary}
+    \begin{itemize}
+        \item[(i)]$M=N$のとき, $p$のまわりの
+        局所座標系$(x_1,\cdots ,x_m)$を固定
+        すれば, $J(id_M)_p=E_m$である
+        ($E_m$は$m$次単位行列). 
+        \item[(ii)]
+        $f:M\to N$が$C^r$級微分同相写像なら, 
+        $p$, $f(p)$のまわりで局所座標系
+        $(x_1,\cdots x_m)$, $(y_1,\cdots ,y_n)$
+        を固定すれば, $(Jf)_p$は正則行列, 
+        すなわち, 逆行列をもつ正方行列であって, 
+        $$(Jf^{-1})_{f(p)}=(Jf)_p^{-1}$$
+        が成り立つ. 
+    \end{itemize}
+\end{corollary}
+とくに, 次が分かる. 
+\begin{corollary}\label{coro:dim equality by diffeomorphism}
+    $C^r$級微分同相写像$f:M\to N$が存在すれば, 
+    $M$の次元$m$と$N$の次元$n$は等しい. つまり, 
+    $$\text{dim}M=\text{dim}N$$
+    が成り立つ. 
+\end{corollary}
 \newpage
 
 
