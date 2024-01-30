@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  30 JAN 2024 23:02
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  31 JAN 2024 05:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -391,129 +391,129 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 
  [1] [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 128.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 128.
- [3] [4]
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 126.
+ [3] [4] [5] [6] [7] [8]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 191.
+(Font)              No change on input line 568.
 
-Overfull \hbox (42.78917pt too wide) detected at line 208
+Overfull \hbox (42.78917pt too wide) detected at line 585
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 )[](\OML/cmm/m/it/12 x[]; []  ; []; []  ; x[]\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 x[]; []  ; []; []  ; x[]\OT1/cmr/m/n/12 )
  []
 
 
-Overfull \hbox (52.12253pt too wide) detected at line 209
+Overfull \hbox (52.12253pt too wide) detected at line 586
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 )[](\OML/cmm/m/it/12 x[]; []  ; []; []  ; x[]\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 x[]; []  ; \OMS/cmsy/m/n/12 ^^@[]\OML/cmm/m/it/12 ; []  ; x[]\OT1/cmr/m/n/12 )
  []
 
-[5]
+[9]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 277.
- [6]
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 368.
- [7]
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 394.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 450.
- [8] [9]
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 587.
+(Font)              No change on input line 654.
  [10]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 649.
+(Font)              No change on input line 745.
+ [11]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 712.
+(Font)              No change on input line 771.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 827.
+ [12] [13]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 964.
+ [14]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 1026.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 1089.
 
-Overfull \hbox (51.01016pt too wide) in paragraph at lines 712--723
+Overfull \hbox (51.01016pt too wide) in paragraph at lines 1089--1100
 []\JY1/mc/m/n/12 点 $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 のまわりの局所座標系 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 を任意に固定する\OT1/cmr/m/n/12 . $[][]$ \JY1/mc/m/n/12 が $[] \OML/cmm/m/it/12 ; []  ; []$
  []
 
-[11]
-Overfull \hbox (11.69197pt too wide) in paragraph at lines 738--749
+[15]
+Overfull \hbox (11.69197pt too wide) in paragraph at lines 1115--1126
 \JY1/mc/m/n/12 を得る\OT1/cmr/m/n/12 . \JY1/mc/m/n/12 右辺の $[]\OT1/cmr/m/n/12 (0)\OML/cmm/m/it/12 ; []  ; []\OT1/cmr/m/n/12 (0)$ \JY1/mc/m/n/12 を単なる実数と思うと\OT1/cmr/m/n/12 , $[][]$ \JY1/mc/m/n/12 が $[] \OML/cmm/m/it/12 ; []  ; []$
  []
 
-[12]
+[16]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 803.
- [13] [14]
+(Font)              No change on input line 1180.
+ [17] [18]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 920.
+(Font)              No change on input line 1297.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 951.
+(Font)              No change on input line 1328.
 
-Overfull \hbox (8.73358pt too wide) in paragraph at lines 951--967
+Overfull \hbox (8.73358pt too wide) in paragraph at lines 1328--1344
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$, $(\OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 をとり\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 T[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 M\OT1/cmr/m/n/12 )$, $\OML/cmm/m/it/12 T[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 N\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 の中に基底 $[]$\OT1/cmr/m/n/12 ,
  []
 
-[15]
+[19]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1019.
+(Font)              No change on input line 1396.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1060.
- [16]
+(Font)              No change on input line 1437.
+ [20]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1100.
- [17] [18]
+(Font)              No change on input line 1477.
+ [21] [22]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1205.
- [19]
+(Font)              No change on input line 1582.
+ [23]
 
-LaTeX Warning: Reference `theo:f^(-1) theorem' on page 20 undefined on input line 1256.
+LaTeX Warning: Reference `theo:f^(-1) theorem' on page 24 undefined on input line 1633.
 
 
-Overfull \hbox (3.05736pt too wide) in paragraph at lines 1285--1298
+Overfull \hbox (3.05736pt too wide) in paragraph at lines 1662--1675
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; []  ; x[]; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []  ; \OT1/cmr/m/n/12 0)$ \JY1/mc/m/n/12 と同じである\OT1/cmr/m/n/12 . \JY1/mc/m/n/12 すなわち\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 のまわりの局所座標系 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (38.31302pt too wide) in paragraph at lines 1285--1298
+Overfull \hbox (38.31302pt too wide) in paragraph at lines 1662--1675
 \JY1/mc/m/n/12 と $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 のまわりの局所座標系 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 をうまく選んで\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 f$ \JY1/mc/m/n/12 の局所座標表示 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 7!
  []
 
-[20]
+[24]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1309.
+(Font)              No change on input line 1686.
 
-Overfull \hbox (68.39423pt too wide) in alignment at lines 1340--1345
+Overfull \hbox (68.39423pt too wide) in alignment at lines 1717--1722
  [][][] []
  []
 
-[21]
-Overfull \hbox (0.4439pt too wide) in paragraph at lines 1387--1390
+[25]
+Overfull \hbox (0.4439pt too wide) in paragraph at lines 1764--1767
 []$\OT1/cmr/m/n/12 0 \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/12 l < n$ \JY1/mc/m/n/12 のとき\OT1/cmr/m/n/12 :$\OML/cmm/m/it/12 L$ \JY1/mc/m/n/12 の任意の点 $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 に対し\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 を含む $\OML/cmm/m/it/12 N$ \JY1/mc/m/n/12 の座標近傍 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$
  []
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1401.
-[22]
+(Font)              No change on input line 1778.
+[26]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1479.
+(Font)              No change on input line 1856.
 
-Overfull \hbox (17.85605pt too wide) in paragraph at lines 1483--1486
+Overfull \hbox (17.85605pt too wide) in paragraph at lines 1860--1863
 []$\OML/cmm/m/it/12 q \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 N$ \JY1/mc/m/n/12 の逆像 $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 q\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 に属する任意の点 $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 に対し\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 のまわりの座標近傍 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 x[]; []  :x[]\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (11.35582pt too wide) in paragraph at lines 1499--1506
+Overfull \hbox (11.35582pt too wide) in paragraph at lines 1876--1883
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 x[]; [] x[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 は任意にと っ てきた $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 に応じて選べるから\OT1/cmr/m/n/12 , $(\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 )$
  []
 
-[23] [24] [25] [26] (./bv20052_GT2023.aux)
+[27] [28] [29] [30] (./bv20052_GT2023.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13037 strings out of 475534
- 262573 string characters out of 5794265
- 597163 words of memory out of 5000000
- 34428 multiletter control sequences out of 15000+600000
+ 13045 strings out of 475534
+ 262733 string characters out of 5794265
+ 597162 words of memory out of 5000000
+ 34436 multiletter control sequences out of 15000+600000
  491322 words of font info for 116 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 84i,11n,89p,434b,361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,89p,434b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bv20052_GT2023.dvi (27 pages, 106672 bytes).
+Output written on bv20052_GT2023.dvi (31 pages, 127416 bytes).

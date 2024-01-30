@@ -123,9 +123,386 @@
 \newpage
 %
 \section{準備}
-%\subsection{m次元数空間}
-%%\subsection{ベクトル空間}
+\subsection{m次元数空間}
+\begin{definition}
+    $m$を$1$以上の自然数とする. $m$個の実数を
+    並べた組
+    $$(x_1,x_2, \cdots ,x_m)$$
+    の全体からなる集合を$m$次元数空間
+    とよび, 記号$\mathbb{R}^m$で
+    表す. ただし, $\mathbb{R}^1$は
+    $\mathbb{R}$と書くこととする. 
+
+    $\mathbb{R}^m$の元を$\mathbb{R}^m$の点
+    とよび, 
+    $$\boldsymbol{x}=(x_1,x_2, \cdots ,x_m)$$
+    と表す. $x_i$を$\boldsymbol{x}$の第$i$座標
+    または第$i$成分という. 
+
+    すべての座標が$0$である点$\boldsymbol{o}
+    =(0,\cdots ,0)$を$\mathbb{R}^m$の原点
+    という. 
+\end{definition}
+\begin{definition}
+    $\mathbb{R}^m$の$2$点$\boldsymbol{x}
+    =(x_1,\cdots ,x_m)$と
+    $\boldsymbol{y}
+    =(y_1,\cdots ,y_m)$の距離とは
+    $$\sqrt{(x_1-y_1)^2+\cdots +(x_m-y_m)^2}$$
+    という実数のことである. これを$d(\boldsymbol{x},
+    \boldsymbol{y})$という記号で表す. 
+\end{definition}
+\begin{definition}
+    $\boldsymbol{a}$を$\mathbb{R}^m$の$1$点
+    , $\epsilon$を正数とする. 点$\boldsymbol{a}$
+    の$\mathbb{R}^m$における$\epsilon$-近傍
+    $N_\epsilon(\boldsymbol{a};\mathbb{R}^m)$
+    とは, $\boldsymbol{a}$からの距離が$\epsilon$
+    であるような点$\boldsymbol{x}\in 
+    \mathbb{R}^m$の全体のなす集合のことである. 
+    すなわち, 
+    $$N_\epsilon(\boldsymbol{a};\mathbb{R}^m)=
+    \{\boldsymbol{x}\in \mathbb{R}^m
+    |d(\boldsymbol{x},\boldsymbol{a})<\epsilon)
+    \}$$
+    である. $N_\epsilon(\boldsymbol{a};\mathbb{R}^m)$
+    を単に$N_\epsilon(\boldsymbol{a})$と書くこともある. 
+\end{definition}
+\begin{definition}
+    $\mathbb{R}^m$の部分集合$U$が$\mathbb{R}^m$
+    の開集合であるとは, $U$に含まれる任意の点
+    $\boldsymbol{a}$について, $\epsilon>0$を
+    十分小さくとると
+    $$N_\epsilon(\boldsymbol{a};\mathbb{R}^m)
+    \subset U$$
+    が成り立つことである. 
+    開集合でない部分集合を閉集合という. 
+\end{definition}
+
+% \begin{proposition}
+%     開集合の基本性質
+%     \begin{itemize}
+%         \item 
+%     \end{itemize}
+% \end{proposition}
+
+\subsection{ベクトル空間}\label{def:vector space}
+\begin{definition}
+    集合$V$が次の条件(I), (II)を満たすとき, 
+    $V$を$\mathbb{R}$上のベクトル空間という. 
+    \begin{itemize}
+        \item[(I)]$V$の$2$元$\boldsymbol{u}$, 
+        $\boldsymbol{v}$に対して和とよばれる
+        第$3$の元(これを$\boldsymbol{u}+
+        \boldsymbol{v}$と表す)が定まり, 
+        次の法則が成り立つ.  
+        \begin{itemize}
+            \item[(1)]
+            $(\boldsymbol{u}+
+            \boldsymbol{v})+\boldsymbol{w}=
+            \boldsymbol{u}+
+            (\boldsymbol{v}+\boldsymbol{w})$ 
+            (結合法則)
+            \item[(2)]
+            $\boldsymbol{u}+
+            \boldsymbol{v}=
+            \boldsymbol{v}+
+            \boldsymbol{u}$ 
+            (交換法則)
+            \item[(3)]
+            ゼロベクトルとよばれる元(これを
+            $\boldsymbol{o}$と表す)がただひとつ
+            存在し, $V$のすべての元$\boldsymbol{v}$
+            に対して, 
+            $$\boldsymbol{o}+\boldsymbol{v}=
+            \boldsymbol{v}$$
+            が成り立つ. 
+            \item[(4)]
+            $V$の任意の元$\boldsymbol{v}$に対し, 
+            $\boldsymbol{v}+\boldsymbol{v'}=
+            \boldsymbol{o}$となる$V$の元
+            $\boldsymbol{v'}$がただひとつ存在する. 
+            これを$-\boldsymbol{v}$と表す. 
+        \end{itemize} 
+        \item[(II)]$V$の任意の元$\boldsymbol{v}$
+        と任意の実数$a$に対し, $\boldsymbol{v}$の
+        $a$倍とよばれるもうひとつの元(これを
+        $a\boldsymbol{v}$と表す)が定まり, 次の
+        法則が成り立つ. 
+        \begin{itemize}
+            \item[(5)]
+            $(a+b)\boldsymbol{v}=
+            a\boldsymbol{v}+
+            b\boldsymbol{v}$,\ 
+            \item[(6)]
+            $a(\boldsymbol{u}+boldsymbol{v})=
+            a\boldsymbol{u}+a\boldsymbol{v}$,\ 
+            \item[(7)]
+            $(ab)\boldsymbol{v}=a(b\boldsymbol{v})$,\ 
+            \item[(8)]
+            $1\boldsymbol{v}=\boldsymbol{v}$. 
+        \end{itemize}
+    \end{itemize}
+    $V$の元をベクトルという. 
+\end{definition}
+\begin{example}
+    $m$次元数空間$\mathbb{R}^m$は($\mathbb{R}$上の)
+    ベクトル空間である. 
+    $\mathbb{R}^m$の$2$元
+    $\boldsymbol{x}=(x_1,\cdots ,x_m)$, 
+    $\boldsymbol{y}=(y_1,\cdots ,y_m)$
+    に対して和$\boldsymbol{x}+\boldsymbol{y}$
+    と$a$倍$a\boldsymbol{x}$を次のように
+    定義すればよい. 
+    $$\boldsymbol{x}+\boldsymbol{y}=
+    (x_1+y_1,\cdots ,x_m+y_m)$$
+    $$a\boldsymbol{x}=(ax_1,\cdots ,ax_m)$$
+    このように定義したとき, $R^m$が定義\ref{def:vector space}
+    の条件(I), (II)を満たすことがわかる. 
+    よって, $\mathbb{R}^m$は($\mathbb{R}$上の)
+    ベクトル空間である. ただし, ゼロベクトルは
+    $\boldsymbol{o}=(0,\cdots ,0)$であり, 
+    $-\boldsymbol{x}$は$(-x_1,\cdots ,-x_m)$
+    である. ベクトル空間としての$\mathbb{R}^m$
+    を($m$次元)数ベクトル空間といい, その元
+    $\boldsymbol{x}=(x_1,\cdots ,x_m)$, 
+    $\boldsymbol{y}=(y_1,\cdots ,y_m)$
+    を($m$次元)数ベクトルという. 
+\end{example}
+\begin{definition}
+    ベクトル空間$V$のいくつかのベクトル
+    $\boldsymbol{v_1},\cdots ,
+    \boldsymbol{v_k}$について, それぞれを実数倍して加えた和
+    $$a_1\boldsymbol{v_1}+\cdots +
+    a_k\boldsymbol{v_k}$$
+    のことを$boldsymbol{v_1},\cdots ,
+    \boldsymbol{v_k}$の$1$次結合という. 
+\end{definition}
+\begin{definition}
+    $\boldsymbol{v_1},\cdots ,
+    \boldsymbol{v_k}$が$1$次独立であるとは, 
+    $$a_1\boldsymbol{v_1}+\cdots +
+    a_k\boldsymbol{v_k}=\boldsymbol{o}\ 
+    \text{ならば}\ a_1=\cdots =a_k=0$$
+    が成り立つことである. 
+    $\boldsymbol{v_1},\cdots ,
+    \boldsymbol{v_k}$が$1$次独立でないとき, 
+    それらは$1$次従属であるという. 
+\end{definition}
+\begin{example}\label{def:fundamental vector of R^m}
+    $\mathbb{R}^m$の中の$m$個のベクトル
+    $\boldsymbol{e_1},\cdots ,
+    \boldsymbol{e_m}$を
+    $$e_1=(1,0,\cdots ,0),\ e_2=(0,1,\cdots ,0), 
+    \cdots ,e_m=(0,0,\cdots ,1)$$
+    と定義すると, これらは$1$次独立である. 
+    なぜなら, $\mathbb{R}^m$における和と実数倍の
+    定義によって
+    $$a_1\boldsymbol{e_1}+\cdots +a_m\boldsymbol{e_m}
+    =(a_1,\cdots ,a_m)$$
+    となり, $a_1\boldsymbol{e_1}+\cdots +
+    a_m\boldsymbol{e_m}=\boldsymbol{o}$
+    ならば$a_1=\cdots =a_m=0$でなければならない
+    からである. 
+
+    $\boldsymbol{e_i}$を$i$方向の基本ベクトル
+    という. 
+\end{example}
+\begin{definition}\label{def:basis}
+    ベクトル空間$V$のベクトルの集合
+    $\boldsymbol{f_1},\cdots ,\boldsymbol{f_k}$
+    が次の条件(1), (2)を満たすとき, 
+    $\boldsymbol{f_1},\cdots ,\boldsymbol{f_k}$
+    を$V$の基底とよぶ. 
+    \begin{itemize}
+        \item[(1)]
+        $\boldsymbol{f_1},\cdots ,\boldsymbol{f_k}$
+        は$1$次独立である. 
+        \item[(2)]
+        $V$の任意の元$\boldsymbol{v}$は
+        $\boldsymbol{f_1},\cdots ,\boldsymbol{f_k}$
+        の$1$次結合として表される. 
+    \end{itemize}
+\end{definition}
+\begin{example}
+    $\mathbb{R}^m$の$m$個の基本ベクトル
+    $\boldsymbol{e_1},\cdots ,\boldsymbol{e_m}$
+    は$\mathbb{R}^m$の基底である. 
+    \begin{itemize}
+        \item[(1)]
+        例\ref{def:fundamental vector of R^m}
+        より, 
+        $\boldsymbol{e_1},\cdots ,\boldsymbol{e_m}$
+        は$1$次独立である. 
+        \item[(2)]
+        $\mathbb{R}^m$の任意のベクトル$\boldsymbol{x}
+        =(x_1,\cdots ,x_m)$
+        は$\boldsymbol{e_1},\cdots ,\boldsymbol{e_m}$
+        の$1$次結合
+        $x_1\boldsymbol{e_1}+\cdots +x_m\boldsymbol{e_m}$
+        で表される. 
+    \end{itemize}
+    よって, $\boldsymbol{e_1},\cdots ,\boldsymbol{e_m}$
+    は$\mathbb{R}^m$の基底である.
+\end{example}
+\begin{definition}
+    基底を構成するベクトルの個数$k$を$V$の
+    次元とよび, 
+    $$k=\text{dim}V$$
+    と書く. 
+\end{definition}
+\begin{definition}
+    ベクトル空間$V$の部分集合$W$が次の条件
+    (1), (2)を満たすとき, 
+    $W
+    $を$V$の部分ベクトル空間という. ただし, 
+    $W \neq \phi$とする. 
+    \begin{itemize}
+        \item[(1)]
+        $\boldsymbol{u},\ \boldsymbol{v}
+        \in W$ならば, 
+        $\boldsymbol{u}+\boldsymbol{v}\in W$
+        \item[(2)]
+        $\boldsymbol{u}\in W$, $a\in \mathbb{R}$
+        ならば, $a\boldsymbol{u}\in W$
+    \end{itemize}
+\end{definition}
+ベクトル空間$V$の部分ベクトル空間$W$は
+それ自信ベクトル空間である. また, 部分
+ベクトル空間$W$の次元は$V$の次元以下である
+($\text{dim}W\leq \text{dim}V$). 
+
 \subsection{連続写像と$C^r$級写像}
+$U$, $V$をそれぞれ$\mathbb{R}^m$, 
+$\mathbb{R}^n$の開集合とする. 
+\begin{definition}\label{def:continuous map}
+    写像$f:U\to V$が点$\boldsymbol{a}\in U$
+    で連続であるとは, $\boldsymbol{a}$
+    の像$f(\boldsymbol{a})$の任意の
+    $\epsilon$-近傍$N_\epsilon(f(\boldsymbol{a}))$
+    に対して, $\delta>0$を十分小さくとれば
+    $$f(N_\delta(\boldsymbol{a}))\subset
+    N_\epsilon(f(\boldsymbol{a}))$$
+    が成り立つことである. 
+    $f$が$U$の各点で連続のとき, $f:U\to V$
+    を連続写像という. 
+\end{definition}
+\begin{definition}\label{def:homeomorphism}
+    写像$f:U\to V$が次の条件(1), (2)を満たす
+    とき, $f$は同相写像であるという. 
+    \begin{itemize}
+        \item[(1)]
+        $f:U\to V$は全単射である. 
+        \item[(2)]
+        $f:U\to V$も$f^{-1}:V\to U$も, 
+        ともに連続写像である. 
+    \end{itemize}
+    $U$と$V$との間に同相写像$f:U\to V$が
+    存在するとき, $U$と$V$は互いに位相同形
+    であるといい, 
+    $$U \approx V$$
+    と書き表す. 
+\end{definition}
+\begin{definition}\label{def:coordinate display}
+    写像$f:U\to V$について, 
+    $\boldsymbol{x}\in U$の像$f(\boldsymbol{x})$
+    は$V(\subset \mathbb{R}^n)$の点であるから, 
+    $f(\boldsymbol{x})=(y_1,\cdots ,y_n)$
+    と$\mathbb{R}^n$の座標で書ける. 
+    ここで各座標$y_i$の値は$\boldsymbol{x}$によって
+    決まるので, $y_i$は$U$上の関数になる. 
+    この関数を$f_i$とおくと, 
+    $$y_i=f_i(\boldsymbol{x})$$
+    であって, $f(\boldsymbol{x})$は
+    $$f(\boldsymbol{x})=(f_1(\boldsymbol{x}),
+    \cdots ,f_n(\boldsymbol{x}))$$
+    と表せる. このような表し方を写像$f:U\to V$
+    の座標表示という. 
+
+    $f:U\to V$の座標表示を単に$f=(f_1,\cdots ,f_n)$
+    と書くこともある. 
+\end{definition}
+$f:U\to V$が連続写像であるための必要十分条件は
+$f$の座標表示$(f_1,\cdots ,f_n)$に現れる
+関数$f_1,\cdots ,f_n$がすべて
+連続関数になることである. 
+\begin{definition}
+    \begin{itemize}
+        \item[(1)]
+        $r$を自然数($r\geq 1$)とする. $U$上の関数
+        $f$が$C^r$級であるとは, $f$の$1$階から
+        $r$階までのすべての偏導関数
+        $\frac{\partial f}{\partial x_i},\cdots ,
+        \frac{\partial^rf}{\partial x_i^r}\ 
+        (i=1,\cdots m)$が存在して$f$自信も含めて
+        それらがみな$U$上で連続であることをいう. 
+        \item[(2)]
+        $f$が任意の自然数$r$について$C^r$級
+        であるとき, $f$を$C^\infty$級関数でという. 
+    \end{itemize}
+    なお, 連続関数のことを$C^0$級関数ということがある. 
+\end{definition}
+\begin{definition}\label{def:C^r map}
+    写像$h:U\to V$が$C^r$級写像であるとは, 
+    $h$の座標表示$h=(h_1,\cdots ,h_n)$に現れる
+    関数$h_1,\cdots ,h_n$がすべて$U$上の$C^r$級
+    関数になることである. 
+\end{definition}
+\begin{proposition}
+    $C^r$級関数の$1$次結合や積は$C^r$級
+    関数である(ただし, $0\leq r\leq \infty$). 
+\end{proposition}
+\begin{proposition}
+    写像$h:U\to V$の座標表示
+    に現れる関数$h_1,\cdots ,h_n$と
+    $V$上の関数$f$が$C^1$級関数である
+    とすると, 合成関数$f\circ h$も
+    $C^1$級であり, かつ次の公式
+    (合成関数の微分法)が成り立つ. 
+    $$\frac{\partial (f\circ h)}{\partial x_i}=
+    \left(\frac{\partial f}{\partial y_1}
+    \circ h\right)\cdot \frac{\partial h_1}
+    {\partial x_i}+\cdots +
+    \left(\frac{\partial f}{\partial y_n}
+    \circ h\right)\cdot \frac{\partial h_n}
+    {\partial x_i}$$
+    ただし, ふつうは簡単に
+    $$\frac{\partial (f\circ h)}{\partial x_i}=
+    \left(\frac{\partial f}{\partial y_1}
+    \right)\cdot \frac{\partial h_1}
+    {\partial x_i}+\cdots +
+    \left(\frac{\partial f}{\partial y_n}
+    \right)\cdot \frac{\partial h_n}
+    {\partial x_i}$$
+    と書くこととする. 
+\end{proposition}
+\begin{proposition}
+    $h:U\to V$が$C^r$級写像, $f:V\to \mathbb{R}$
+    が$C^r$級関数なら, 合成関数$f\circ h:U\to 
+    \mathbb{R}$も$C^r$級関数である(ただし, 
+    $0\leq r\leq \infty$). 
+\end{proposition}
+\begin{proposition}
+    $U$, $V$, $W$がそれぞれ$\mathbb{R}^m$, 
+    $\mathbb{R}^n$, $\mathbb{R}^l$
+    の開集合のとき, $2$つの$C^r$級
+    写像$f:U\to V$, $g:V\to W$の合成写像
+    $g\circ f:U\to W$は$C^r$級である. 
+\end{proposition}
+\begin{definition}\label{def:C^r diffeomorphism}
+    写像$f:U\to V$が次の条件(1), (2)を満たすとき, 
+    $f$を$C^r$級微分同相写像という. 
+    \begin{itemize}
+        \item[(1)]
+        $f:U\to V$は全単射である. 
+        \item[(2)]
+        $f:U\to V$も$f^{-1}:V\to U$もともに
+        $C^r$級写像である. 
+    \end{itemize}
+\end{definition}
+$U$と$V$との間に$C^r$級微分同相写像
+$f:U\to V$が存在するとき, $U$と$V$は互いに
+$C^r$級微分同相であるという. 
 \subsection{位相空間}
 \newpage
 %
