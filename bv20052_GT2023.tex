@@ -121,6 +121,7 @@
 \newpage
 %%%%%%↓ここから本文↓%%%%%%
 \section{はじめに}
+多様体の次元を調べる方法を書きます. 
 \newpage
 %
 \section{準備}
@@ -2117,21 +2118,167 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
     $(0,0,2x_3,2x_4)$は$1$次独立である. 行列の
     階数はその行列の$1$次独立な行ベクトルの個数
     に一致するから, rank$(Jf)_{\boldsymbol{p}}=2$
-    よって, $T^2$は$C^\infty$級$4-2=2$次元
+    よって, $T^2$は$4-2=2$次元$C^\infty$級
     多様体である. 
+\end{example}
+\begin{example}
+    らせん$H=\{(x,y,z)\in \mathbb{R}^3|
+    x=\cos z, y=\sin z\}$は
+    $1$次元$C^\infty$級多様体である. 
+
+    $C^\infty$級写像$\mathbb{R}^3\to \mathbb{R}^2$
+    を
+    $$f(x,y,z)=(x-\cos z,y-\sin z)$$
+    と定義すると, 
+    $$H=f^{-1}(0,0)$$
+    となる. 点$\boldsymbol{p}=(x,y,z)$
+    におけるヤコビ行列$(Jf)_{\boldsymbol{p}}$
+    を調べると, 
+    \begin{eqnarray*}
+        (Jf)_{\boldsymbol{p}}&=&
+        \left(\begin{array}{ccc}
+            \frac{\partial f_1}{\partial x}&
+            \frac{\partial f_1}{\partial y}&
+            \frac{\partial f_1}{\partial z}\\
+            \frac{\partial f_2}{\partial x}&
+            \frac{\partial f_2}{\partial y}&
+            \frac{\partial f_2}{\partial z}
+        \end{array}\right)\\
+        &=&
+        \left(\begin{array}{ccc}
+            1&0&\sin z\\
+            0&1&-\cos z
+        \end{array}\right)
+    \end{eqnarray*}
+    となる. $(Jf)_{\boldsymbol{p}}$
+    の$2$つの行ベクトル$(1,0,\sin z)$, 
+    $(0,1,-\cos z)$は$1$次独立であるから, 
+    rank$(Jf)_{\boldsymbol{p}}=2$
+    よって, $H$は$3-2=1$次元$C^\infty$級
+    多様体である. 
+\end{example}
+\begin{definition}\label{def:Stiefel manifold}
+    $\mathbb{R}^m$の直交$k$枠とは, $\mathbb{R}^m$
+    の中の$k$個のベクトルの組$(\boldsymbol{v}_1,
+    \cdots ,\boldsymbol{v}_k)$であって, 
+    次の条件(1), (2)を満たすものをいう. 
+    (ただし, $1\leq k\leq m$とする. )
+    \begin{itemize}
+        \item[(1)]
+        $\|\boldsymbol{v}_i\|=1\ (i=1,\cdots ,k)$
+        \item[(2)] 
+        $\boldsymbol{v}_i$と$\boldsymbol{v}_j$は
+        直交する. ($i\neq j,\ i,j=1,\cdots k$)
+    \end{itemize}
+
+    $\mathbb{R}^m$の中の直交$k$枠の全体のなす
+    集合を
+    $$V_{m,k}$$
+    と表し, ($m,k$)型のシュティーフェル多様体とよぶ. 
+\end{definition}
+以下, $m=2$のときのシュティーフェル多様体$V_{2,k}$
+を調べる. 
+\begin{example}
+    $k=1$のとき, 
+    シュティーフェル多様体$V_{2,1}$は
+    $1$次元$C^\infty$級多様体になる. 
+
+    定義より, 
+    \begin{eqnarray*}
+        V_{2,1}&=&\{\boldsymbol{v}\in
+    \mathbb{R}^2|\|\boldsymbol{v}\|=1\}\\
+    &=&\{(v_1,v_2)\in
+    \mathbb{R}^2|v_1^2+v_2^2=1\}=S^1
+    \end{eqnarray*}
+    となり, $V_{2,1}$は$1$次元球面$S^1$と等しい
+    ことがわかる. よって$V_{2,1}$は
+    $1$次元$C^\infty$級多様体になる.
+\end{example}
+\begin{example}
+    $k=2$のとき, 
+    シュティーフェル多様体$V_{2,2}$は
+    $1$次元$C^\infty$級多様体になる. 
+
+    $\boldsymbol{v}_1=(x_1,x_2)$, 
+    $\boldsymbol{v}_2=(y_1,y_2)$を
+    $\mathbb{R}^2$の直交$2$枠の
+    $2$つのベクトルとすると, 定義\ref{def:Stiefel manifold}
+    の条件(1), (2)はそれぞれ次のように表せる. 
+    \begin{itemize}
+        \item[(1)]
+        $x_1^2+x_2^2=1, y_1^2+y_2^2=1$
+        \item[(2)]
+        $x_1y_1+x_2y_2=0$
+    \end{itemize}
+    よって$V_{2,2}$は
+    $$V_{2,2}=\{(x_1,x_2,y_1,y_2)\in \mathbb{R}^4|
+    x_1^2+x_2^2=1, y_1^2+y_2^2=1, x_1y_1+x_2y_2=0\}$$
+    と書き表せる. 
+    $C^\infty$写像$f:\mathbb{R}^4\to \mathbb{R}^3$
+    を
+    $$f(x_1,x_2,y_1,y_2)=
+    (x_1^2+x_2^2-1, y_1^2+y_2^2-1, x_1y_1+x_2y_2)$$
+    と定義すると, 
+    $$V_{2,2}=f^{-1}(0,0,0)$$
+    となる. 点$(\boldsymbol{v}_1,
+    \boldsymbol{v}_2)$におけるヤコビ行列
+    $(Jf)_{(\boldsymbol{v}_1,
+    \boldsymbol{v}_2)}$を計算すると, 
+    $$(Jf)_{(\boldsymbol{v}_1,
+    \boldsymbol{v}_2)}=
+    \left(\begin{array}{cccc}
+        2x_1&2x_2&0&0\\
+        0&0&2y_1&2y_2\\
+        y_1&y_2&x_1&x_2\\
+    \end{array}\right)$$
+    $(Jf)_{(\boldsymbol{v}_1,
+    \boldsymbol{v}_2)}$の$3$つの
+    行ベクトル$(2x_1,2x_2,0,0)$, 
+    $(0,0,2y_1,2y_2)$, 
+    $(y_1,y_2,x_1,x_2)$が$1$次独立である
+    ことを示す. $a$, $b$, $c$を実数として, 
+    $$a(2x_1,2x_2,0,0)+b(0,0,2y_1,2y_2)+
+    c(y_1,y_2,x_1,x_2)=(0,0,0,0)$$
+    と仮定すると, 
+    $$2a(\boldsymbol{v}_1,0,0)+
+    2b(0,0,\boldsymbol{v}_2)+
+    c(\boldsymbol{v}_2,\boldsymbol{v}_1)=
+    (0,0,0,0)$$
+    であるから, これを整理して, 
+    $$(2a\boldsymbol{v}_1+c\boldsymbol{v}_2,
+    2b\boldsymbol{v}_2+c\boldsymbol{v}_1)=
+    (0,0,0,0)$$
+    を得る. よって, 
+    $$2a\boldsymbol{v}_1+c\boldsymbol{v}_2=
+    (0,0),\ 
+    2b\boldsymbol{v}_2+c\boldsymbol{v}_1=
+    (0,0)$$
+    となるが, いま, $\boldsymbol{v}_1$と
+    $\boldsymbol{v}_2$は$1$次独立であるから, 
+    $a=c=0$, $b=c=0$が導かれ, $a=b=c=0$である
+    ことがわかる. したがって, $(2x_1,2x_2,0,0)$, 
+    $(0,0,2y_1,2y_2)$, 
+    $(y_1,y_2,x_1,x_2)$は$1$次独立である. 
+    ゆえに, rank$(Jf)_{(\boldsymbol{v}_1,
+    \boldsymbol{v}_2)}=3$であるから, 
+    $V_{2,2}$は$4-3=1$次元$C^\infty$級多様体
+    となる. 
 \end{example}
 \newpage
 %
 \section{おわりに}
-\begin{figure}[H]
-    \includegraphics[scale=0.8]{SIT.png}
-\end{figure}
+多様体の次元を調べる方法を書きました.
+
+% \begin{figure}[H]
+% \end{figure}
 \newpage
 %参考文献
 \begin{thebibliography}{99}
 \bibitem{Matsumoto18} 松本幸夫, [第30版]多様体の基礎, 東京大学出版会, 2018.
-\bibitem{b}【論文の場合】著者名，タイトル，雑誌名，巻・号，出版年度，頁．
-\bibitem{c}【Webページの場合】 タイトル，ページ制作者(機関)等，URL: \url{http://www.shibaura-it.ac.jp/}，最終アクセス日時: 2021/12/28 16:33．
+\bibitem{Hujioka17} 藤岡敦, [第2版]具体例から学ぶ　多様体, 裳華房, 2017.
+\bibitem{Hattori76} 服部晶夫, [第1版]多様体, 岩波書店, 1976.
+%\bibitem{b}【論文の場合】著者名，タイトル，雑誌名，巻・号，出版年度，頁．
+%\bibitem{c}【Webページの場合】 タイトル，ページ制作者(機関)等，URL: \url{http://www.shibaura-it.ac.jp/}，最終アクセス日時: 2021/12/28 16:33．
 \end{thebibliography}
 
 \end{document}
