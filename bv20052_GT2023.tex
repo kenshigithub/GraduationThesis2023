@@ -397,12 +397,16 @@ $\mathbb{R}^n$の開集合とする.
         $f:U\to V$も$f^{-1}:V\to U$も, 
         ともに連続写像である. 
     \end{itemize}
+
     $U$と$V$との間に同相写像$f:U\to V$が
     存在するとき, $U$と$V$は互いに位相同形
     であるといい, 
     $$U \approx V$$
     と書き表す. 
 \end{definition}
+$f:U\to V$, $g:V\to W$がともに同相
+写像なら合成$g\circ f:U\to W$も同相
+写像である. 
 \begin{definition}\label{def:coordinate display}
     写像$f:U\to V$について, 
     $\boldsymbol{x}\in U$の像$f(\boldsymbol{x})$
@@ -499,11 +503,105 @@ $f$の座標表示$(f_1,\cdots ,f_n)$に現れる
         $f:U\to V$も$f^{-1}:V\to U$もともに
         $C^r$級写像である. 
     \end{itemize}
-\end{definition}
-$U$と$V$との間に$C^r$級微分同相写像
+
+    $U$と$V$との間に$C^r$級微分同相写像
 $f:U\to V$が存在するとき, $U$と$V$は互いに
-$C^r$級微分同相であるという. 
+$C^r$級微分同相であるという.
+\end{definition}
+$f:U\to V$, $g:V\to W$がともに$C^r$級微分同相
+写像なら合成$g\circ f:U\to W$も$C^r$級微分同相
+写像である. 
+ 
 \subsection{位相空間}
+\begin{definition}\label{def:topological sapace}
+    集合$X$び部分集合族$\mathcal{O}$が次の条件
+    (1), (2), (3)を満たすとき, $\mathcal{O}$
+    を$X$の位相とよび, $X$と$\mathcal{O}$の対
+    $(X,\mathcal{O})$を位相空間という. 
+    \begin{itemize}
+        \item[(1)]$X\in \mathcal{O}$かつ
+        $\phi \in \mathcal{O}$
+        \item[(2)]
+        $U_1,U_2, \cdots ,U_k\in \mathcal{O}$
+        ならば$U_1\cap U_2\cap \cdots \cap U_k
+        \in \mathcal{O}$
+        \item[(3)]
+        任意の集合族$\{U_\lambda\}_\Lambda$について
+        $U_\lambda\in \mathcal{O}\ 
+        (\forall \lambda \in \Lambda)$ならば
+        $$\bigcup_{\lambda\in \Lambda}{U_\lambda}
+        \in \mathcal{O}$$
+    \end{itemize}
+    位相$\mathcal{O}$を位相空間$X$の
+    開集合系とよぶことがある. $X$の部分集合
+    $U$が$\mathcal{O}$に属するとき, $U$を
+    $X$の開集合という. 
+    位相空間$X$の個々の元を$X$の点という. 
+\end{definition}
+\begin{example}
+    $m$次元数空間$\mathbb{R}^m$の開集合全体の
+    なす集合族を$\mathcal{O}^{(m)}$とする. 
+    このとき, $\mathcal{O}^{(m)}$は
+    上の定義\ref{def:topological sapace}
+    の条件(1), (2), (3)を満たす
+    (ただし, $X=\mathbb{R}^m$). したがって, 
+    $\mathcal{O}^{(m)}$は$\mathbb{R}^m$
+    の位相であり, $(\mathbb{R}^m, \mathcal{O}^{(m)})$
+    は位相空間である.
+
+    $\mathcal{O}^{(m)}$を$\mathbb{R}^m$の自然な
+    位相という. 通常, $\mathbb{R}^m$を位相空間と
+    考えるときは, この位相$\mathcal{O}^{(m)}$
+    が指定されているものとする. 
+\end{example}
+\begin{definition}
+    $(X, \mathcal{O})$を位相空間, $A$を
+    $X$の任意の部分空間とすると, $A$の部分集合族
+    $$\mathcal{O}_A=\{U\cap A|U\in \mathcal{O}\}$$
+    を$A$の位相として, $A$をそれ自身ひとつの位相空間
+    と考えることができる. 
+
+    この$\mathcal{O}_A$を$X$の位相$\mathcal{O}$
+    から導かれた$A$の相対位相とよび, 位相空間
+    $(A,\mathcal{O}_A)$を$(X,\mathcal{O})$の
+    部分空間とよぶ. 
+\end{definition}
+\begin{definition}\label{def:topological continuous map}
+$2$つの位相空間$(X, \mathcal{O})$, $(Y,\mathcal{O}')$
+の間の写像$f:X\to Y$が連続写像であるとは, $Y$の任意の
+開集合$U$について, $f^{-1}(U)\in \mathcal{O}$
+となることである. 
+
+一般に逆像$f^{-1}(U)$とは
+$$f^{-1}(U)=\{p\in X|f(p)\in U\}$$
+で定義される$X$の部分集合のことである. 
+\end{definition}
+位相空間$X$, $Y$をそれぞれ$\mathbb{R}^m$, 
+$\mathbb{R}^n$の開集合$V$, $W$とすると
+上の定義\ref{def:topological continuous map}の
+連続写像の概念と, 定義\ref{def:continuous map}
+の連続写像の概念は一致する. 
+\begin{definition}\label{def:topological homeomorphism}
+    位相空間$(X,\mathcal{O})$, $(Y,\mathcal{O}')$
+    の間の写像$f:X\to Y$が次の条件(1), (2)を満たす
+    とき, $f$を同相写像という. 
+    \begin{itemize}
+        \item[(1)]$f:X\to Y$は全単射である. 
+        \item[(2)]$f:X\to Y$も$f^{-1}:Y\to X$
+        もともに連続写像である. 
+
+        $X$と$Y$との間に同相写像$f:X\to Y$が
+    存在するとき, $X$と$Y$は互いに位相同形
+    であるといい, 
+    $$X \approx Y$$
+    と書き表す. 
+    \end{itemize}
+\end{definition}
+明らかに, この定義\ref{def:topological homeomorphism}
+は定義\ref{def:homeomorphism}の拡張である. 
+
+また, $f:X\to Y$, $g:Y\to Z$がともに同相写像なら
+合成$g\circ f:X\to Z$も同相写像である. 
 \newpage
 %
 \section{$C^r$級多様体と$C^r$級写像}
@@ -1630,7 +1728,7 @@ $$(J\varphi)_p=
 $$
 となり, det$(J\varphi)_p=$det$B\neq 0$である. 
 したがって, 逆関数の定理(定理
-\ref{theo:f^(-1) theorem})
+\ref{theo:f^(-1)theorem})
 により, 点$p$を含む$U$を十分小さくとれば, 
 $\varphi |U:U\to \varphi(U)$は$C^r$級微分同相写像
 である. よって, /ref{prop: cord-nabor condition}
@@ -1891,6 +1989,9 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
     が証明できた. 
 \end{proof}
 \subsection{多様体の次元の具体的な計算}
+最後に定理\ref{theo:f^{-1}(q) C^r manifold}を
+用いて多様体の次元を具体的に計算していく. 
+
 \newpage
 %
 \section{おわりに}
