@@ -9,6 +9,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[dvipdfmx]{graphicx}%画像挿入
+\usepackage{here}
 %\usepackage{theorem}%定義や定理の環境
 \usepackage{url}
 %必要なパッケージを追加
@@ -123,7 +124,7 @@
 \newpage
 %
 \section{準備}
-\subsection{m次元数空間}
+\subsection{$m$次元数空間}
 \begin{definition}
     $m$を$1$以上の自然数とする. $m$個の実数を
     並べた組
@@ -1991,10 +1992,140 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
 \subsection{多様体の次元の具体的な計算}
 最後に定理\ref{theo:f^{-1}(q) C^r manifold}を
 用いて多様体の次元を具体的に計算していく. 
+\begin{example}
+    $n$次元球面
+    $$S^n=\{(x_1,\cdots ,x_{n+1}\in 
+    \mathbb{R}^{n+1})|x_1^2+\cdots +x_{n+1}^2=1\}$$
+    は$n$次元$C^\infty$級多様体である. 
 
+    $C^\infty$級写像($C^\infty$級関数)
+    $f:\mathbb{R}^{n+1}\to \mathbb{R}$を
+    $$f(x_1,\cdots ,x_{n+1})=
+    x_1^2+\cdots +x_{n+1}^2-1$$
+    で定義すると, 
+    $$S^n=\{(x_1,\cdots ,x_{n+1}\in 
+    \mathbb{R}^{n+1})|f(x_1,\cdots ,x_{n+1})=0\}
+    =f^{-1}(0)$$
+    より, $S^n$は逆像$f^{-1}(0)$となっている. 
+    ヤコビ行列$(Jf)_{\boldsymbol{x}}$を調べると, 
+    \begin{eqnarray*}
+        (Jf)_{\boldsymbol{x}}&=&
+    \left(\frac{\partial f}{\partial x_1}
+    (\boldsymbol{x}), 
+    \cdots ,\frac{\partial f}{\partial x_{n+1}}
+    (\boldsymbol{x})\right)\\
+    &=&(2x_1,\cdots ,2x_{n+1})
+    \end{eqnarray*}
+    $\boldsymbol{x}=(x_1,\cdots x_{n+1})\in S^n$
+    のとき, $\boldsymbol{x}\neq \boldsymbol{o}
+    \ (:=(0, \cdots ,0))$であるから, 
+    $$(Jf)_{\boldsymbol{x}}=(2x_1,\cdots ,2x_{n+1})
+    \neq \boldsymbol{o}$$
+    となり, $(Jf)_{\boldsymbol{x}}$の階数は$1$となる. 
+    よって, $S^n$は$(n+1)-1=n$次元$C^\infty$級
+    多様体である. 
+\end{example}
+\begin{example}
+    $2$次元トーラス
+    $$T^2:=S^1\times S^1=
+    \{(\boldsymbol{x},\boldsymbol{y})|
+    \boldsymbol{x},\boldsymbol{y}\in S^1\}$$
+    は$2$次元$C^\infty$級多様体である. 
+
+    $2$次元トーラス$T^2$は$\mathbb{R}^3$の
+    中で$xz$平面上の中心が$(R,0)$, 半径が$r$
+    の円を$z$軸のまわりに$1$回転させた図形
+    (ただし, $(0<r<R)$)と考えられるので, 
+    $$T^2=\{(x,y,z)\in \mathbb{R}^3|
+    (\sqrt{x^2+y^2}-R)^2+z^2=r^2\}\ (0<r<R)$$
+    と表すことができる. 
+    $C^\infty$級写像($C^\infty$級関数)
+    $f:\mathbb{R}^3\to \mathbb{R}$
+    を
+    $$f(x,y,z)=(\sqrt{x^2+y^2}-R)^2+z^2-r^2$$
+    と定義すると, 
+    $$T^2=f^{-1}(0)$$
+    となる. $\boldsymbol{p}=(x,y,z)$における
+    ヤコビ行列
+    $(Jf)_{\boldsymbol{p}}$を調べると, 
+    \begin{eqnarray*}
+        (Jf)_{\boldsymbol{p}}&=&
+        \left(\frac{\partial f}{\partial x}
+        (\boldsymbol{p}), \frac{\partial f}{\partial y}
+        (\boldsymbol{p}), \frac{\partial f}{\partial z}
+        (\boldsymbol{p})\right)\\
+        &=&
+        \left(\frac{2(\sqrt{x^2+y^2}-R)x}
+        {sqrt{x^2+y^2}},\frac{2(\sqrt{x^2+y^2}-R)y}
+        {sqrt{x^2+y^2}},2z\right)
+    \end{eqnarray*}
+    であり, $\boldsymbol{p}\in T^2$のとき, 
+    $\boldsymbol{p}\neq \boldsymbol{o}$
+    つまり, 常に$x\neq 0$または$y\neq 0$または
+    $z\neq 0$が成り立ち, 
+    $\sqrt{x^2+y^2}-R=0$のときは$z=\pm r\neq 0$
+    となる. よって, 
+    $$(Jf)_{\boldsymbol{p}}=
+    \left(\frac{2(\sqrt{x^2+y^2}-R)x}
+        {\sqrt{x^2+y^2}},\frac{2(\sqrt{x^2+y^2}-R)y}
+        {\sqrt{x^2+y^2}},2z\right)\neq 
+        \boldsymbol{o}$$
+    となり, rank$(Jf)_{\boldsymbol{p}}=1$
+    を得る. 
+    したがって, $T^2$は$3-1=2$次元$C^\infty$
+    級多様体である. 
+\end{example}
+\begin{example}
+    $S^1 \subset \mathbb{R}^2$であることに注意する
+    と$2$次元トーラス$T^2$は
+    $\mathbb{R}^4$の部分集合として, 
+    $$T^2=\{(x_1,x_2,x_3,x_4)\in \mathbb{R}^4|
+    x_1^2+x_2^2=1, x_3^2+x_4^2=1\}$$
+    と表せる. この表し方においても$T^2$は
+    $2$次元$C^\infty$級多様体になる. 
+
+    $C^\infty$級写像$f:\mathbb{R}^4\to \mathbb{R}^2$
+    を
+    $$f(x_1,x_2,x_3,x_4)=(x_1^2+x_2^2-1,
+    x_3^2+x_4^2-1)$$と定義すると, 
+    $$T^2=f^{-1}(0,0)$$
+    と表せる. 点$\boldsymbol{p}=(x_1,x_2,x_3,x_4)$
+    におけるヤコビ行列$(Jf)_{\boldsymbol{p}}$
+    を調べると, 
+    \begin{eqnarray*}
+        (Jf)_{\boldsymbol{p}}&=&
+        \left(\begin{array}{cccc}
+            \frac{\partial f_1}{\partial x_1}&
+            \frac{\partial f_1}{\partial x_2}&
+            \frac{\partial f_1}{\partial x_3}&
+            \frac{\partial f_1}{\partial x_4}\\
+            \frac{\partial f_2}{\partial x_1}&
+            \frac{\partial f_2}{\partial x_2}&
+            \frac{\partial f_2}{\partial x_3}&
+            \frac{\partial f_2}{\partial x_4}
+        \end{array}\right)\\
+        &=&
+        \left(\begin{array}{cccc}
+            2x_1&2x_2&0&0\\
+            0&0&2x_3&2x_4
+        \end{array}\right)
+    \end{eqnarray*}
+    $\boldsymbol{p}\in T^2$のとき, $x_1\neq 0$
+    または$x_2\neq 0$で, さらに$x_3\neq 0$または
+    $x_4\neq 0$でもあるので, $(Jf)_{\boldsymbol{p}}$
+    の$2$つの行ベクトル$(2x_1,2x_2,0,0)$, 
+    $(0,0,2x_3,2x_4)$は$1$次独立である. 行列の
+    階数はその行列の$1$次独立な行ベクトルの個数
+    に一致するから, rank$(Jf)_{\boldsymbol{p}}=2$
+    よって, $T^2$は$C^\infty$級$4-2=2$次元
+    多様体である. 
+\end{example}
 \newpage
 %
 \section{おわりに}
+\begin{figure}[H]
+    \includegraphics[scale=0.8]{SIT.png}
+\end{figure}
 \newpage
 %参考文献
 \begin{thebibliography}{99}

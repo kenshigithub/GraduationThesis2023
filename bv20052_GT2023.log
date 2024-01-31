@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  31 JAN 2024 20:19
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  1 FEB 2024 02:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -120,28 +120,35 @@ File: dvipdfmx.def 2022/04/16 v5.0l Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen166
 \Gin@req@width=\dimen167
+) (c:/texlive/2022/texmf-dist/tex/latex/here/here.sty) (c:/texlive/2022/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count272
+\float@exts=\toks23
+\float@box=\box70
+\@float@everytoks=\toks24
+\@floatcapt=\box71
 ) (c:/texlive/2022/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (c:/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks23
-\thm@bodyfont=\toks24
-\thm@headfont=\toks25
-\thm@notefont=\toks26
-\thm@headpunct=\toks27
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
 \thm@preskip=\skip52
 \thm@postskip=\skip53
 \thm@headsep=\skip54
-\dth@everypar=\toks28
+\dth@everypar=\toks30
 )
-\c@theorem=\count272
+\c@theorem=\count273
  (c:/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks29
+\pgfutil@everybye=\toks31
 \pgfutil@tempdima=\dimen168
 \pgfutil@tempdimb=\dimen169
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box70
+\pgfutil@abb=\box72
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
@@ -149,10 +156,10 @@ Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks32
+\pgfkeys@tmptoks=\toks34
 ))
 \pgf@x=\dimen170
 \pgf@y=\dimen171
@@ -166,14 +173,14 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yd=\dimen179
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count273
-\c@pgf@countb=\count274
-\c@pgf@countc=\count275
-\c@pgf@countd=\count276
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count277
+\c@pgf@counta=\count274
+\c@pgf@countb=\count275
+\c@pgf@countc=\count276
+\c@pgf@countd=\count277
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count278
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -183,11 +190,11 @@ File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )
-\pgfsys@objnum=\count278
+\pgfsys@objnum=\count279
 )) (c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count279
-\pgfsyssoftpath@bigbuffer@items=\count280
+\pgfsyssoftpath@smallbuffer@items=\count280
+\pgfsyssoftpath@bigbuffer@items=\count281
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (c:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -211,13 +218,13 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen180
-\pgfmath@count=\count281
-\pgfmath@box=\box71
-\pgfmath@toks=\toks36
-\pgfmath@stack@operand=\toks37
-\pgfmath@stack@operation=\toks38
+\pgfmath@count=\count282
+\pgfmath@box=\box73
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count282
+\c@pgfmathroundto@lastzeros=\count283
 )) (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen181
@@ -244,10 +251,10 @@ File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@start@additional=\dimen198
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box72
-\pgf@hbox=\box73
-\pgf@layerbox@main=\box74
-\pgf@picture@serial@count=\count283
+\pgfpic=\box74
+\pgf@hbox=\box75
+\pgf@layerbox@main=\box76
+\pgf@picture@serial@count=\count284
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen199
@@ -268,13 +275,13 @@ File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen260
-\pgf@sys@shading@range@num=\count284
-\pgf@shadingcount=\count285
+\pgf@sys@shading@range@num=\count285
+\pgf@shadingcount=\count286
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box75
+\pgfexternal@startupbox=\box77
 )) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -285,7 +292,7 @@ File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box76
+\pgfnodeparttextbox=\box78
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
@@ -299,13 +306,13 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen263
 \pgffor@skip=\dimen264
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
 )) (c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count286
+\pgf@plot@mark@count=\count287
 \pgfplotmarksize=\dimen265
 )
 \tikz@lastx=\dimen266
@@ -316,66 +323,66 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@lastmovetoy=\dimen271
 \tikzleveldistance=\dimen272
 \tikzsiblingdistance=\dimen273
-\tikz@figbox=\box77
-\tikz@figbox@bg=\box78
-\tikz@tempbox=\box79
-\tikz@tempbox@bg=\box80
-\tikztreelevel=\count287
-\tikznumberofchildren=\count288
-\tikznumberofcurrentchild=\count289
-\tikz@fig@count=\count290
+\tikz@figbox=\box79
+\tikz@figbox@bg=\box80
+\tikz@tempbox=\box81
+\tikz@tempbox@bg=\box82
+\tikztreelevel=\count288
+\tikznumberofchildren=\count289
+\tikznumberofcurrentchild=\count290
+\tikz@fig@count=\count291
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count291
-\pgfmatrixcurrentcolumn=\count292
-\pgf@matrix@numberofcolumns=\count293
+\pgfmatrixcurrentrow=\count292
+\pgfmatrixcurrentcolumn=\count293
+\pgf@matrix@numberofcolumns=\count294
 )
-\tikz@expandcount=\count294
+\tikz@expandcount=\count295
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2022-08-30 L3 backend support: dvips
-\l__pdf_internal_box=\box81
-\g__pdf_backend_object_int=\count295
-\l__pdf_backend_content_box=\box82
-\l__pdf_backend_model_box=\box83
-\g__pdf_backend_annotation_int=\count296
-\g__pdf_backend_link_int=\count297
-\g__pdf_backend_link_sf_int=\count298
+\l__pdf_internal_box=\box83
+\g__pdf_backend_object_int=\count296
+\l__pdf_backend_content_box=\box84
+\l__pdf_backend_model_box=\box85
+\g__pdf_backend_annotation_int=\count297
+\g__pdf_backend_link_int=\count298
+\g__pdf_backend_link_sf_int=\count299
 ) (./bv20052_GT2023.aux)
 \openout1 = `bv20052_GT2023.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 104.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 104.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 104.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 104.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 110.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 111.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 110.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 111.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -391,121 +398,123 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 
  [1] [2]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 126.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 127.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 126.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 127.
  [3] [4] [5] [6] [7] [8] [9] [10]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 666.
+(Font)              No change on input line 667.
 
-Overfull \hbox (42.78917pt too wide) detected at line 683
+Overfull \hbox (42.78917pt too wide) detected at line 684
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 )[](\OML/cmm/m/it/12 x[]; []  ; []; []  ; x[]\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 x[]; []  ; []; []  ; x[]\OT1/cmr/m/n/12 )
  []
 
 
-Overfull \hbox (52.12253pt too wide) detected at line 684
+Overfull \hbox (52.12253pt too wide) detected at line 685
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 )[](\OML/cmm/m/it/12 x[]; []  ; []; []  ; x[]\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 x[]; []  ; \OMS/cmsy/m/n/12 ^^@[]\OML/cmm/m/it/12 ; []  ; x[]\OT1/cmr/m/n/12 )
  []
 
 [11]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 752.
+(Font)              No change on input line 753.
  [12]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 843.
+(Font)              No change on input line 844.
  [13]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 869.
+(Font)              No change on input line 870.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 925.
+(Font)              No change on input line 926.
  [14] [15]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1062.
+(Font)              No change on input line 1063.
  [16]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1124.
+(Font)              No change on input line 1125.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1187.
+(Font)              No change on input line 1188.
 
-Overfull \hbox (51.01016pt too wide) in paragraph at lines 1187--1198
+Overfull \hbox (51.01016pt too wide) in paragraph at lines 1188--1199
 []\JY1/mc/m/n/12 点 $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 のまわりの局所座標系 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 を任意に固定する\OT1/cmr/m/n/12 . $[][]$ \JY1/mc/m/n/12 が $[] \OML/cmm/m/it/12 ; []  ; []$
  []
 
 [17]
-Overfull \hbox (11.69197pt too wide) in paragraph at lines 1213--1224
+Overfull \hbox (11.69197pt too wide) in paragraph at lines 1214--1225
 \JY1/mc/m/n/12 を得る\OT1/cmr/m/n/12 . \JY1/mc/m/n/12 右辺の $[]\OT1/cmr/m/n/12 (0)\OML/cmm/m/it/12 ; []  ; []\OT1/cmr/m/n/12 (0)$ \JY1/mc/m/n/12 を単なる実数と思うと\OT1/cmr/m/n/12 , $[][]$ \JY1/mc/m/n/12 が $[] \OML/cmm/m/it/12 ; []  ; []$
  []
 
 [18]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1278.
+(Font)              No change on input line 1279.
  [19] [20]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1395.
+(Font)              No change on input line 1396.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1426.
+(Font)              No change on input line 1427.
 
-Overfull \hbox (8.73358pt too wide) in paragraph at lines 1426--1442
+Overfull \hbox (8.73358pt too wide) in paragraph at lines 1427--1443
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$, $(\OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 をとり\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 T[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 M\OT1/cmr/m/n/12 )$, $\OML/cmm/m/it/12 T[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 N\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 の中に基底 $[]$\OT1/cmr/m/n/12 ,
  []
 
 [21]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1494.
+(Font)              No change on input line 1495.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1535.
+(Font)              No change on input line 1536.
  [22]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1575.
+(Font)              No change on input line 1576.
  [23] [24]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1680.
+(Font)              No change on input line 1681.
  [25]
-Overfull \hbox (3.05736pt too wide) in paragraph at lines 1760--1773
+Overfull \hbox (3.05736pt too wide) in paragraph at lines 1761--1774
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; []  ; x[]; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []  ; \OT1/cmr/m/n/12 0)$ \JY1/mc/m/n/12 と同じである\OT1/cmr/m/n/12 . \JY1/mc/m/n/12 すなわち\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 のまわりの局所座標系 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (38.31302pt too wide) in paragraph at lines 1760--1773
+Overfull \hbox (38.31302pt too wide) in paragraph at lines 1761--1774
 \JY1/mc/m/n/12 と $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 のまわりの局所座標系 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 をうまく選んで\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 f$ \JY1/mc/m/n/12 の局所座標表示 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 7!
  []
 
 [26]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1784.
+(Font)              No change on input line 1785.
 
-Overfull \hbox (68.39423pt too wide) in alignment at lines 1815--1820
+Overfull \hbox (68.39423pt too wide) in alignment at lines 1816--1821
  [][][] []
  []
 
 [27]
-Overfull \hbox (0.4439pt too wide) in paragraph at lines 1862--1865
+Overfull \hbox (0.4439pt too wide) in paragraph at lines 1863--1866
 []$\OT1/cmr/m/n/12 0 \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/12 l < n$ \JY1/mc/m/n/12 のとき\OT1/cmr/m/n/12 :$\OML/cmm/m/it/12 L$ \JY1/mc/m/n/12 の任意の点 $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 に対し\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 を含む $\OML/cmm/m/it/12 N$ \JY1/mc/m/n/12 の座標近傍 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 x[]; []  ; x[]\OT1/cmr/m/n/12 )$
  []
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1876.
+(Font)              No change on input line 1877.
 [28]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 1954.
+(Font)              No change on input line 1955.
 
-Overfull \hbox (17.85605pt too wide) in paragraph at lines 1958--1961
+Overfull \hbox (17.85605pt too wide) in paragraph at lines 1959--1962
 []$\OML/cmm/m/it/12 q \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 N$ \JY1/mc/m/n/12 の逆像 $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 q\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 に属する任意の点 $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 に対し\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 p$ \JY1/mc/m/n/12 のまわりの座標近傍 $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 x[]; []  :x[]\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (11.35582pt too wide) in paragraph at lines 1974--1981
+Overfull \hbox (11.35582pt too wide) in paragraph at lines 1975--1982
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 U\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 x[]; [] x[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 は任意にと っ てきた $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 )$ \JY1/mc/m/n/12 に応じて選べるから\OT1/cmr/m/n/12 , $(\OML/cmm/m/it/12 V\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 y[]; []  ; y[]\OT1/cmr/m/n/12 )$
  []
 
-[29] [30] [31] [32] (./bv20052_GT2023.aux) ) 
+[29] [30] [31] [32]
+File: SIT.png Graphic file (type bmp)
+ <SIT.png> [33] [34] (./bv20052_GT2023.aux) ) 
 Here is how much of TeX's memory you used:
- 13047 strings out of 475534
- 262799 string characters out of 5794265
- 597163 words of memory out of 5000000
- 34438 multiletter control sequences out of 15000+600000
+ 13151 strings out of 475534
+ 264675 string characters out of 5794265
+ 598556 words of memory out of 5000000
+ 34530 multiletter control sequences out of 15000+600000
  491322 words of font info for 116 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 84i,11n,89p,434b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,89p,434b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bv20052_GT2023.dvi (33 pages, 133100 bytes).
+Output written on bv20052_GT2023.dvi (35 pages, 141724 bytes).

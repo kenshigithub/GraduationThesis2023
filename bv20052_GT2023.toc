@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}はじめに}{2}{}%
 \contentsline {section}{\numberline {2}準備}{3}{}%
-\contentsline {subsection}{\numberline {2.1}m次元数空間}{3}{}%
+\contentsline {subsection}{\numberline {2.1}$m$次元数空間}{3}{}%
 \contentsline {subsection}{\numberline {2.2}ベクトル空間}{3}{}%
 \contentsline {subsection}{\numberline {2.3}連続写像と$C^r$級写像}{6}{}%
 \contentsline {subsection}{\numberline {2.4}位相空間}{7}{}%
@@ -14,4 +14,4 @@
 \contentsline {subsection}{\numberline {5.1}写像の局所的性質}{25}{}%
 \contentsline {subsection}{\numberline {5.2}$C^r$級部分多様体}{28}{}%
 \contentsline {subsection}{\numberline {5.3}多様体の次元の具体的な計算}{30}{}%
-\contentsline {section}{\numberline {6}おわりに}{31}{}%
+\contentsline {section}{\numberline {6}おわりに}{33}{}%
