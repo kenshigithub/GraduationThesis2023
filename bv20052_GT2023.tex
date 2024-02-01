@@ -122,7 +122,7 @@
 %%%%%%↓ここから本文↓%%%%%%
 \section{はじめに}
 空間の限られた範囲に描かれた座標系を局所座標系
-という. どこでも好きなところに局所座標系
+といい, どこでも好きなところに局所座標系
 を描ける空間を多様体という. 例えば, 球面
 は球面上のどこでも好きなところに
 $xy$座標系(2つの座標軸$x$軸, $y$軸をもつ
@@ -130,20 +130,29 @@ $xy$座標系(2つの座標軸$x$軸, $y$軸をもつ
 多様体になる. 一般に$m$本の座標軸をもつ
 座標系を$m$次元座標系といい, 好きなところに
 $m$次元の局所座標系が描ける空間を$m$次元
-多様体であるという. 平面や局面, 球面は
+多様体であるという. 平面や曲面, 球面は
 $2$次元多様体であり, 直線や曲線は
 $1$次元多様である. 
+
 このように, ある空間の
 多様体としての次元を知ることは
 その空間の概形を理解することに繋がることがわかる. 
 私は複雑な方程式で表された空間や
 高次元の空間などの形を理解することに興味をもち, 
 多様体の次元を調べる方法を研究することにした. 
-本論文では, 多様体から多様体の間の写像
+
+本研究では, 多様体から多様体の間の写像
 の微分を定義し, その微分の線型性を利用して 
 多様体の次元を調べる方法を示した. また, 第$5$章の
 後半ではそれを用いて多様体の次元の具体的
 な計算の例をいくつか挙げた. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.3]
+         {CoSysInS2.pdf}
+    \caption{球面に描かれた局所座標系}
+    \label{CoSysInS2}
+   \end{figure}
 \newpage
 %
 \section{準備}
@@ -590,6 +599,13 @@ $f:U\to V$, $g:V\to W$がともに$C^r$級微分同相
     $(A,\mathcal{O}_A)$を$(X,\mathcal{O})$の
     部分空間とよぶ. 
 \end{definition}
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.3]{relativeTopology.pdf}
+    \caption{$A$の相対位相}
+    \label{relativeTopology}
+   \end{figure}
+   
 \begin{definition}\label{def:topological continuous map}
 $2$つの位相空間$(X, \mathcal{O})$, $(Y,\mathcal{O}')$
 の間の写像$f:X\to Y$が連続写像であるとは, $Y$の任意の
@@ -637,9 +653,22 @@ $\mathbb{R}^n$の開集合$V$, $W$とすると
     があるとき, $(U, \varphi)$を$m$次元座標近傍といい, 
     $\varphi$を$U$上の局所座標系という. 
 \end{definition}
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.6]
+    {coNeighborhood.pdf}
+    \caption{$U$上の局所座標系}
+    \label{coNeighborhood}
+   \end{figure}
 $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
     が描かれていると考え, $(U;x_1, \cdots ,x_m)$
     とも表すこととする. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, scale=0.5]{DrawnLocalCoSys.pdf}
+        \caption{$U$上に描かれた局所座標系}
+        \label{DrawnLocalCoSysd}
+       \end{figure}
 \begin{definition}
     $(U, \varphi)$を位相空間$X$内の局所座標近傍とする.
     $U$内の任意の点$p$に対して$\varphi(p) \in \mathbb{R}^m$
@@ -663,6 +692,13 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
     $$\psi \circ \varphi:\varphi(U\cap V)\rightarrow \psi(U\cap V)$$
     を$(U, \varphi)$から$(V, \psi)$への座標変換という. 
 \end{definition}
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.5]{coordinateConversion.pdf}
+    \caption{座標変換}
+    \label{coordinateConversion}
+   \end{figure}
+   
 \begin{definition}\label{def:C^r manifold}
     $r\geq 1$を自然数または$\infty$とする. 
     位相空間$M$が次の条件(1), (2), (3)を満たすとき, 
@@ -745,6 +781,12 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
     \end{itemize}
     以上より, $S^m$は$m$次元$C^{\infty}$級多様体であることが分かった. 
 \end{proof}
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.6]{locaCoSysOfS1.pdf}
+    \caption{$S^1$の場合の座標近傍系}
+    \label{locaCoSysOfS1}
+   \end{figure}
 \begin{definition}
     $\{(U_\alpha ,\varphi _\alpha)\}_{\alpha \in A}$
     を$m$次元$C^r$級多様体$M$の$1$つの$m$次元$C^r$級
@@ -1129,6 +1171,13 @@ $t$は$-\epsilon \leq t\leq \epsilon$の
         という記号で表す. 接ベクトル空間$T_p(M)$の
         元を接ベクトルとよぶ. 
     \end{definition}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, scale=0.6]{tangentVectorSpace.pdf}
+        \caption{接ベクトル空間$T_p(M)$}
+        \label{tangentVectorSpace}
+       \end{figure}
+       
     \begin{proposition}
         $T_p(M)$は点$p$のまわりの局所座標系のとり方に
         よらず一意に定まる. つまり, 点$p$のまわりで
@@ -1257,6 +1306,13 @@ $$c:(-\epsilon, \epsilon)\to M,\ c(0)=p$$
 $q=f(p)$を通る$N$上の$C^r$曲線
 $$f\circ c:(-\epsilon, \epsilon)\to N, f^\circ c(0)=q$$
 が得られる. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.4]{cTofc.pdf}
+    \caption{$C^r$曲線$c$, $f\circ c$}
+    \label{cTofc}
+   \end{figure}
+   
 $t=0$における曲線$c$の速度ベクトル
 $$\left .\frac{dc}{dt}\right|_{t=0}\in T_p(M)$$
 と, $t=0$における曲線$f\circ c$の速度ベクトル
@@ -1443,6 +1499,12 @@ $$T_p(M)\to T_q(N),\
     と書き, 点$p$における$f:M\to N$
     の微分とよぶ. 
 \end{definition}
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.5]{differential.pdf}
+    \caption{$f$の微分$(df)_p:T_p(M)\to T_q(N)$}
+    \label{differential}
+   \end{figure}
 \begin{proposition}
     $(df)_p:T_p(M)\to T_p(M)$は線型写像である. 
 \end{proposition}
@@ -1700,6 +1762,13 @@ $(df)_p$, $(dg)_{f(p)}$, $d(g\circ f)_p$はそれぞれ
     \end{eqnarray*}
     であるようにできる. 
 \end{theorem}
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.5]{projectionTheorem.pdf}
+    \caption{射影の様子}
+    \label{projectionTheorem}
+   \end{figure}
+   
 \begin{proof}
     $C^r$級写像$f:M\to N$が与えられており, 
     ある点$p\in M$における微分
@@ -1804,6 +1873,13 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
     \end{eqnarray*}
     であるようにできる. 
 \end{theorem}
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.5]{subsetmapTheorem.pdf}
+    \caption{包含写像の様子}
+    \label{subsetmapTheorem}
+   \end{figure}
+   
 \begin{proof}
     問題は局所的であるから$M=\mathbb{R}^m$, 
     $N=\mathbb{R}^n$と仮定してよい. ($m\leq n$)
@@ -1891,6 +1967,13 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
         が成り立つことである. 
     \end{itemize}
 \end{definition}
+\begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.4]{CrSubmanifold.pdf}
+    \caption{$N$の部分多様体$L$}
+    \label{CrSubmanifold}
+   \end{figure}
+   
 \begin{proposition}\label{prop:dim of C^r-submanifold}
     $n$次元$C^r$級多様体$N$の$l$次元$C^r$級
     部分多様体$L$は, それ自身$l$次元$C^r$級
@@ -2054,11 +2137,18 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
     \{(\boldsymbol{x},\boldsymbol{y})|
     \boldsymbol{x},\boldsymbol{y}\in S^1\}$$
     は$2$次元$C^\infty$級多様体である. 
-
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, scale=0.4]{T2Noshadow.pdf}
+        \caption{$\mathbb{R}^3$の
+        中の$2$次元トーラス$T^2$}
+        \label{T2Noshadow}
+       \end{figure}
     $2$次元トーラス$T^2$は$\mathbb{R}^3$の
     中で$xz$平面上の中心が$(R,0)$, 半径が$r$
     の円を$z$軸のまわりに$1$回転させた図形
-    (ただし, $(0<r<R)$)と考えられるので, 
+    (ただし, $(0<r<R)$)と考えられる
+    (図\ref{T2Noshadow})ので, 
     $$T^2=\{(x,y,z)\in \mathbb{R}^3|
     (\sqrt{x^2+y^2}-R)^2+z^2=r^2\}\ (0<r<R)$$
     と表すことができる. 
@@ -2192,7 +2282,13 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
         $\boldsymbol{v}_i$と$\boldsymbol{v}_j$は
         直交する. ($i\neq j,\ i,j=1,\cdots k$)
     \end{itemize}
-
+    \begin{figure}[H]
+        \centering
+        \includegraphics[keepaspectratio, scale=0.3]{orthogonalKframe.pdf}
+        \caption{直交$2$枠$(\boldsymbol{v}_1,
+        \boldsymbol{v}_2)$}
+        \label{orthogonalKframe}
+       \end{figure}
     $\mathbb{R}^m$の中の直交$k$枠の全体のなす
     集合を
     $$V_{m,k}$$
@@ -2216,7 +2312,7 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
     ことがわかる. よって$V_{2,1}$は
     $1$次元$C^\infty$級多様体になる.
 \end{example}
-\begin{example}
+\begin{example}\label{ex:(2,2)Stiefel manifold}
     $k=2$のとき, 
     シュティーフェル多様体$V_{2,2}$は
     $1$次元$C^\infty$級多様体になる. 
@@ -2289,8 +2385,42 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
 \newpage
 %
 \section{おわりに}
-多様体の次元を調べる方法を書きました.
+本研究の目的は, 直観的に理解し難い
+高次元の空間などの
+形を理解するために, 
+その空間の多様体としての次元を
+調べる方法を示すことであった. 
 
+研究の方法としては, 主に$3$つの文献
+松本\cite{Matsumoto18}, 藤岡
+\cite{Hujioka17}, 服部
+\cite{Hattori76}を参考にして, 
+必要な定義や定理などの概念を選び, 
+論理を構成した. 
+
+その結果, 
+空間を多様体$M$, $N$の間の$C^r$級写像$f:M\to N$の逆像$f^{-1}(q)$
+(ただし$q$は$N$のある$1$点)
+とみなせれば, $f$のヤコビ行列の階数を計算することで
+多様体としての次元を調べることができるという
+ことが分かり(定理\ref{theo:f^{-1}(q) C^r manifold}), 
+その定理を用いて実際に多様体の
+次元の具体的な計算を示すことができた. 
+
+今後の課題としては, 多様体が
+部分多様体として実現できる空間の
+条件(埋め込み可能性)について調べたい. 例えば例
+\ref{ex:(2,2)Stiefel manifold}の$V_{2,2}$
+は$\mathbb{R}^4$の中の$1$次元部分多様体であると
+みなせるが, $V_{2,2}$がより低い次元の
+$\mathbb{R}^3$や$\mathbb{R}^2$に埋め込める
+かどうかを判定する方法などを調べていきたい. 
+
+\section{謝辞}
+最後に, 本論文の作成にあたり, 
+指導教員の亀子正喜教授には終始適切な助言をいただきながら
+研究を進め, 本論文を書き上げることができました. 
+ここに感謝いたします. 
 % \begin{figure}[H]
 % \end{figure}
 \newpage
