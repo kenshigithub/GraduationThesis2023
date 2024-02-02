@@ -75,7 +75,7 @@ $2$次元多様体である.
     \label{CoSysInS2}
    \end{figure}
 
-\section{数式の例}
+\section{$C^r$級多様体と$C^s$級写像}
 \begin{definition}\label{def:C^r manifold}
   $r\geq 1$を自然数または$\infty$とする. 
   位相空間$M$が次の条件(1), (2), (3)を満たすとき, 
@@ -141,26 +141,35 @@ $2$次元多様体である.
   \end{tabular}
 \end{figure}
 
-\begin{definition}\label{def:C^s deffeomorphism}
-  $M$, $N$を$C^r$級多様体とする. $f:M\to N$
-  が$C^s$級微分同相写像であるとは, 次の条件
-  (1), (2)を満たすことをいう. 
+\begin{definition}\label{def:C^s map}
+  連続写像$f:M\to N$が$1$点$p\in M$において
+  $C^s$級であるとは, $p$を含む$M$の$C^r$級
+  座標近傍$(U,\varphi)$と
+  $f(p)$を含む$N$の
+  座標近傍$(V,\psi)$が存在して, 
   \begin{itemize}
-      \item[(1)]
-      $f:M\to N$は全単射($1$対$1$かつ上への写像)
-      である. 
-      \item[(2)] 
-      $f:M\to N$と$f^{-1}:N\to M$はともに$C^s$
-      級写像である. 
+      \item[(1)]$f(U)\subset V$
+      \item[(2)]$(U,\varphi)$と
+      $(V;y_1,\psi)$に関する$f$の
+      局所座標表示
+      $\psi\circ f\circ \varphi^{-1}$
+      が$C^s$級である.
+      (ただし, $0\leq s \leq r \leq \infty$) 
   \end{itemize}
-  ここで$f:M\to N$が$C^s$級写像であるとは, 
-  $p\in M$, $f(p)\in N$を含む$C^r$級
-座標近傍$(U,\varphi)$, $(V,\psi)$に対して
-  $\psi^{-1} \circ f\circ \varphi$が
-  $C^s$級写像であるということである. 
+  この$2$つの条件が成り立つことである. 
+  $f$が任意の点$p\in M$で$C^s$級であるとき, 
+  $f$は$C^s$級写像であるという. 
 \end{definition}
+\begin{figure}[H]
+  \centering
+  \includegraphics[keepaspectratio, scale=0.24]
+       {Csmap.pdf}
+  \caption{$f$と$\psi\circ f\circ \varphi^{-1}$
+  の関係}
+  \label{CoSysInS2}
+ \end{figure}
 \begin{definition}
-  $p$を含む座標近傍$(U;x_1,\cdots x_m)$を
+  $p$を含む座標近傍$(U,\varphi)$を
   $1$つ固定する. $p$のまわりで定義された
   $C^r$級関数$f$に, $p$における$x_i$
   方向の偏微分係数を対応させる操作を
@@ -168,7 +177,8 @@ $2$次元多様体である.
   \right)_p$と書く. すなわち, 
   $$\left(\frac{\partial}{\partial x_i}
   \right)_p:f\mapsto 
-  \frac{\partial f}{\partial x_i}(p)$$
+  \frac{\partial f\circ \varphi^{-1}}{\partial x_i}(
+    \varphi(p))$$
   である. 
 \end{definition}
 \begin{proposition} 
@@ -191,48 +201,13 @@ $2$次元多様体である.
 \end{definition}
 \begin{figure}[H]
       \centering
-      \includegraphics[keepaspectratio, scale=0.3]{tangentVectorSpace_2.pdf}
+      \includegraphics[keepaspectratio, scale=0.28]{tangentVectorSpace_2.pdf}
       \caption{$T_p(M)$のイメージ}
       \label{}
 \end{figure}
 $T_p(M)$は点$p$のまわりの局所座標系のとり方に
 よらず一意に定まる. 
-\begin{proposition}\label{prop:relation of v and w}
-  $t=0$におけるj曲線$c$, $f\circ c$の速度ベクトルを
-  それぞれ
-  $$\left .\frac{dc}{dt}\right|_{t=0}=
-  \sum_{i=1}^{m}v_i\left(\frac{\partial}
-  {\partial x_i}\right)_p,\ 
-  \left .\frac{d(f\circ c)}{dt}\right|_{t=0}=
-  \sum_{j=1}^{n}w_j\left(\frac{\partial}
-  {\partial y_j}\right)_q$$
-  とおくと, 係数$v_1,\cdots ,v_m$と
-  $w_1,\cdots ,w_n$の間には次の関係がある. 
-  $$w_j=\sum_{i=1}^{m}\frac{\partial f_j}
-  {\partial x_i}(p)v_i\ (j=1,\cdots ,n)$$
-  またこの式を, 縦ベクトルと行列を使って書くと
-  $$\begin{pmatrix}
-        w_1 \\
-        \vdots \\
-        w_n 
-      \end{pmatrix}
-      =
-      \left(
-      \begin{array}{ccc}
-        \frac{\partial f_1}{\partial x_1}(p)&\cdots &\frac{\partial f_1}{\partial x_m}(p)\\
-        \vdots &\ddots& \vdots \\
-        \frac{\partial f_n}{\partial x_1}(p)&\cdots &\frac{\partial f_n}{\partial x_m}(p) 
-      \end{array} 
-      \right)
-      \begin{pmatrix}
-        v_1\\
-        \vdots \\
-        v_m
-      \end{pmatrix}
-      $$
-  となる. 上の$n$行$m$列の行列を点$p$における
-  ヤコビ行列とよび, $(Jf)_p$で表す. 
-\end{proposition}
+
 \begin{definition}\label{def:differential}
   $$(df)_p:T_p(M)\to T_{f(p)}(N),\ 
   \begin{pmatrix}
@@ -248,7 +223,17 @@ $T_p(M)$は点$p$のまわりの局所座標系のとり方に
     v_m
   \end{pmatrix}$$
   を, 点$p$における$f:M\to N$
-  の微分とよぶ. 
+  の微分とよぶ. ただし, $(Jf)_p$は
+  点$p$におけるヤコビ行列
+  $$(Jf)_p=
+  \left(
+  \begin{array}{ccc}
+    \frac{\partial (\psi\circ f\circ \varphi^{-1})_1}{partial x_1}(\varphi(p))&\cdots &\frac{\partial (\psi\circ f\circ \varphi^{-1})_1}{\partial x_m}(\varphi(p))\\
+    \vdots &\ddots& \vdots \\
+    \frac{\partial (\psi\circ f\circ \varphi^{-1})_n}{\partial x_1}(\varphi(p))&\cdots &\frac{\partial (\psi\circ f\circ \varphi^{-1})_n}{\partial x_m}(\varphi(p)) 
+  \end{array} 
+  \right)$$
+  であるとする. 
 \end{definition}
 \begin{theorem}\label{theo:f^{-1}(q) C^r manifold}
   $M$, $N$を$m$次元, $n$次元の$C^r$級多様体, 
@@ -281,6 +266,16 @@ $T_p(M)$は点$p$のまわりの局所座標系のとり方に
   $T^2$は$4-2=2$次元$C^\infty$級
   多様体である. 
 \end{example}
+\section{おわりに}
+空間を多様体$M$, $N$の間の$C^r$級写像$f:M\to N$の逆像$f^{-1}(q)$
+(ただし$q$は$N$のある$1$点)
+とみなせれば, $f$のヤコビ行列の階数を計算することで
+多様体としての次元を調べることができるという
+ことが分かった. 
+
+今後の課題としては, 多様体が
+部分多様体として実現できる空間の
+条件(埋め込み可能性)について調べたい. 
 %参考文献
 \begin{thebibliography}{99}
   \bibitem{Matsumoto18} 松本幸夫, [第30版]多様体の基礎, 東京大学出版会, 2018.

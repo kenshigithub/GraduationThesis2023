@@ -655,8 +655,8 @@ $\mathbb{R}^n$の開集合$V$, $W$とすると
 \end{definition}
 \begin{figure}[H]
     \centering
-    \includegraphics[keepaspectratio, scale=0.6]
-    {coNeighborhood.pdf}
+    \includegraphics[keepaspectratio, scale=0.4]
+    {coNeighborhoodBig.pdf}
     \caption{$U$上の局所座標系}
     \label{coNeighborhood}
    \end{figure}
@@ -665,7 +665,7 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
     とも表すこととする. 
     \begin{figure}[H]
         \centering
-        \includegraphics[keepaspectratio, scale=0.5]{DrawnLocalCoSys.pdf}
+        \includegraphics[keepaspectratio, scale=0.2]{DrawnLocalCoSysBig.pdf}
         \caption{$U$上に描かれた局所座標系}
         \label{DrawnLocalCoSysd}
        \end{figure}
@@ -694,7 +694,7 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
 \end{definition}
 \begin{figure}[H]
     \centering
-    \includegraphics[keepaspectratio, scale=0.5]{coordinateConversion.pdf}
+    \includegraphics[keepaspectratio, scale=0.5]{coordinateConversionBig.pdf}
     \caption{座標変換}
     \label{coordinateConversion}
    \end{figure}
@@ -782,11 +782,24 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
     以上より, $S^m$は$m$次元$C^{\infty}$級多様体であることが分かった. 
 \end{proof}
 \begin{figure}[H]
-    \centering
-    \includegraphics[keepaspectratio, scale=0.6]{locaCoSysOfS1.pdf}
-    \caption{$S^1$の場合の座標近傍系}
-    \label{locaCoSysOfS1}
-   \end{figure}
+    \begin{tabular}{cc}
+      %---- 最初の図 ---------------------------
+      \begin{minipage}[t]{0.45\hsize}
+        \centering
+        \includegraphics[keepaspectratio, scale=0.2]{localCoSysOfS1_1.pdf}
+        \caption{$S^1$の開集合}
+        \label{}
+      \end{minipage} &
+      %---- 2番目の図 --------------------------
+      \begin{minipage}[t]{0.45\hsize}
+        \centering
+        \includegraphics[keepaspectratio, scale=0.2]{localCoSysOfS1_2.pdf}
+        \caption{$S^1$の局所座標系}
+        \label{}
+      \end{minipage}
+      %---- 図はここまで ----------------------
+    \end{tabular}
+  \end{figure}
 \begin{definition}
     $\{(U_\alpha ,\varphi _\alpha)\}_{\alpha \in A}$
     を$m$次元$C^r$級多様体$M$の$1$つの$m$次元$C^r$級
@@ -873,10 +886,8 @@ $U$と$V$の中には座標近傍系$(x_1,\cdots x_m)$,
 $(y_1,\cdots y_n)$があるから, 
 $f|U:U\to V$を
 $$(y_1,\cdots y_n)=
-\psi^{-1} \circ f\circ \varphi(x_1,\cdots x_m)$$
-と表示することができる. この表示の
-$\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
-もの($(y_1,\cdots y_n)=f(x_1,\cdots x_m)$)
+f(x_1,\cdots x_m)$$
+と表示することができる. この表示
 を$(U;x_1,\cdots x_m)$と$(V;y_1,\cdots y_n)$
 に関する$f$の局所座標表示という. 
 \end{definition}
@@ -1206,7 +1217,7 @@ $t$は$-\epsilon \leq t\leq \epsilon$の
     \end{definition}
     \begin{figure}[H]
         \centering
-        \includegraphics[keepaspectratio, scale=0.6]{tangentVectorSpace.pdf}
+        \includegraphics[keepaspectratio, scale=0.4]{tangentVectorSpace_2.pdf}
         \caption{接ベクトル空間$T_p(M)$}
         \label{tangentVectorSpace}
        \end{figure}
