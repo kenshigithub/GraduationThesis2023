@@ -150,7 +150,7 @@ $2$次元多様体である.
   \begin{itemize}
       \item[(1)]$f(U)\subset V$
       \item[(2)]$(U,\varphi)$と
-      $(V;y_1,\psi)$に関する$f$の
+      $(V,\psi)$に関する$f$の
       局所座標表示
       $\psi\circ f\circ \varphi^{-1}$
       が$C^s$級である.
@@ -166,7 +166,7 @@ $2$次元多様体である.
        {Csmap.pdf}
   \caption{$f$と$\psi\circ f\circ \varphi^{-1}$
   の関係}
-  \label{CoSysInS2}
+  \label{Csmap}
  \end{figure}
 \begin{definition}
   $p$を含む座標近傍$(U,\varphi)$を
@@ -181,13 +181,7 @@ $2$次元多様体である.
     \varphi(p))$$
   である. 
 \end{definition}
-\begin{proposition} 
-  $m$個のベクトル
-  $\left(\frac{\partial}{\partial x_1}\right)_p, 
-  \cdots 
-  \left(\frac{\partial}{\partial x_m}\right)_p$
-  は$1$次独立である. 
-\end{proposition}
+
 \begin{definition}\label{def:tangent vector space}
   $m$個のベクトル
   $\left(\frac{\partial}{\partial x_1}\right)_p, 
@@ -207,9 +201,13 @@ $2$次元多様体である.
 \end{figure}
 $T_p(M)$は点$p$のまわりの局所座標系のとり方に
 よらず一意に定まる. 
-
 \begin{definition}\label{def:differential}
-  $$(df)_p:T_p(M)\to T_{f(p)}(N),\ 
+  任意の接ベクトル$\boldsymbol{v}\in T_p(M)$
+  を$\boldsymbol{v}=
+  \sum_{i=1}^{m}v_i\left(\frac{\partial}
+  {\partial x_i}\right)_p$とし, $m$次元
+  数ベクトル$(v_1,\cdots ,v_m)$とみなすとき, 
+   $$(df)_p:T_p(M)\to T_{f(p)}(N),\ 
   \begin{pmatrix}
     v_1\\
     \vdots \\
@@ -228,7 +226,7 @@ $T_p(M)$は点$p$のまわりの局所座標系のとり方に
   $$(Jf)_p=
   \left(
   \begin{array}{ccc}
-    \frac{\partial (\psi\circ f\circ \varphi^{-1})_1}{partial x_1}(\varphi(p))&\cdots &\frac{\partial (\psi\circ f\circ \varphi^{-1})_1}{\partial x_m}(\varphi(p))\\
+    \frac{\partial (\psi\circ f\circ \varphi^{-1})_1}{\partial x_1}(\varphi(p))&\cdots &\frac{\partial (\psi\circ f\circ \varphi^{-1})_1}{\partial x_m}(\varphi(p))\\
     \vdots &\ddots& \vdots \\
     \frac{\partial (\psi\circ f\circ \varphi^{-1})_n}{\partial x_1}(\varphi(p))&\cdots &\frac{\partial (\psi\circ f\circ \varphi^{-1})_n}{\partial x_m}(\varphi(p)) 
   \end{array} 

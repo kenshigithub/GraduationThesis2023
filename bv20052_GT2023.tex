@@ -9,10 +9,10 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[dvipdfmx]{graphicx}%画像挿入
-\usepackage{here}
 %\usepackage{theorem}%定義や定理の環境
 \usepackage{url}
 %必要なパッケージを追加
+\usepackage{here}
 %定理環境の設定
 
 \usepackage{amsthm}
@@ -33,16 +33,10 @@
 \newtheorem*{example*}{例}
 \renewcommand\proofname{\bf 証明}
 
-%スタイルファイルを追加したい場合は以下のように書く
-\usepackage{graphicx}
-\usepackage{amsmath,amssymb}
-%\usepackage{eclbkbox}
-\usepackage{tikz}
-
 %\newcommandでマクロを定義できる
-\newcommand{\macrotest}{\LaTeX のマクロは便利}
-\newcommand{\PD}[2]{\frac{\partial {#1}}{\partial {#2}}}%引数もとれる
-\newcommand{\combination}[2]{{}_{#1} \mathrm{C}_{#2}}
+% \newcommand{\macrotest}{\LaTeX のマクロは便利}
+% \newcommand{\PD}[2]{\frac{\partial {#1}}{\partial {#2}}}%引数もとれる
+% \newcommand{\combination}[2]{{}_{#1} \mathrm{C}_{#2}}
 
 
 
@@ -61,8 +55,8 @@
 %
 % 顔写真の設定: 下のいずれかの行を活かし, 他方をコメントアウト
 %
-\def\FACE{\WAKU}   % 枠線のみ表示
-%\def\FACE{\IMAGE}  % 顔写真ファイル使用時
+%def\FACE{\WAKU}   % 枠線のみ表示
+\def\FACE{\IMAGE}  % 顔写真ファイル使用時
 %========================================
 % ルビの定義
 %
@@ -172,7 +166,7 @@ $1$次元多様である.
     と表す. $x_i$を$\boldsymbol{x}$の第$i$座標
     または第$i$成分という. 
 
-    すべての座標が$0$である点$\boldsymbol{o}
+    すべての座標が$0$である点$O
     =(0,\cdots ,0)$を$\mathbb{R}^m$の原点
     という. 
 \end{definition}
@@ -268,7 +262,7 @@ $1$次元多様である.
             a\boldsymbol{v}+
             b\boldsymbol{v}$,\ 
             \item[(6)]
-            $a(\boldsymbol{u}+boldsymbol{v})=
+            $a(\boldsymbol{u}+\boldsymbol{v})=
             a\boldsymbol{u}+a\boldsymbol{v}$,\ 
             \item[(7)]
             $(ab)\boldsymbol{v}=a(b\boldsymbol{v})$,\ 
@@ -308,7 +302,7 @@ $1$次元多様である.
     \boldsymbol{v_k}$について, それぞれを実数倍して加えた和
     $$a_1\boldsymbol{v_1}+\cdots +
     a_k\boldsymbol{v_k}$$
-    のことを$boldsymbol{v_1},\cdots ,
+    のことを$\boldsymbol{v_1},\cdots ,
     \boldsymbol{v_k}$の$1$次結合という. 
 \end{definition}
 \begin{definition}
@@ -437,8 +431,9 @@ $\mathbb{R}^n$の開集合とする.
     $$U \approx V$$
     と書き表す. 
 \end{definition}
-$f:U\to V$, $g:V\to W$がともに同相
-写像なら合成$g\circ f:U\to W$も同相
+$f:U\to V$, $g:V\to W$が同相
+写像なら逆写像$f^{-1}:V\to U$, 
+合成$g\circ f:U\to W$も同相
 写像である. 
 \begin{definition}\label{def:coordinate display}
     写像$f:U\to V$について, 
@@ -541,8 +536,9 @@ $f$の座標表示$(f_1,\cdots ,f_n)$に現れる
 $f:U\to V$が存在するとき, $U$と$V$は互いに
 $C^r$級微分同相であるという.
 \end{definition}
-$f:U\to V$, $g:V\to W$がともに$C^r$級微分同相
-写像なら合成$g\circ f:U\to W$も$C^r$級微分同相
+$f:U\to V$, $g:V\to W$が$C^r$級微分同相
+写像なら逆写像$f^{-1}:V\to U$, 
+合成$g\circ f:U\to W$も$C^r$級微分同相
 写像である. 
  
 \subsection{位相空間}
@@ -640,8 +636,18 @@ $\mathbb{R}^n$の開集合$V$, $W$とすると
 明らかに, この定義\ref{def:topological homeomorphism}
 は定義\ref{def:homeomorphism}の拡張である. 
 
-また, $f:X\to Y$, $g:Y\to Z$がともに同相写像なら
+また, $f:X\to Y$, $g:Y\to Z$が同相写像なら
+逆写像$f^{-1}:Y\to X$, 
 合成$g\circ f:X\to Z$も同相写像である. 
+
+\begin{definition}\label{def:hausdorff space}
+    位相空間$(X,\mathcal{O})$の任意の異なる$2$
+    点$p$, $q$に対して, $p$を含む開集合$U$と
+    $q$を含む開集合$V$が存在して
+    $$U\cap V=\phi$$
+    を満たすとき, 
+    $(X,\mathcal{O})$をハウスドルフ空間という. 
+\end{definition}
 \newpage
 %
 \section{$C^r$級多様体と$C^r$級写像}
@@ -689,13 +695,13 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
 \begin{definition}
     $m$次元位相多様体$M$の$2$つの座標近傍$(U, \varphi)$, 
     $(V, \psi)$が交わっているとき, 同相写像
-    $$\psi \circ \varphi:\varphi(U\cap V)\rightarrow \psi(U\cap V)$$
+    $$\psi \circ \varphi^{-1}:\varphi(U\cap V)\rightarrow \psi(U\cap V)$$
     を$(U, \varphi)$から$(V, \psi)$への座標変換という. 
 \end{definition}
 \begin{figure}[H]
     \centering
     \includegraphics[keepaspectratio, scale=0.5]{coordinateConversionBig.pdf}
-    \caption{座標変換}
+    \caption{座標変換$\psi \circ \varphi^{-1}$}
     \label{coordinateConversion}
    \end{figure}
    
@@ -713,7 +719,9 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
         が成り立つ. 
         \item[(3)]$U_\alpha \cap U_\beta \neq \phi$
         であるような任意の$\alpha$, $\beta$に対して, 座標変換
-        $$\psi \circ \varphi:\varphi(U\cap V)\rightarrow \psi(U\cap V)$$
+        $$\varphi_\beta \circ \varphi_\alpha^{-1}:
+        \varphi_\alpha(U_\alpha\cap U_\beta)\rightarrow 
+        \varphi_\beta(U_\alpha\cap U_\beta)$$
         は$C^r$級写像である. 
     \end{itemize}
 \end{definition}
@@ -749,7 +757,7 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
         よって, $S^m$は$2(m+1)$個の座標近傍$(U_1^+,\varphi_1^+),
         (U_1^-,\varphi_1^-),\cdots ,(U_{m+1}^+,\varphi_{m+1}^+),(U_{m+1}^-,\varphi_{m+1}^-)$
         で被覆される. 
-        \item[(3)]2(m+1)個の座標近傍の間の座標変換がすべて
+        \item[(3)]$2(m+1)$個の座標近傍の間の座標変換がすべて
         $C^{\infty}$級であることを示す. \\
         $1\leq a, b\leq 2(m+1)$を満たす互いに異なる自然数$a$, $b$
         に対して, 
@@ -781,6 +789,7 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
     \end{itemize}
     以上より, $S^m$は$m$次元$C^{\infty}$級多様体であることが分かった. 
 \end{proof}
+以下は$S^1$の場合の開集合と局所座標系である. 
 \begin{figure}[H]
     \begin{tabular}{cc}
       %---- 最初の図 ---------------------------
@@ -815,12 +824,13 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
         である. 
         \item[(2)] $V\cap U_\alpha \neq \phi$
         となる$\alpha$に対しては, 
-        $\psi \circ \varphi ^{-1}:
-        \varphi(V\cap U_\alpha)\to
-        \psi(V\cap U_\alpha)$は$C^r$級写像である. 
+        $\psi \circ \varphi_\alpha ^{-1}:
+        \varphi_\alpha(V\cap U_\alpha)\to
+        \psi(V\cap U_\alpha)$は$C^r$級微分同相
+        写像である. 
     \end{itemize}
 \begin{proposition}
-    $(V_1,\psi_1)$, $(V_1,\psi_1)$がともに与えられた
+    $(V_1,\psi_1)$, $(V_2,\psi_2)$がともに与えられた
     座標近傍系$\{(U_\alpha ,
     \varphi _\alpha)\}_{\alpha \in A}$
     と両立していて, $V_1\cap V_2\neq \phi$
@@ -841,13 +851,21 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
     $(\psi_2\circ \varphi_\alpha^{-1})$, 
     $(\psi_1\circ \varphi_\alpha^{-1})^{-1}$
     はそれぞれ$x\in V_1\cap V_2$
-    に関して$C^r$級であるから, 
+    に関して$C^r$級微分同相であるから, 
     $\psi_2\circ \psi_1^{-1}$も
-    $x$に関して$C^r$級である. いま, 
+    $x$に関して$C^r$級微分同相である. いま, 
     $x\in V_1\cap V_2$は任意であったから, 
     $\psi_2\circ \psi_1^{-1}$は$C^r$級
-    写像である. 
+    微分同相写像である. 
 \end{proof}
+\begin{corollary}
+    $(V,\psi)$が
+    $C^r$級座標近傍系
+    $\mathcal{S}=
+    \{(U_\alpha, \varphi_\alpha)\}_{\alpha\in A}$
+    と両立するとき, $\mathcal{S}\cup (V,\psi)$も
+    $C^r$級座標近傍系になる. 
+\end{corollary}
 \begin{definition}
     位相空間$M$上に$C^r$級座標近傍系
     $\mathcal{S}=
@@ -891,6 +909,13 @@ f(x_1,\cdots x_m)$$
 を$(U;x_1,\cdots x_m)$と$(V;y_1,\cdots y_n)$
 に関する$f$の局所座標表示という. 
 \end{definition}
+$f$の局所座標表示は本来, $U$, $V$の局所座標系
+$\varphi=(x_1,\cdots ,x_m)$, 
+$\psi=(y_1,\cdots ,y_n)$を用いて, 
+$(y_1,\cdots y_n)=
+\psi \circ f\circ \varphi^{-1}(x_1,\cdots x_m)$
+と書くべきものであるので, 必要に応じてこちらの表記
+を使うこととする. 
 \begin{definition}\label{def:C^s map}
     連続写像$f:M\to N$が$1$点$p\in M$において
     $C^s$級であるとは, $p$を含む$M$の$C^r$級
@@ -1020,7 +1045,7 @@ f(x_1,\cdots x_m)$$
     $\mathcal{S}=\{(U_\alpha,
     \varphi_\alpha)\}_{\alpha\in A}$を
     $M$の$C^r$級座標近傍系とする. 上で証明した
-    ように, $\varphi:U_alpha\to U'_\alpha$
+    ように, $\varphi:U_\alpha\to U'_\alpha$
     は$C^r$級微分同相写像である. 
     $(V,\varphi)$から, $(U_\alpha,
     \varphi_\alpha)$への座標変換は, 
@@ -1039,6 +1064,7 @@ f(x_1,\cdots x_m)$$
     である. 
 \end{proof}
 %
+\newpage
 \section{接ベクトル空間}
 \subsection{接ベクトル空間}
 $M$を$m$次元$C^r$級多様体とし 
