@@ -817,7 +817,7 @@ $(U,\varphi)$には局所座標系$(x_1, \cdots ,x_m)$
 \begin{proof}
     任意の点$x\in V_1\cap V_2$に対し, 
     $x_\in U_\alpha$となる$(U_\alpha, 
-    \varphi_\alpha)$が座っ票近傍系の中に
+    \varphi_\alpha)$が座票近傍系の中に
     存在する. 
     $$\psi_2\circ \psi_1^{-1}:
     \psi_1(V_1\cap V_2\cap U_\alpha)\to
@@ -991,9 +991,41 @@ $\psi^{-1} \circ f\circ \varphi$を$f$に書き直した
     まず, $(V,\varphi)$が$C^r$級座標近傍なら, 
     $\varphi:V\to V'$が, $C^r$級微分同相写像
     であることを証明する. 
-    $\varphi ^{-1}\circ\varphi:V'\to V'$
-    が$C^r$級であることを示せばよい.  
+    いま, $\varphi$は同相写像より, 全単射
+    であることは明らかである. 
+    $\varphi:V\to V'$の局所座標表示
+    $\varphi \circ\varphi^{-1}:V'\to V'$と
+    その逆写像が$C^r$級であることを示せばよいが, 
+    逆写像も
+    $\varphi \circ\varphi^{-1}:V'\to V'$
+    となるため, 
+    $\varphi \circ\varphi^{-1}:V'\to V'$
+    が$C^r$級であることを示せばよい. これは
+    恒等写像であるため, 明らかに$C^r$級である. 
 
+    次に, $\varphi:V\to V'$が$C^r$級同相写像
+    であると仮定して, $(V,\varphi)$が$M$の$C^r$級
+    座標近傍になることを証明する. 
+    $\mathcal{S}=\{(U_\alpha,
+    \varphi_\alpha)\}_{\alpha\in A}$を
+    $M$の$C^r$級座標近傍系とする. 上で証明した
+    ように, $\varphi:U_alpha\to U'_\alpha$
+    は$C^r$級微分同相写像である. 
+    $(V,\varphi)$から, $(U_\alpha,
+    \varphi_\alpha)$への座標変換は, 
+    $$\varphi_\alpha \circ \varphi^{-1}:
+    \varphi(V\cap U_\alpha)\to 
+    \varphi_\alpha(V\cap U_\alpha)$$
+    $$\varphi \circ \varphi_\alpha^{-1}:
+    \varphi_\alpha(V\cap U_\alpha)\to 
+    \varphi(V\cap U_\alpha)$$
+    であって, これらは$C^r$級微分同相写像
+    の合成になっているから, $C^r$級である. 
+
+    よって, $(V,\varphi)$は$\mathcal{S}$で決まる
+    極大$C^r$級座標近傍系$\mathcal{M}(\mathcal{S})$
+    に属することになり, $M$の$C^r$級座標近傍
+    である. 
 \end{proof}
 %
 \section{接ベクトル空間}
@@ -1094,7 +1126,8 @@ $t$は$-\epsilon \leq t\leq \epsilon$の
         \right)_p$と書く. すなわち, 
         $$\left(\frac{\partial}{\partial x_i}
         \right)_p:f\mapsto 
-        \frac{\partial f}{\partial x_i}(p)$$. 
+        \frac{\partial f}{\partial x_i}(p)$$
+        である.  
         このとき, $\left(\frac{\partial}
         {\partial x_i}\right)_p$は$p$における
         方向微分の性質(0), (1), (2)を満たす. 
@@ -1345,7 +1378,7 @@ $$\left .\frac{d(f\circ c)}{dt}\right|_{t=0}
           \vdots &\ddots& \vdots \\
           \frac{\partial f_n}{\partial x_1}(p)&\cdots &\frac{\partial f_n}{\partial x_m}(p) 
         \end{array} 
-        \right)=
+        \right)
         \begin{pmatrix}
           v_1\\
           \vdots \\
@@ -2230,6 +2263,7 @@ $$(z_1,\cdots ,z_m)\mapsto (z_{m-n+1},\cdots ,z_m)
     $(0,0,2x_3,2x_4)$は$1$次独立である. 行列の
     階数はその行列の$1$次独立な行ベクトルの個数
     に一致するから, rank$(Jf)_{\boldsymbol{p}}=2$
+    である. 
     よって, $T^2$は$4-2=2$次元$C^\infty$級
     多様体である. 
 \end{example}

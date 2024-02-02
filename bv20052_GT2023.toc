@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {3.2}$C^s$級写像}{16}{}%
 \contentsline {section}{\numberline {4}接ベクトル空間}{18}{}%
 \contentsline {subsection}{\numberline {4.1}接ベクトル空間}{18}{}%
-\contentsline {subsection}{\numberline {4.2}$C^r$級写像の微分}{22}{}%
+\contentsline {subsection}{\numberline {4.2}$C^r$級写像の微分}{23}{}%
 \contentsline {section}{\numberline {5}多様体の次元を調べる方法}{31}{}%
 \contentsline {subsection}{\numberline {5.1}写像の局所的性質}{31}{}%
 \contentsline {subsection}{\numberline {5.2}$C^r$級部分多様体}{35}{}%
