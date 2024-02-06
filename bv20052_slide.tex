@@ -100,6 +100,7 @@ $2$次元多様体である.
    \end{figure}
 \end{frame}
 
+\section{準備}
 \begin{frame}
 \frametitle{準備} 
 \begin{dfn}
@@ -146,41 +147,9 @@ $\varphi$を$U$上の局所座標系という.
     \label{coordinateConversion}
    \end{figure}
 \end{frame}
-% \begin{frame}
-% \begin{ex}
-% $\mathbb{R}^3$内の位相空間としての球面$S^2$の開集合$U_3^+$と
-% $\varphi_3^+ : U_3^+ \rightarrow \mathbb{R}^2$をそれぞれ\\
-% $U_3^+ = \{(x_1, x_2, x_3)\in S^2|x_3>0\}$\\
-% $\varphi_3^+(x_1, x_2, x_3)=(x_1, x_2)$\\
-% とすると$(U_3^+, \varphi_3^+)$は$2$次元座標近傍になる. 
-% \end{ex}
-% \end{frame}
-
-% \begin{frame}
-% \begin{proof}
-% $\varphi_3^+(U_3^+)=\{(x_1,x_2)\in \mathbb{R}^2|x_1^2+x_2^2<1\}$より, 
-% $\varphi_3^+$は$S^2$の開集合から$\mathbb{R}^2$の開集合への写像になっている. \\
-% また, $\varphi_3^+(x_1, x_2, x_3)=(x_1, x_2)$より, $\varphi_3^+$は全単射かつ連続である. \\
-% さらに, $\varphi_3^+$の逆関数$(\varphi_3^+)^{-1}$は
-% $(\varphi_3^+)^{-1}(x_1,x_2)=\left(x_1,x_2,\sqrt{1-(x_1^2+x_2^2)} \right)$となり, これも連続である, 
-% よって, $(U_3^+, \varphi_3^+)$は$2$次元座標近傍になる. 
-% \end{proof}
-% \begin{tikzpicture}[scale=1.2]
-% \draw[->,>=stealth,semithick] (-2,0)--(2,0) node[right]{$x_1$}; %x軸
-% \draw[->,>=stealth,semithick] (0,-2)--(0,2) node[left]{$x_3$}; %y軸
-% \draw[->,>=stealth,semithick] (-2,-0.5)--(1.5,0.5) node[left]{$x_2$}; %y軸
-% \draw (0,0) node[below left]{O}; %原点
-% \draw (1.5,0) arc (0:180:1.5);
-% \draw[dashed](0,0)circle[x radius=1.5,y radius=0.5];
-% \draw[->,thick](-0.7,1)--(-0.7,-0.1);
-% \node at(1.2,1.2) {$U_3^+$};
-% \node at(-0.4,1){$\varphi_3^+$};
-% \end{tikzpicture}
-
-% \end{frame}
 
 \begin{frame}
-  \frametitle{準備} 
+  \frametitle{} 
   \begin{dfn}
   $r$を自然数または$\infty$とする. 位相空間$M$が条件(1), (2), (3)をみたすとき, 
   $M$を$m$次元$\mathit{C}^r$級多様体という. \\
@@ -196,6 +165,7 @@ $\varphi$を$U$上の局所座標系という.
   
   \section{多様体の例}
   \begin{frame}
+  \frametitle{多様体の例}
   \begin{thm}
     $m$次元球面$S^m \in \mathbb{R}^{m+1}$を
     $$S^m=\{(x_1,\cdots x_{m+1})|x_1^2+\cdots +x_{m+1}^2=1\}$$
@@ -222,8 +192,9 @@ $\varphi$を$U$上の局所座標系という.
   \node at (0.27, 0.5)  {{\fontsize{9pt}{12pt}\selectfont　$(U_i^{\pm}, \varphi_i^{\pm})$}};
   \node at (-1, 0.75)  {$S^2$};
   \end{tikzpicture}
-
 \end{frame}
+
+
   \begin{frame}
     $\mathbb{R}^{m+1}$はハウスドルフ空間
         であるから, その部分空間として, $S^m$は
@@ -241,6 +212,7 @@ $\varphi$を$U$上の局所座標系という.
         $$\varphi_i^-(x_1,\cdots ,x_i,\cdots, x_{m+1})=(x_1,\cdots ,\hat{x_i},\cdots ,x_{m+1})$$
         ここで, $\hat{x_i}$は$x_i$を取り去るという意味である. 
       \end{frame}
+
   \begin{frame}
     \begin{figure}[H]
       \begin{tabular}{cc}
@@ -262,15 +234,17 @@ $\varphi$を$U$上の局所座標系という.
       \end{tabular}
     \end{figure}
 
-        このとき, 
-        $\varphi_i^+$, $\varphi_i^-$はそれぞれ, $U_i^+$, 
-        $U_i^-$から$\mathbb{R}^m$への射影であるから, 同相写像であり, 
-        すべての座標変換$\varphi_b^+\circ(\varphi_a^+)^{-1}\ 
-        (1\leq a, b\leq 2(m+1))$が$C^{\infty}$級であることが確かめられる. 
-        よって, $S^m$は$m$次元$C^{\infty}$級多様体であることがわかる. 
+    このとき, 
+    $\varphi_i^+$, $\varphi_i^-$はそれぞれ, $U_i^+$, 
+    $U_i^-$から$\mathbb{R}^m$への射影であるから, 同相写像であり, 
+    すべての座標変換$\varphi_b^+\circ(\varphi_a^+)^{-1}\ 
+    (1\leq a, b\leq 2(m+1))$が$C^{\infty}$級であることが確かめられる. 
+    よって, $S^m$は$m$次元$C^{\infty}$級多様体であることがわかる. 
 \end{frame}
 
+\section*{$C^s$級写像とその微分}
 \begin{frame}
+    \frametitle{$C^r$級写像の微分}
   \begin{dfn}\label{def:C^s map}
     連続写像$f:M\to N$が$1$点$p\in M$において
     $C^s$級であるとは, $p$を含む$M$の$C^r$級
@@ -292,13 +266,71 @@ $\varphi$を$U$上の局所座標系という.
   \end{dfn}
   \begin{figure}[H]
     \centering
-    \includegraphics[keepaspectratio, scale=0.2]
+    \includegraphics[keepaspectratio, scale=0.15]
          {Csmap.pdf}
     \caption{$f$と$\psi\circ f\circ \varphi^{-1}$
     の関係}
     \label{Csmap}
   \end{figure}
 \end{frame}
+
+% \begin{frame}
+%   \frametitle{}
+%   \begin{prop}
+%     連続写像$f:M\to N$が$1$点$p\in M$において
+%     $C^s$級であるという性質は, $p$, $f(p)$を
+%     それぞれ含む$C^r$級座標近傍$(U,\varphi)$, 
+%     $(V, \psi)$の選び方によらない. 
+%     (ただし, $0\leq s \leq r \leq \infty$)
+% \end{prop}
+% \end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{dfn}\label{def:C^s deffeomorphism}
+    $M$, $N$を$C^r$級多様体とする. $f:M\to N$
+    が$C^s$級微分同相写像であるとは, 次の条件
+    (1), (2)を満たすことをいう. 
+    \begin{itemize}
+        \item[(1)]
+        $f:M\to N$は全単射($1$対$1$かつ上への写像)
+        である. 
+        \item[(2)] 
+        $f:M\to N$と$f^{-1}:N\to M$はともに$C^s$
+        級写像である. 
+    \end{itemize}
+\end{dfn}
+\end{frame}
+\begin{frame}
+  \frametitle{}
+  \begin{thm}
+ $m$次元$C^r$級多様体, $M$に座標近傍系
+ $\mathcal{S}=
+  \{(U_\alpha, \varphi_\alpha)\}_{\alpha\in A}$
+  が与えられているとする. 
+  $V$を$M$の開集合, 
+  $V'$を$\mathbb{R}^m$の開集合とし,  
+  $\varphi:V\to V'$を$C^r$級微分同相写像
+  であるとすると, 
+  $\mathcal{S}\cup (V,\psi)$も
+  $C^r$級座標近傍系になる. 
+  \end{thm}
+
+  % つまり,  
+  % $(V,\varphi)$も$M$の$C^r$級
+  % 座標近傍であることにできる. 
+  \begin{dfn}
+  このような$(V,\psi)$の全体集合
+  $\mathcal{M}=\mathcal{M}(\mathcal{S})$を
+  $\mathcal{S}$から決まる
+  $M$の$C^r$級極大座標近傍系という.
+  \end{dfn}
+  これによって, いくらでも小さい座標近傍や, 
+  新しい局所座標系$\varphi'$による座標近傍
+  $(U_\alpha,\varphi_\alpha')$も同時に考えら
+  れるようになる. 
+\end{frame}
+
 
 \begin{frame}
   \frametitle{}
@@ -315,6 +347,28 @@ $\varphi$を$U$上の局所座標系という.
       \varphi(p))$$
     である. 
   \end{dfn}
+  和と$a$倍($a\in \mathbb{R}$)を
+  $$\left(\frac{\partial}{\partial x_i}
+  \right)_p+\left(\frac{\partial}{\partial x_j}
+  \right)_p:f\mapsto 
+  \frac{\partial f\circ \varphi^{-1}}{\partial x_i}(
+    \varphi(p))+\frac{\partial f\circ \varphi^{-1}}{\partial x_j}(
+      \varphi(p))$$
+  $$\left(\frac{\partial}{\partial x_i}
+  \right)_p:f\mapsto 
+  a\frac{\partial f\circ \varphi^{-1}}{\partial x_i}(
+    \varphi(p))$$
+  と定義すると, 
+  $\left(\frac{\partial}{\partial x_1}\right)_p, 
+  \cdots 
+  \left(\frac{\partial}{\partial x_m}\right)_p$
+  の$1$次結合全体の集合
+  はベクトル空間となり, 
+  $m$個のベクトル
+  $\left(\frac{\partial}{\partial x_1}\right)_p, 
+  \cdots 
+  \left(\frac{\partial}{\partial x_m}\right)_p$
+  はその基底になっている. 
 \end{frame}
 
 \begin{frame}
@@ -335,11 +389,30 @@ $\varphi$を$U$上の局所座標系という.
         \caption{$T_p(M)$のイメージ}
         \label{}
   \end{figure}
-
 \end{frame}
+
+  % \begin{frame}
+  %   \frametitle{}
+  %   \begin{prop}
+  %     $T_p(M)$は点$p$のまわりの局所座標系のとり方に
+  %     よらず一意に定まる. つまり, 点$p$のまわりで
+  %     $(x_1,\cdots ,x_m)$と別の局所座標系
+  %     $(y_1,\cdots ,y_m)$を選んだとき, 
+  %     方向微分
+  %     $$\left(\frac{\partial}{\partial y_1}\right)_p, 
+  %     \cdots ,
+  %     \left(\frac{\partial}{\partial y_m}\right)_p$$
+  %     の張る$D_p^r(M)$の部分ベクトル空間は, 
+  %     $$\left(\frac{\partial}{\partial x_1}\right)_p, 
+  %     \cdots ,
+  %     \left(\frac{\partial}{\partial x_m}\right)_p$$
+  %     の張る部分ベクトル空間に一致する. 
+  % \end{prop}
+  % \end{frame}
+
 \begin{frame}
   \frametitle{}
-  \begin{definition}\label{def:differential}
+  \begin{dfn}\label{def:differential}
     任意の接ベクトル$\boldsymbol{v}\in T_p(M)$
     を$\boldsymbol{v}=
     \sum_{i=1}^{m}v_i\left(\frac{\partial}
@@ -370,14 +443,42 @@ $\varphi$を$U$上の局所座標系という.
     \end{array} 
     \right)$$
     であるとする. 
-  \end{definition}
+  \end{dfn}
 \end{frame}
+
+\section{写像の局所的性質}
 \begin{frame}
   \frametitle{写像の局所的性質}
+  \begin{thm}\label{theo:f^(-1)theorem}
+    $(df)_p:T_p(M)\to T_p(N)$が線型写像として
+    同型(det$(Jf)_p\neq 0$)なら, $f$は$p$のある開近傍から$f(p)$の
+    ある開近傍への$C^r$級微分同相写像である. 
+    すなわち, $p$の開近傍$U$と$f(p)$の開近傍$V$
+    が存在して, $f(U)=V$となり, かつ, 
+    $f|U:U \to V$は$C^r$級微分同相写像である. 
+  \end{thm}
+  これを逆関数の定理という. 
+  \begin{ex}
+    $f:\mathbb{R}\to \mathbb{R}, f(x)=x^2$と
+    すると, $(Jf)_x=2x$となり, $x\neq 0$のとき
+    det$(Jf)_x\neq 0$となるので, $f$を十分
+    小さい$p$の開近傍$U$上に制限した写像$f|U$
+    は$C^\infty$級微分同相写像である. 
+    実際$p>0$のとき, $p$の開近傍$(0,2p)$上
+    の写像$f|(0,2p)$の逆写像$f|(0,2p)^{-1}:
+    f|(0,2p)^{-1}(x)=\sqrt{x}$が
+    存在し, $C^\infty$
+    級であるので, $f|(0,2p)$が
+    $C^\infty$級微分同相写像であることがわかる.
+  \end{ex}
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
   \begin{thm}\label{theo: projection theorem}
     $f:M\to N$を$C^r$級写像とする. ある点$p\in M$
     における微分$(df)_p:T_p(M)\to T_p(N)$が上への
-    線型写像なら, 点$p$付近での$f$の様子は, 射影:
+    線型写像(rank$(Jf)_p=n$)なら, 点$p$付近での$f$の様子は, 射影:
     $\mathbb{R}^{m-n} \times \mathbb{R}^n \to \mathbb{R}^n$, 
     $(x_1, \cdots ,x_m)\mapsto (x_(m-n+1), \cdots ,x_m)$
     と同じである. すなわち, $f(p)$のまわりの局所座標系
@@ -392,20 +493,32 @@ $\varphi$を$U$上の局所座標系という.
         y_n&=&f_n(x_1,\cdots ,x_m)=x_m
     \end{eqnarray*}
     であるようにできる. 
-\end{thm}
+  \end{thm}
 \end{frame}
+
 \begin{frame}
+  $p$のまわりの座標近傍が$(U;x_1, \cdots ,x_m)$
+  のとき, 
+  $$\varphi(x_1,\cdots ,x_m)=
+  (x_1,\cdots ,x_{m-n+1},f_1(x_1\cdots ,x_m),\cdots
+  ,f_n(x_1,\cdots ,x_m))$$
+  ととるとdet$(J\varphi)_p\neq 0$となり, 逆関数の定理
+  を利用して$\varphi|U$が$C^r$級微分同相写像であることがわかる. 
+  $(U,\varphi|U)$が新しい$C^r$級座標近傍になり, 
+  $p$のまわりの局所座標系$(x_1,\cdots ,x_m)$は
+  このように選べば良いことが分かる.
   \frametitle{}
   \begin{figure}[H]
     \centering
-    \includegraphics[keepaspectratio, scale=0.5]{projectionTheorem.pdf}
+    \includegraphics[keepaspectratio, scale=0.4]{projectionTheorem.pdf}
     \caption{射影の様子}
     \label{projectionTheorem}
    \end{figure}
 \end{frame}
+
 \begin{frame}
   \frametitle{}
-  \begin{definition}\label{def:C^r-submanifold}
+  \begin{dfn}\label{def:C^r-submanifold}
     $n$次元$C^r$級多様体$N$の部分集合$L$が
     $N$の$l$次元$C^r$級部分多様体であるとは, 
     \begin{itemize}
@@ -418,36 +531,68 @@ $\varphi$を$U$上の局所座標系という.
         x_{l+1}=\cdots =x_n=0\}$$
         が成り立つことである. 
     \end{itemize}
-\end{definition}
-\begin{figure}[H]
+  \end{dfn}
+  \begin{figure}[H]
     \centering
     \includegraphics[keepaspectratio, scale=0.2]{CrSubmanifold.pdf}
     \caption{$N$の部分多様体$L$}
     \label{CrSubmanifold}
    \end{figure}
 \end{frame}
+
 \begin{frame}
   \frametitle{}
   \begin{prop}\label{prop:dim of C^r-submanifold}
     $n$次元$C^r$級多様体$N$の$l$次元$C^r$級
     部分多様体$L$は, それ自身$l$次元$C^r$級
     多様体である. 
-\end{prop}
-  
-
+  \end{prop}
 \end{frame}
-  \begin{frame}
-    \frametitle{}
-    \begin{thm}\label{theo:f^{-1}(q) C^r manifold}
-      $M$, $N$を$m$次元, $n$次元の$C^r$級多様体, 
-      $f:M\to N$を$C^r$級写像とする. $N$のある点
-      $q$について, $f(p)=q$となる$M$の各点$p$
-      が常にrank$(Jf)_p=n$を満たすとき, 逆像
-      $f^{-1}(q)$は$(m-n)$次元$C^r$級多様体
-      である. 
-    \end{thm}
-  \end{frame}
+     
+\begin{frame}
+  \frametitle{}
+  \begin{thm}\label{theo:f^{-1}(q) C^r manifold}
+    $M$, $N$を$m$次元, $n$次元の$C^r$級多様体, 
+    $f:M\to N$を$C^r$級写像とする. $N$のある点
+    $q$について, $f(p)=q$となる$M$の各点$p$
+    が常にrank$(Jf)_p=n$を満たすとき, 逆像
+    $f^{-1}(q)$は$(m-n)$次元$C^r$級多様体
+    である. 
+  \end{thm}
+  $q\in N$の逆像$f^{-1}(q)$に属する任意の点
+  $p$に対し, $p$のまわりの座標近傍
+  $(U;x_1,\cdots .x_m)$が存在して, 
+  $$f^{-1}(q)\cap U
+  =\{(x_1,\cdots x_m)\in U|
+  x_{m-n+1}=\cdots =x_m=0\}$$
+  が成り立つことを証明すればよい. 
+\end{frame}
 
+\begin{frame}
+  \frametitle{}
+    今, $f(p)=q$を満たす$p\in M$について, 常に
+    rank$(Jf)_p=n$であるから, $(df)_p$は上への
+    写像である. よって, 
+    $q$($=f(p)$)のまわりの座標近傍$(V;y_1,\cdots ,y_n)$
+    に対して, 
+    $p$のまわりの座標近傍$(U;x_1,\cdots ,x_m)$を
+    とってきて
+    $$f|U:U\to V,\ (y_1,\cdots ,y_n)=f(x_1,\cdots x_m)
+    =(x_{m-n+1},\cdots ,x_m)$$
+    とすることができる.  \\
+    $(V;y_1,\cdots ,y_n)$は
+    点$q$で$y_1=\cdots =y_n=0$となるように
+    とっておくと, 
+    \begin{eqnarray*}
+        f^{-1}(q)\cap U&=& \{p\in U|f(p)=q\}\\
+        &=&\{(x_1,\cdots ,x_m)\in U|f(x_1,\cdots x_m)=(0,\cdots ,0)\}\\
+        &=&\{(x_1,\cdots ,x_m)\in U|(x_{m-n+1},\cdots x_m)=(0,\cdots ,0)\}\\
+        &=&\{(x_1,\cdots x_m)\in U|x_{m-n+1}=\cdots =x_m=0\}
+    \end{eqnarray*}
+    となり, 条件を満たす$U$が存在することがわかる. 
+\end{frame}
+
+\section{多様体の次元の具体的な計算}
 \begin{frame}
   \frametitle{多様体の次元の具体的な計算}
   \begin{ex}
@@ -456,7 +601,6 @@ $\varphi$を$U$上の局所座標系という.
     \mathbb{R}^{n+1})|x_1^2+\cdots +x_{n+1}^2=1\}$$
     は$n$次元$C^\infty$級多様体である. 
 \end{ex}
-
 $C^\infty$級写像($C^\infty$級関数)
 $f:\mathbb{R}^{n+1}\to \mathbb{R}$を
 $$f(x_1,\cdots ,x_{n+1})=
@@ -474,6 +618,7 @@ $$(Jf)_{\boldsymbol{x}}=(2x_1,\cdots ,2x_{n+1})
 よって, $S^n$は$(n+1)-1=n$次元$C^\infty$級
 多様体である. 
 \end{frame}
+
 \begin{frame}
   \frametitle{}
   \begin{ex}
@@ -491,6 +636,7 @@ $$(Jf)_{\boldsymbol{x}}=(2x_1,\cdots ,2x_{n+1})
      \end{figure}
 \end{ex}
 \end{frame}
+
 \begin{frame}
     $C^\infty$級写像($C^\infty$級関数)
     $f:\mathbb{R}^3\to \mathbb{R}$
@@ -512,6 +658,7 @@ $$(Jf)_{\boldsymbol{x}}=(2x_1,\cdots ,2x_{n+1})
     したがって, $T^2$は$3-1=2$次元$C^\infty$
     級多様体である. 
 \end{frame}
+
 \begin{frame}
   \begin{ex}
     $2$次元トーラス$T^2=S^1\times S^1$は
@@ -536,114 +683,6 @@ $$(Jf)_{\boldsymbol{x}}=(2x_1,\cdots ,2x_{n+1})
   多様体である.
 \end{frame}
 
-% \section{準備}
-% \begin{frame}
-% \frametitle{準備} 
-% \begin{dfn}
-% $(X, \mathcal{O})$, $(Y, \mathcal{O'})$を位相空間とする. 写像$f:X\rightarrow Y$が条件(1), (2)
-% をみたすとき, $f$を同相写像という. \\
-% (1)$f:X\rightarrow Y$は全単射である. \\
-% (2)$f:X\rightarrow Y$も$f^{-1}:Y\rightarrow X$も, ともに連続写像である. \\
-% 位相空間XとYの間に同相写像$f:X\rightarrow Y$があるとき, $X$と$Y$は互いに
-% 位相同型であるといい, 記号で$X\approx Y$と表す. 
-% \end{dfn}
-% \begin{ex}
-% 双曲線$xy=1$を$C$とすると, $C \approx \mathbb{R}/\{0\}$である. 
-% \end{ex}
-% \end{frame}
-
-% \begin{frame}
-% \begin{proof}
-% $f:\mathbb{R}/\{0\}\rightarrow C$を$f(x)=(x, 1/x)$とすると, $f$は全単射
-% かつ連続である. \\
-% また, $f$の逆関数$f^{-1}$は$f^{-1}(x,y)=x$となり, これも連続である. 
-% よって$f$は同相写像であるから, $C \approx \mathbb{R}/\{0\}$である. 
-% \end{proof}
-% \begin{tikzpicture}[scale=1.2]
-%  \draw[blue] (0, 0, 0) circle (0.1);
-% \draw[semithick, blue] (-2,0)--(-0.1,0);
-% \draw[semithick] (-0.1,0)--(0.1,0);
-% \draw[->,>=stealth,semithick, blue] (0.1,0)--(2,0); %x軸
-% \draw[->,>=stealth,semithick] (0,-2)--(0,2) node[left]{$y$}; %y軸
-% \draw (0,0) node[below left]{O}; %原点
-% \draw [domain=0.5:2,samples=100,smooth, blue] plot (\x,{1/\x})node[right]{$xy=1$};
-% \draw [domain=-2:-0.5,samples=100,smooth, blue] plot (\x,{1/\x});
-% \draw[->](-1, 0)--(-1,-1)node[right]{$f$}; 
-
-% \node at (2.3, 0) {$x$};
-% \node at (1,-0.4) {\textcolor{blue}{$\mathbb{R}/\{0\}$}};
-% \end{tikzpicture}
-% \end{frame}
-
-
-
-% \begin{frame}
-% \frametitle{多様体の例} 
-% \begin{dfn}
-% $m$個の円周$S^1$の直積
-% $$S^1 \times S^1 \times \cdots \times S^1$$
-% を$m$次元トーラスといい, $T^m$と書く. 
-% \end{dfn}
-% \end{frame}
-
-% \begin{frame}
-% \frametitle{多様体の例} 
-% \begin{thm}
-% $2$次元トーラス$T^2$は$2$次元$\mathit{C}^\infty$級多様体である. \\
-% \end{thm}
-
-% $T^2$は$2$個の円周$S^1$の直積である. これは積位相を入れることで位相空間となり, 
-% $S^1$の座標近傍$\mathcal{S}=\{(U_\alpha, \varphi_\alpha)\}_{\alpha \in A}$から導かれる
-% 座標近傍\\
-% $\{(U_\alpha \times U_\beta, \varphi_\alpha \times \varphi_\beta)\}_{\alpha , \beta \in A}$
-% によって$2$次元$\mathit{C}^\infty$級多様体になる.\\
-% \ \\
-% \ \\
-% \ \\
-% \begin{tikzpicture}[scale=1.2]
-%  \draw (4, 0) ellipse (1.5 and 1);
-% \draw (3.2, 0.4+0.2) to[bend right] (4.8, 0.4+0.2);
-% \draw (3.5, 0.2+0.2) to[bend left] (4.5, 0.2+0.2);
-% \draw[line width=1pt,->] (4, -1) to[bend left] (4, 0.15);
-% \draw[line width=1pt,->] (2.8, -0.2) to[bend right] (5.2, -0.2);
-% \node at (5, 0)  {{\fontsize{9pt}{12pt}\selectfont　$(U_\alpha \times U_\beta, \varphi_\alpha \times \varphi_\beta)$}};
-% \node at (2.5, 0.75)  {$T^2$};
-% \end{tikzpicture}
-% \end{frame}
-
-% \section{今後の目標}
-% \begin{frame}
-% \frametitle{今後の目標} 
-% 現在は, 射影平面$P^2$はメビウスの帯と円盤を貼り合わせたものであるという定性的な
-% 理解に留まっているが, これから$P^2$の厳密な定義と, 「はめ込み」, 「埋め込み」の定義を学び, $\mathbb{R}^3$へのはめ込み可能性と埋め込み可能性を調べていきたい.\\
-% \ \\
-% \ \\
-% \ \\
-% \begin{tikzpicture}
-
-% \draw[line width=1pt,->] (-0.75,0.75) to[bend right](1, 0.4);
-% \draw[line width=1pt,->] (1,0.4) to[bend right](-0.2, 0.4);
-% \draw[dashed] (-0.3, 0.4) to[bend right](-0.75,0);
-% \draw[line width=1pt,->](-0.75,0) to[bend right](1.5, 0.4);
-% \draw[line width=1pt,->](1.5, 0.4) to[bend right](-0.75,0.75);
-% \draw[line width=1pt] (-0.75,0.75) to[bend right](-0.75,0);
-% \node at (0, -0.8)  {メビウスの帯};
-% \pause
-% \node at (2+0.5, 0.3)  {$+$};
-% % 球面の描画
-%     \draw[line width=1pt,->] (3+1.5, 0.3) circle (0.7);
-%     \draw[line width=1pt] (3.1+1.5, 1.1) -- (3+1.5, 1);
-%     \draw[line width=1pt] (3.1+1.5, 0.9) -- (3+1.5, 1);
-% \node at (3+1.5, -0.8)  {円盤};
-% \pause
-
-% \draw[line width=1pt, ->] (4+2, 0.3) -- (5+4, 0.3);
-% \node at (4.5+3, -0.3)  {線に沿って貼り合わせる};
-% \node at (4.7+3, -0.8)  {\textcolor{red}{($\mathbb{R}^3$内だと難しい)}};
-% \node at (6+4, 0.3)  {{\fontsize{12pt}{12pt}\selectfont $P^2$}};
-% \end{tikzpicture}
-% \ \\
-% (参考文献\cite{Matsumoto18}参照)
 \begin{frame}
     \frametitle{おわりに}
   空間を多様体$M$, $N$の間の$C^r$級写像$f:M\to N$の逆像$f^{-1}(q)$
@@ -665,6 +704,82 @@ $$(Jf)_{\boldsymbol{x}}=(2x_1,\cdots ,2x_{n+1})
   \bibitem{Hujioka17} 藤岡敦, [第2版]具体例から学ぶ　多様体, 裳華房, 2017.
   \bibitem{Hattori76} 服部晶夫, [第1版]多様体, 岩波書店, 1976.
 \end{thebibliography}
+\end{frame}
+
+%ここからは補足
+\begin{frame}
+  \frametitle{}
+  \begin{prop}
+    連続写像$f:M\to N$が$1$点$p\in M$において
+    $C^s$級であるという性質は, $p$, $f(p)$を
+    それぞれ含む$C^r$級座標近傍$(U,\varphi)$, 
+    $(V, \psi)$の選び方によらない. 
+    (ただし, $0\leq s \leq r \leq \infty$)
+  \end{prop}
+    $f$は$p\in M$において$(U,\varphi)$, 
+    $(V, \psi)$に関して$C^s$級であると仮定する. 
+    $f(U')\subset V'$, $U'=U$, $V'=V$となるような
+    $p$, $f(p)$をそれぞれ含む別の$C^r$級座標近傍
+    $(U',\varphi')$, $(V, \psi')$をとると, 
+    $\psi'\circ f\circ \varphi'^{-1}$は
+    $$\psi'\circ f\circ \varphi'^{-1}=
+    (\psi'\circ \psi^{-1})\circ
+    (\psi \circ f\circ \varphi^{-1})\circ
+    (\varphi \circ \varphi')$$
+    と分解される. $\psi'\circ \psi^{-1}$, 
+    $\varphi \circ \varphi'$はそれぞれ$M$, $N$
+    における座標変換であるから$C^r$級であり, 
+    $\psi \circ f\circ \varphi^{-1}$は
+    仮定より$C^s$級であるから, 
+    $\psi'\circ f\circ \varphi'^{-1}$は
+    $C^s$級である. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
+  \begin{prop}\label{prop:dim of C^r-submanifold}
+    $n$次元$C^r$級多様体$N$の$l$次元$C^r$級
+    部分多様体$L$は, それ自身$l$次元$C^r$級
+    多様体である. 
+  \end{prop}
+  $0\leq l<n$のとき, 点$p\in L$に対し, $p$を含む$N$の
+  局所座標系で部分多様体の定義の条件を満たすもの
+  を選び, $(U_p;x^p_1,\cdots ,x^p_n)$, 
+  $(U_q;x^q_1,\cdots ,x^q_n)$とし,  
+  $V_p=L\cap U_p$, $V_q=L\cap U_q$とおく.  
+  $U_p$, $U_q$の間の座標変換はある$C^r$級関数$f$を
+  用いて, 
+  %$V_p\cap V_q$上では, 
+  % $x^q_{l+1}=\cdots =x^p_n=0$, $x^q_{l+1}=\cdots =x^q_n=0$
+  % が成り立つので, $V_p\cap V_q$上では
+  \begin{eqnarray*}
+      x^q_1&=&f_1(x^p_1, \cdots ,x^p_l,0,\cdots ,0)\\
+      &\vdots & \\
+      x^q_l&=&f_l(x^p_1, \cdots ,x^p_l,0,\cdots ,0)\\
+      0&=&f_{l+1}(x^p_1, \cdots ,x^p_l,0,\cdots ,0)\\
+      &\vdots & \\
+      0&=&f_n(x^p_1, \cdots ,x^p_l,0,\cdots ,0)\\
+  \end{eqnarray*}
+\end{frame}
+\begin{frame}
+  \frametitle{}
+  改めて関数$g$を
+  \begin{eqnarray*}
+  g(x^p_1, \cdots ,x^p_l)&=&
+  (g_1(x^p_1, \cdots ,x^p_l), \cdots 
+  , g_l(x^p_1, \cdots ,x^p_l))\\
+  &=&(f_1(x^p_1, \cdots ,x^p_l,0,\cdots ,0), \cdots 
+  , f_l(x^p_1, \cdots ,x^p_l,0,\cdots ,0))
+  \end{eqnarray*}
+  と定義すると, この関数は$C^r$級である. 
+  そして, 
+  $$(x^\beta_1, \cdots ,x^\beta_l)
+  =g(x^\alpha_1, \cdots ,x^\alpha_l)$$
+  が$(V_p;x^p_1,\cdots x^p_l)$から
+  $(V_q;x^q_1,\cdots x^q_l)$の座標変換を与えている. \\
+  ゆえに, $\{(V_p;x^p_1,\cdots ,x^p_l)\}_{p\in L}$
+  は$L$の$C^r$級座標近傍になっている. \\
+  以上より, $L$は$l$次元$C^r$級多様体である. 
 \end{frame}
 
 \end{document}

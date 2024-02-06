@@ -6,13 +6,16 @@
 \beamer@slide {}{9}
 \beamer@slide {def:C^s map}{10}
 \beamer@slide {Csmap}{10}
-\beamer@slide {def:tangent vector space}{12}
-\beamer@slide {}{12}
-\beamer@slide {def:differential}{13}
-\beamer@slide {theo: projection theorem}{14}
-\beamer@slide {projectionTheorem}{15}
-\beamer@slide {def:C^r-submanifold}{16}
-\beamer@slide {CrSubmanifold}{16}
-\beamer@slide {prop:dim of C^r-submanifold}{17}
-\beamer@slide {theo:f^{-1}(q) C^r manifold}{18}
-\beamer@slide {T2Noshadow}{20}
+\beamer@slide {def:C^s deffeomorphism}{11}
+\beamer@slide {def:tangent vector space}{14}
+\beamer@slide {}{14}
+\beamer@slide {def:differential}{15}
+\beamer@slide {theo:f^(-1)theorem}{16}
+\beamer@slide {theo: projection theorem}{17}
+\beamer@slide {projectionTheorem}{18}
+\beamer@slide {def:C^r-submanifold}{19}
+\beamer@slide {CrSubmanifold}{19}
+\beamer@slide {prop:dim of C^r-submanifold}{20}
+\beamer@slide {theo:f^{-1}(q) C^r manifold}{21}
+\beamer@slide {T2Noshadow}{24}
+\beamer@slide {prop:dim of C^r-submanifold}{30}

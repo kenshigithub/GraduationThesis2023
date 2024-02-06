@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  5 FEB 2024 15:34
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  6 FEB 2024 11:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -697,6 +697,9 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `prop:dim of C^r-submanifold' multiply defined.
+
 )
 \openout1 = `bv20052_slide.aux'.
 
@@ -876,42 +879,42 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 131.
+(Font)              scaled to size 11.09619pt on input line 132.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 131.
+(Font)              scaled to size 11.09619pt on input line 132.
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 131.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 132.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 131.
+(Font)              scaled to size 11.09619pt on input line 132.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 131.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 132.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 131.
+(Font)              scaled to size 11.09619pt on input line 132.
 
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 File: coNeighborhoodBig.pdf Graphic file (type pdf)
 <coNeighborhoodBig.pdf>
 
-Overfull \hbox (14.99709pt too wide) in paragraph at lines 131--131
+Overfull \hbox (14.99709pt too wide) in paragraph at lines 132--132
  [][] 
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 131.
+Package hyperref Warning: Ignoring empty anchor on input line 132.
 
 File: DrawnLocalCoSysBig.pdf Graphic file (type pdf)
 <DrawnLocalCoSysBig.pdf>
 
-Overfull \hbox (14.99709pt too wide) in paragraph at lines 131--131
+Overfull \hbox (14.99709pt too wide) in paragraph at lines 132--132
  [][] 
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 131.
+Package hyperref Warning: Ignoring empty anchor on input line 132.
 
 
-Overfull \vbox (8.10333pt too high) detected at line 131
+Overfull \vbox (8.10333pt too high) detected at line 132
  []
 
 [4
@@ -922,7 +925,7 @@ Missing character: There is no 7 in font nullfont!
 File: coordinateConversionBig.pdf Graphic file (type pdf)
 <coordinateConversionBig.pdf>
 
-Overfull \vbox (77.89305pt too high) detected at line 148
+Overfull \vbox (77.89305pt too high) detected at line 149
  []
 
 [5
@@ -936,9 +939,9 @@ Missing character: There is no 2 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 226.
+(Font)              scaled to size 8.32214pt on input line 195.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 226.
+(Font)              scaled to size 8.32214pt on input line 195.
 [7
 
 ] [8
@@ -947,32 +950,44 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 File: localCoSysOfS1_1.pdf Graphic file (type pdf)
 <localCoSysOfS1_1.pdf>
 
-Overfull \hbox (57.25754pt too wide) in paragraph at lines 271--271
+Overfull \hbox (57.25754pt too wide) in paragraph at lines 243--243
  [][] 
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 271.
+Package hyperref Warning: Ignoring empty anchor on input line 243.
 
 File: localCoSysOfS1_2.pdf Graphic file (type pdf)
 <localCoSysOfS1_2.pdf>
 
-Overfull \hbox (57.25754pt too wide) in paragraph at lines 271--271
+Overfull \hbox (57.25754pt too wide) in paragraph at lines 243--243
  [][] 
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 271.
+Package hyperref Warning: Ignoring empty anchor on input line 243.
 
 [9
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 245.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 245.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 245.
+
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 File: Csmap.pdf Graphic file (type pdf)
 <Csmap.pdf>
 
-Overfull \vbox (36.3723pt too high) detected at line 301
+Overfull \vbox (36.91833pt too high) detected at line 275
  []
 
 [10
@@ -985,85 +1000,119 @@ Missing character: There is no 7 in font nullfont!
 ]
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 2 in font nullfont!
-File: tangentVectorSpace_2.pdf Graphic file (type pdf)
-<tangentVectorSpace_2.pdf>
-
-Package hyperref Warning: Ignoring empty anchor on input line 339.
-
-
-Overfull \vbox (28.9812pt too high) detected at line 339
- []
-
-[12
-
-]
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no 7 in font nullfont!
-[13
+[12
 
 ]
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no 2 in font nullfont!
+
+Overfull \vbox (2.14471pt too high) detected at line 372
+ []
+
+[13
+
+]
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+File: tangentVectorSpace_2.pdf Graphic file (type pdf)
+<tangentVectorSpace_2.pdf>
+
+Package hyperref Warning: Ignoring empty anchor on input line 392.
+
+
+Overfull \vbox (28.9812pt too high) detected at line 392
+ []
+
 [14
+
+]
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+[15
+
+]
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+[16
+
+]
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+[17
 
 ]
 File: projectionTheorem.pdf Graphic file (type pdf)
 <projectionTheorem.pdf>
 
-Overfull \hbox (80.28343pt too wide) in paragraph at lines 405--405
- [] 
+Overfull \vbox (97.69081pt too high) detected at line 517
  []
 
-
-Overfull \vbox (90.28008pt too high) detected at line 405
- []
-
-[15
-
-]
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no 7 in font nullfont!
-File: CrSubmanifold.pdf Graphic file (type pdf)
-<CrSubmanifold.pdf>
-
-Overfull \vbox (53.78725pt too high) detected at line 428
- []
-
-[16
-
-]
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 2 in font nullfont!
-[17
-
-]
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 7 in font nullfont!
 [18
 
 ]
-Missing character: There is no 7 in font nullfont!
+Missing character: There is no 8 in font nullfont!
 Missing character: There is no 2 in font nullfont!
+File: CrSubmanifold.pdf Graphic file (type pdf)
+<CrSubmanifold.pdf>
+
+Overfull \vbox (55.21858pt too high) detected at line 541
+ []
+
 [19
+
+]
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+[20
+
+]
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+[21
+
+] [22
+
+]
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+[23
 
 ]
 File: T2Noshadow.pdf Graphic file (type pdf)
 <T2Noshadow.pdf>
 
-Missing character: There is no 7 in font nullfont!
-Missing character: There is no 7 in font nullfont!
-[20
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+[24
 
-] [21
+] [25
+
+]
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+[26
+
+] [27
+
+] [28
+
+]
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+[29
 
 ]
 Missing character: There is no 8 in font nullfont!
-Missing character: There is no 2 in font nullfont!
-[22
+Missing character: There is no 7 in font nullfont!
+[30
 
-] [23
-
-] [24
+] [31
 
 ]
 \tf@nav=\write7
@@ -1080,15 +1129,15 @@ Missing character: There is no 2 in font nullfont!
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `bv20052_slide.out' has not changed.
-(rerunfilecheck)             Checksum: F3C65FFECEA1679EB0CD5DA2FE920EDD;151.
+(rerunfilecheck)             Checksum: 9517E49A5F03BB98EE34DFCB56E34308;386.
  ) 
 Here is how much of TeX's memory you used:
- 28867 strings out of 475534
- 560089 string characters out of 5794265
+ 28940 strings out of 475534
+ 561872 string characters out of 5794265
  854214 words of memory out of 5000000
- 49876 multiletter control sequences out of 15000+600000
- 537806 words of font info for 159 fonts, out of 8000000 for 9000
+ 49944 multiletter control sequences out of 15000+600000
+ 541625 words of font info for 171 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  128i,15n,122p,456b,1019s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bv20052_slide.dvi (24 pages, 319120 bytes).
+Output written on bv20052_slide.dvi (31 pages, 428432 bytes).

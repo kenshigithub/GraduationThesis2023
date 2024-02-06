@@ -1,2 +1,5 @@
 \beamer@sectionintoc {1}{はじめに}{3}{0}{1}
-\beamer@sectionintoc {2}{多様体の例}{7}{0}{2}
+\beamer@sectionintoc {2}{準備}{4}{0}{2}
+\beamer@sectionintoc {3}{多様体の例}{7}{0}{3}
+\beamer@sectionintoc {5}{写像の局所的性質}{16}{0}{4}
+\beamer@sectionintoc {6}{多様体の次元の具体的な計算}{23}{0}{5}
