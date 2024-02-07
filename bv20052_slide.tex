@@ -88,8 +88,9 @@
 $2$次元の局所座標系を描くことができるため, 
 $2$次元多様体である.  
 
-私は複雑な方程式で表された空間や
-高次元の空間などの形を理解することに興味をもち, 
+私は空間の多様体としての
+次元を調べることで複雑な方程式で表された空間や
+高次元の空間などの形を理解できることに興味をもち, 
 多様体の次元を調べる方法を研究することにした. 
   \begin{figure}[]
     \centering
@@ -107,8 +108,9 @@ $2$次元多様体である.
 位相空間$X$の開集合$U$から, $m$次元数空間$\mathbb{R}^m$のある開集合$U'$
 への同相写像
 $\varphi : U\rightarrow U'$
-があるとき$(U, \varphi)$を$m$次元座標近傍という. 
-$\varphi$を$U$上の局所座標系という.
+があるとき$\varphi$を$U$上の局所座標系といい, 
+$(U, \varphi)$を$m$次元座標近傍という. 
+
 \end{dfn}
 \begin{figure}[H]
   \begin{tabular}{cc}
@@ -123,7 +125,7 @@ $\varphi$を$U$上の局所座標系という.
     \begin{minipage}[t]{0.45\hsize}
       \centering
       \includegraphics[keepaspectratio, scale=0.2]{DrawnLocalCoSysBig.pdf}
-      \caption{局所座標系が描かれていると考える}
+      \caption{描かれた局所座標系}
       \label{}
     \end{minipage}
     %---- 図はここまで ----------------------
@@ -133,13 +135,15 @@ $\varphi$を$U$上の局所座標系という.
 \begin{frame}
   \frametitle{}
   \begin{dfn}
-    $m$次元位相多様体$M$の$2$つの座標近傍$(U, \varphi)$, 
+    $2$つの座標近傍$(U, \varphi)$, 
     $(V, \psi)$が交わっているとき, 同相写像
     $$\psi \circ \varphi^{-1}:\varphi(U\cap V)\rightarrow \psi(U\cap V)$$
     を$(U, \varphi)$から$(V, \psi)$への座標変換という. 
 \end{dfn}
-座標変換$\psi \circ \varphi^{-1}$の微分可能性は
-座標近傍の張り合わせの「滑らかさ」と考えられる. 
+局所座標系が描かれているだけでなく, 重なっている場合は
+その間の
+座標変換$\psi \circ \varphi^{-1}$が微分可能(
+座標近傍の張り合わせが滑らか)なものを考る. 
 \begin{figure}[H]
     \centering
     \includegraphics[keepaspectratio, scale=0.3]{coordinateConversionBig.pdf}
@@ -242,11 +246,13 @@ $\varphi$を$U$上の局所座標系という.
     よって, $S^m$は$m$次元$C^{\infty}$級多様体であることがわかる. 
 \end{frame}
 
-\section*{$C^s$級写像とその微分}
+\section{$C^s$級写像とその微分}
 \begin{frame}
-    \frametitle{$C^r$級写像の微分}
+    \frametitle{$C^s$級写像とその微分}
   \begin{dfn}\label{def:C^s map}
-    連続写像$f:M\to N$が$1$点$p\in M$において
+    $C^r$級多様体$M$($m$次元), $N$
+    ($n$次元)間の写像
+    $f:M\to N$が$1$点$p\in M$において
     $C^s$級であるとは, $p$を含む$M$の$C^r$級
     座標近傍$(U,\varphi)$と
     $f(p)$を含む$N$の
@@ -274,16 +280,6 @@ $\varphi$を$U$上の局所座標系という.
   \end{figure}
 \end{frame}
 
-% \begin{frame}
-%   \frametitle{}
-%   \begin{prop}
-%     連続写像$f:M\to N$が$1$点$p\in M$において
-%     $C^s$級であるという性質は, $p$, $f(p)$を
-%     それぞれ含む$C^r$級座標近傍$(U,\varphi)$, 
-%     $(V, \psi)$の選び方によらない. 
-%     (ただし, $0\leq s \leq r \leq \infty$)
-% \end{prop}
-% \end{frame}
 
 \begin{frame}
   \frametitle{}
@@ -300,52 +296,52 @@ $\varphi$を$U$上の局所座標系という.
         級写像である. 
     \end{itemize}
 \end{dfn}
+\begin{thm}
+  $m$次元$C^r$級多様体, $M$に座標近傍系
+  $\mathcal{S}=
+   \{(U_\alpha, \varphi_\alpha)\}_{\alpha\in A}$
+   が与えられているとする. 
+   $V$を$M$の開集合, 
+   $V'$を$\mathbb{R}^m$の開集合とし,  
+   $\varphi:V\to V'$を$C^r$級微分同相写像
+   であるとすると, $\mathcal{S}$に$(V,\psi)$を
+   加えた集合
+   $\mathcal{S}\cup (V,\psi)$も
+   $C^r$級座標近傍系になる. 
+   \end{thm}
 \end{frame}
 \begin{frame}
   \frametitle{}
-  \begin{thm}
- $m$次元$C^r$級多様体, $M$に座標近傍系
- $\mathcal{S}=
-  \{(U_\alpha, \varphi_\alpha)\}_{\alpha\in A}$
-  が与えられているとする. 
-  $V$を$M$の開集合, 
-  $V'$を$\mathbb{R}^m$の開集合とし,  
-  $\varphi:V\to V'$を$C^r$級微分同相写像
-  であるとすると, 
-  $\mathcal{S}\cup (V,\psi)$も
-  $C^r$級座標近傍系になる. 
-  \end{thm}
-
-  % つまり,  
-  % $(V,\varphi)$も$M$の$C^r$級
-  % 座標近傍であることにできる. 
   \begin{dfn}
   このような$(V,\psi)$の全体集合
   $\mathcal{M}=\mathcal{M}(\mathcal{S})$を
   $\mathcal{S}$から決まる
   $M$の$C^r$級極大座標近傍系という.
   \end{dfn}
-  これによって, いくらでも小さい座標近傍や, 
-  新しい局所座標系$\varphi'$による座標近傍
-  $(U_\alpha,\varphi_\alpha')$も同時に考えら
+  これによって, いくらでも小さい開近傍$U'$や, 
+  新しい局所座標系$\varphi '$による座標近傍
+  $(U',\varphi ')$も同時に考えら
   れるようになる. 
+  \begin{figure}[H]
+    \centering
+    \includegraphics[keepaspectratio, scale=0.25]{stereoprojection.pdf}
+    \caption{小さい$U'$とステレオ投影$\varphi '$}
+    \label{}
+\end{figure}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{}
   \begin{dfn}
-    $p$を含む座標近傍$(U,\varphi)$を
-    $1$つ固定する. $p$のまわりで定義された
-    $C^r$級関数$f$に, $p$における$x_i$
+    $p\in M$のまわりの座標近傍$(U,\varphi)$上の
+    $C^r$級関数$f:M\to \mathbb{R}$に, $p$における$x_i$
     方向の偏微分係数を対応させる操作を
-    $\left(\frac{\partial}{\partial x_i}
-    \right)_p$と書く. すなわち, 
     $$\left(\frac{\partial}{\partial x_i}
     \right)_p:f\mapsto 
     \frac{\partial f\circ \varphi^{-1}}{\partial x_i}(
       \varphi(p))$$
-    である. 
+    と表す. 
   \end{dfn}
   和と$a$倍($a\in \mathbb{R}$)を
   $$\left(\frac{\partial}{\partial x_i}
@@ -450,7 +446,7 @@ $\varphi$を$U$上の局所座標系という.
 \begin{frame}
   \frametitle{写像の局所的性質}
   \begin{thm}\label{theo:f^(-1)theorem}
-    $(df)_p:T_p(M)\to T_p(N)$が線型写像として
+    $(df)_p:T_p(M)\to T_f(p)(N)$が線型写像として
     同型(det$(Jf)_p\neq 0$)なら, $f$は$p$のある開近傍から$f(p)$の
     ある開近傍への$C^r$級微分同相写像である. 
     すなわち, $p$の開近傍$U$と$f(p)$の開近傍$V$
@@ -461,14 +457,14 @@ $\varphi$を$U$上の局所座標系という.
   \begin{ex}
     $f:\mathbb{R}\to \mathbb{R}, f(x)=x^2$と
     すると, $(Jf)_x=2x$となり, $x\neq 0$のとき
-    det$(Jf)_x\neq 0$となるので, $f$を十分
-    小さい$p$の開近傍$U$上に制限した写像$f|U$
+    det$(Jf)_x\neq 0$となるので, 十分
+    小さい$p$の開近傍上$U$で$f|U$
     は$C^\infty$級微分同相写像である. 
-    実際$p>0$のとき, $p$の開近傍$(0,2p)$上
-    の写像$f|(0,2p)$の逆写像$f|(0,2p)^{-1}:
-    f|(0,2p)^{-1}(x)=\sqrt{x}$が
+    実際$p>0$のとき, $p$の十分小さい開近傍
+    $U$で$f|U^{-1}:
+    f|U^{-1}(x)=\sqrt{x}$が
     存在し, $C^\infty$
-    級であるので, $f|(0,2p)$が
+    級であるので, $f|U$が
     $C^\infty$級微分同相写像であることがわかる.
   \end{ex}
 \end{frame}
@@ -477,11 +473,9 @@ $\varphi$を$U$上の局所座標系という.
   \frametitle{}
   \begin{thm}\label{theo: projection theorem}
     $f:M\to N$を$C^r$級写像とする. ある点$p\in M$
-    における微分$(df)_p:T_p(M)\to T_p(N)$が上への
-    線型写像(rank$(Jf)_p=n$)なら, 点$p$付近での$f$の様子は, 射影:
-    $\mathbb{R}^{m-n} \times \mathbb{R}^n \to \mathbb{R}^n$, 
-    $(x_1, \cdots ,x_m)\mapsto (x_(m-n+1), \cdots ,x_m)$
-    と同じである. すなわち, $f(p)$のまわりの局所座標系
+    における微分$(df)_p:T_p(M)\to T_f(p)(N)$が上への
+    線型写像(rank$(Jf)_p=n$)なら, 点$p$付近での$f$の様子は,
+    射影と同じ, つまり, $f(p)$のまわりの局所座標系
     $(y_1, \cdots ,y_n)$に対して
     $p$のまわりの局所座標系
     $(x_1,\cdots ,x_m)$をうまく選んで, $f$
@@ -494,6 +488,7 @@ $\varphi$を$U$上の局所座標系という.
     \end{eqnarray*}
     であるようにできる. 
   \end{thm}
+  これを射影の定理とよぶこととする. 
 \end{frame}
 
 \begin{frame}
@@ -510,7 +505,7 @@ $\varphi$を$U$上の局所座標系という.
   \frametitle{}
   \begin{figure}[H]
     \centering
-    \includegraphics[keepaspectratio, scale=0.4]{projectionTheorem.pdf}
+    \includegraphics[keepaspectratio, scale=0.35]{projection_new.pdf}
     \caption{射影の様子}
     \label{projectionTheorem}
    \end{figure}
@@ -565,7 +560,9 @@ $\varphi$を$U$上の局所座標系という.
   $$f^{-1}(q)\cap U
   =\{(x_1,\cdots x_m)\in U|
   x_{m-n+1}=\cdots =x_m=0\}$$
-  が成り立つことを証明すればよい. 
+  が成り立つこと
+  ($(m-n)$次元$C^r$級
+  部分多様体の条件)を証明すればよい. 
 \end{frame}
 
 \begin{frame}
@@ -574,22 +571,17 @@ $\varphi$を$U$上の局所座標系という.
     rank$(Jf)_p=n$であるから, $(df)_p$は上への
     写像である. よって, 
     $q$($=f(p)$)のまわりの座標近傍$(V;y_1,\cdots ,y_n)$
-    に対して, 
-    $p$のまわりの座標近傍$(U;x_1,\cdots ,x_m)$を
-    とってきて
-    $$f|U:U\to V,\ (y_1,\cdots ,y_n)=f(x_1,\cdots x_m)
-    =(x_{m-n+1},\cdots ,x_m)$$
-    とすることができる.  \\
-    $(V;y_1,\cdots ,y_n)$は
+    に対して, $(V;y_1,\cdots ,y_n)$は
     点$q$で$y_1=\cdots =y_n=0$となるように
-    とっておくと, 
-    \begin{eqnarray*}
-        f^{-1}(q)\cap U&=& \{p\in U|f(p)=q\}\\
-        &=&\{(x_1,\cdots ,x_m)\in U|f(x_1,\cdots x_m)=(0,\cdots ,0)\}\\
-        &=&\{(x_1,\cdots ,x_m)\in U|(x_{m-n+1},\cdots x_m)=(0,\cdots ,0)\}\\
-        &=&\{(x_1,\cdots x_m)\in U|x_{m-n+1}=\cdots =x_m=0\}
-    \end{eqnarray*}
-    となり, 条件を満たす$U$が存在することがわかる. 
+    とっておくと, 射影の定理より
+    $p$のまわりの座標近傍$(U;x_1,\cdots ,x_m)$を
+    とってきて以下のようにできる. 
+    \begin{figure}[H]
+      \centering
+      \includegraphics[keepaspectratio, scale=0.35]{finverseIsManifold.pdf}
+      \caption{}
+      \label{finverseIsManifold}
+     \end{figure}
 \end{frame}
 
 \section{多様体の次元の具体的な計算}
@@ -781,5 +773,27 @@ $$(Jf)_{\boldsymbol{x}}=(2x_1,\cdots ,2x_{n+1})
   は$L$の$C^r$級座標近傍になっている. \\
   以上より, $L$は$l$次元$C^r$級多様体である. 
 \end{frame}
-
+\begin{frame}
+  \frametitle{}
+    今, $f(p)=q$を満たす$p\in M$について, 常に
+    rank$(Jf)_p=n$であるから, $(df)_p$は上への
+    写像である. よって, 
+    $q$($=f(p)$)のまわりの座標近傍$(V;y_1,\cdots ,y_n)$
+    に対して, 
+    $p$のまわりの座標近傍$(U;x_1,\cdots ,x_m)$を
+    とってきて
+    $$f|U:U\to V,\ (y_1,\cdots ,y_n)=f(x_1,\cdots x_m)
+    =(x_{m-n+1},\cdots ,x_m)$$
+    とすることができる.  \\
+    $(V;y_1,\cdots ,y_n)$は
+    点$q$で$y_1=\cdots =y_n=0$となるように
+    とっておくと, 
+    \begin{eqnarray*}
+        f^{-1}(q)\cap U&=& \{p\in U|f(p)=q\}\\
+        &=&\{(x_1,\cdots ,x_m)\in U|f(x_1,\cdots x_m)=(0,\cdots ,0)\}\\
+        &=&\{(x_1,\cdots ,x_m)\in U|(x_{m-n+1},\cdots x_m)=(0,\cdots ,0)\}\\
+        &=&\{(x_1,\cdots x_m)\in U|x_{m-n+1}=\cdots =x_m=0\}
+    \end{eqnarray*}
+    となり, 条件を満たす$U$が存在することがわかる. 
+\end{frame}
 \end{document}

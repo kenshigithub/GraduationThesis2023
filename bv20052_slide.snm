@@ -7,6 +7,7 @@
 \beamer@slide {def:C^s map}{10}
 \beamer@slide {Csmap}{10}
 \beamer@slide {def:C^s deffeomorphism}{11}
+\beamer@slide {}{12}
 \beamer@slide {def:tangent vector space}{14}
 \beamer@slide {}{14}
 \beamer@slide {def:differential}{15}
@@ -17,5 +18,6 @@
 \beamer@slide {CrSubmanifold}{19}
 \beamer@slide {prop:dim of C^r-submanifold}{20}
 \beamer@slide {theo:f^{-1}(q) C^r manifold}{21}
+\beamer@slide {finverseIsManifold}{22}
 \beamer@slide {T2Noshadow}{24}
 \beamer@slide {prop:dim of C^r-submanifold}{30}

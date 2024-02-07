@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  6 FEB 2024 14:22
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.9.8)  8 FEB 2024 04:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -698,6 +698,9 @@ LaTeX Warning: Label `' multiply defined.
 LaTeX Warning: Label `' multiply defined.
 
 
+LaTeX Warning: Label `' multiply defined.
+
+
 LaTeX Warning: Label `prop:dim of C^r-submanifold' multiply defined.
 
 )
@@ -850,72 +853,72 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 3.69873pt on input line 76.
 [1
 
-] (./bv20052_slide.toc) [2
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 101.
+] (./bv20052_slide.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 101.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 101.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
  (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 101.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 4.
  (c:/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
+)) [2
+
+]
 File: CoSysInS2.pdf Graphic file (type pdf)
 <CoSysInS2.pdf>
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 101.
+(Font)              scaled to size 9.24683pt on input line 102.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 101.
- [3
+(Font)              scaled to size 9.24683pt on input line 102.
+
+Overfull \vbox (10.73334pt too high) detected at line 102
+ []
+
+[3
 
 ]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 132.
+(Font)              scaled to size 11.09619pt on input line 134.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 132.
+(Font)              scaled to size 11.09619pt on input line 134.
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 132.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 132.
+(Font)              scaled to size 11.09619pt on input line 134.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 132.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 132.
+(Font)              scaled to size 11.09619pt on input line 134.
 
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 File: coNeighborhoodBig.pdf Graphic file (type pdf)
 <coNeighborhoodBig.pdf>
 
-Overfull \hbox (14.99709pt too wide) in paragraph at lines 132--132
+Overfull \hbox (14.99709pt too wide) in paragraph at lines 134--134
  [][] 
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 132.
+Package hyperref Warning: Ignoring empty anchor on input line 134.
 
 File: DrawnLocalCoSysBig.pdf Graphic file (type pdf)
 <DrawnLocalCoSysBig.pdf>
 
-Overfull \hbox (14.99709pt too wide) in paragraph at lines 132--132
+Overfull \hbox (14.99709pt too wide) in paragraph at lines 134--134
  [][] 
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 132.
-
-
-Overfull \vbox (8.10333pt too high) detected at line 132
- []
+Package hyperref Warning: Ignoring empty anchor on input line 134.
 
 [4
 
@@ -925,7 +928,7 @@ Missing character: There is no 7 in font nullfont!
 File: coordinateConversionBig.pdf Graphic file (type pdf)
 <coordinateConversionBig.pdf>
 
-Overfull \vbox (77.89305pt too high) detected at line 149
+Overfull \vbox (81.3155pt too high) detected at line 153
  []
 
 [5
@@ -939,9 +942,9 @@ Missing character: There is no 2 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 7 in font nullfont!
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 195.
+(Font)              scaled to size 8.32214pt on input line 199.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 195.
+(Font)              scaled to size 8.32214pt on input line 199.
 [7
 
 ] [8
@@ -950,44 +953,44 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 File: localCoSysOfS1_1.pdf Graphic file (type pdf)
 <localCoSysOfS1_1.pdf>
 
-Overfull \hbox (57.25754pt too wide) in paragraph at lines 243--243
+Overfull \hbox (57.25754pt too wide) in paragraph at lines 247--247
  [][] 
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 243.
+Package hyperref Warning: Ignoring empty anchor on input line 247.
 
 File: localCoSysOfS1_2.pdf Graphic file (type pdf)
 <localCoSysOfS1_2.pdf>
 
-Overfull \hbox (57.25754pt too wide) in paragraph at lines 243--243
+Overfull \hbox (57.25754pt too wide) in paragraph at lines 247--247
  [][] 
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 243.
+Package hyperref Warning: Ignoring empty anchor on input line 247.
 
 [9
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 245.
+(hyperref)                removing `math shift' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 245.
+(hyperref)                removing `superscript' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 245.
+(hyperref)                removing `math shift' on input line 249.
 
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 File: Csmap.pdf Graphic file (type pdf)
 <Csmap.pdf>
 
-Overfull \vbox (36.91833pt too high) detected at line 275
+Overfull \vbox (50.51834pt too high) detected at line 281
  []
 
 [10
@@ -995,22 +998,27 @@ Overfull \vbox (36.91833pt too high) detected at line 275
 ]
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 7 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 2 in font nullfont!
 [11
 
 ]
 Missing character: There is no 4 in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 4 in font nullfont!
 Missing character: There is no 7 in font nullfont!
+File: stereoprojection.pdf Graphic file (type pdf)
+<stereoprojection.pdf>
+
+Package hyperref Warning: Ignoring empty anchor on input line 331.
+
+
+Overfull \vbox (14.32965pt too high) detected at line 331
+ []
+
 [12
 
 ]
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no 2 in font nullfont!
-
-Overfull \vbox (2.14471pt too high) detected at line 372
- []
-
 [13
 
 ]
@@ -1019,10 +1027,10 @@ Missing character: There is no 7 in font nullfont!
 File: tangentVectorSpace_2.pdf Graphic file (type pdf)
 <tangentVectorSpace_2.pdf>
 
-Package hyperref Warning: Ignoring empty anchor on input line 392.
+Package hyperref Warning: Ignoring empty anchor on input line 388.
 
 
-Overfull \vbox (28.9812pt too high) detected at line 392
+Overfull \vbox (28.9812pt too high) detected at line 388
  []
 
 [14
@@ -1045,10 +1053,10 @@ Missing character: There is no 7 in font nullfont!
 [17
 
 ]
-File: projectionTheorem.pdf Graphic file (type pdf)
-<projectionTheorem.pdf>
+File: projection_new.pdf Graphic file (type pdf)
+<projection_new.pdf>
 
-Overfull \vbox (97.69081pt too high) detected at line 517
+Overfull \vbox (67.83655pt too high) detected at line 512
  []
 
 [18
@@ -1059,7 +1067,7 @@ Missing character: There is no 2 in font nullfont!
 File: CrSubmanifold.pdf Graphic file (type pdf)
 <CrSubmanifold.pdf>
 
-Overfull \vbox (55.21858pt too high) detected at line 541
+Overfull \vbox (55.21858pt too high) detected at line 536
  []
 
 [19
@@ -1074,7 +1082,14 @@ Missing character: There is no 9 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 [21
 
-] [22
+]
+File: finverseIsManifold.pdf Graphic file (type pdf)
+<finverseIsManifold.pdf>
+
+Overfull \vbox (57.83655pt too high) detected at line 585
+ []
+
+[22
 
 ]
 Missing character: There is no 9 in font nullfont!
@@ -1103,7 +1118,8 @@ Missing character: There is no 7 in font nullfont!
 ] [28
 
 ]
-Missing character: There is no 4 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 [29
 
@@ -1113,6 +1129,8 @@ Missing character: There is no 7 in font nullfont!
 [30
 
 ] [31
+
+] [32
 
 ]
 \tf@nav=\write7
@@ -1132,12 +1150,12 @@ Package rerunfilecheck Info: File `bv20052_slide.out' has not changed.
 (rerunfilecheck)             Checksum: 9517E49A5F03BB98EE34DFCB56E34308;386.
  ) 
 Here is how much of TeX's memory you used:
- 28940 strings out of 475534
- 561872 string characters out of 5794265
- 854214 words of memory out of 5000000
- 49944 multiletter control sequences out of 15000+600000
+ 28961 strings out of 475534
+ 562494 string characters out of 5794265
+ 854213 words of memory out of 5000000
+ 49961 multiletter control sequences out of 15000+600000
  541625 words of font info for 171 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  128i,15n,122p,456b,1019s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bv20052_slide.dvi (31 pages, 428436 bytes).
+Output written on bv20052_slide.dvi (32 pages, 441236 bytes).
